@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>物品详情 - 星源证章</title>
+<style>
+  hr{
+    margin: 20px 0;
+  }
+    ul {
+    list-style-type: none;  /* 去除小圆点 */
+    padding-left: 0;        /* 去除默认的左内边距 */
+  }
+</style>
+  <link rel="stylesheet" href="../main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+  <button class="sidebar-toggle">目录</button>
+
+  <nav>
+    <a href="../index.html">首页</a>
+    <a href="../astesia.html">星极</a>
+    <a href="../astgenne.html">星源</a>
+  </nav>
+
+  <div id="sidebar-placeholder"></div>
+
+  <main>
+    <h1 style="font-size: 48px;">星源证章</h1>
+    <h3 style="margin-bottom: 20px;">星源证章</h3>
+    <div class="main-container">
+
+      <div class="left-container">
+        <div class="avatar-container">
+          <img src="../image/astesia2.webp" alt="星极" width="40px" height="40px" class="avatar" data-character="astesia">
+          <img src="../image/astgenne2.webp" alt="星源" width="40px" height="40px" class="avatar" data-character="astgenne">
+          <img src="../image/48px-Wilson_Portrait.webp" alt="威尔逊" width="40px" height="40px" class="avatar" data-character="wilson">
+
+
+        </div>
+        <div class="description-container" id="characterDescription">
+          <!-- 角色描述将在这里动态显示 -->
+        </div>
+        <div class="analysis-container">
+          <ul>
+            <li style="margin-bottom: 20px;"><span class="color-important">星源证章（ast_badge_astgenne）</span>是一种仅【星源】可使用的物品。</li>
+
+            <li>
+              用于保存和读取【星源】的各项等级数据，右键使用后可读取预先保存的各项等级数据。<br>
+              <span class="color-important">说明-获取方式：</span><br>
+              当前人物为【星源】，换人时自动掉落一个保存当前各项等级数据的【星源证章】
+            </li>
+            <hr>
+            <li></li>
+          </ul>
+
+        </div>
+      </div>
+      <div class="right-container">
+        <h2 style="color: #007acc;">星源证章</h2>
+        <p>ast_badge_astgenne</p>
+        <hr>
+        <img src="../image/ast_badge_astgenne.webp" alt="星源证章" width="100px">
+        <hr>
+        <p>分类：物品/功能</p>
+      </div>
+    </div>
+    
+  </main>
+
+  <script>
+    // 角色描述数据
+    const characterDescriptions = {
+      astesia: "该准备迎接的茶会了。",
+      astgenne: "这次的科研任务终于结束了！~",
+      wilson: "她是电花，也是你手旁的小喇叭。"
+    }; 
+
+    // 获取DOM元素
+    const avatars = document.querySelectorAll('.avatar');
+    const descriptionContainer = document.getElementById('characterDescription');
+
+    // 随机选择初始角色
+    function initializeRandomCharacter() {
+      const characters = Object.keys(characterDescriptions);
+      const randomCharacter = characters[Math.floor(Math.random() * characters.length)];
+      showCharacterDescription(randomCharacter);
+      updateActiveAvatar(randomCharacter);
+    }
+
+    // 显示角色描述
+    function showCharacterDescription(character) {
+      descriptionContainer.textContent = characterDescriptions[character];
+    }
+
+    // 更新活跃的头像样式
+    function updateActiveAvatar(character) {
+      avatars.forEach(avatar => {
+        if (avatar.dataset.character === character) {
+          avatar.classList.add('active');
+        } else {
+          avatar.classList.remove('active');
+        }
+      });
+    }
+
+    // 为每个头像添加点击事件
+    avatars.forEach(avatar => {
+      avatar.addEventListener('click', () => {
+        const character = avatar.dataset.character;
+        showCharacterDescription(character);
+        updateActiveAvatar(character);
+      });
+    });
+
+    // 页面加载时初始化随机角色
+    window.addEventListener('DOMContentLoaded', initializeRandomCharacter);
+  
+
+fetch("./sidebar.html")
+  .then(response => response.text())
+  .then(html => {
+    document.getElementById("sidebar-placeholder").innerHTML = html;
+
+    // 目录内容加载完毕后，绑定折叠事件
+    const toggleBtn = document.querySelector(".sidebar-toggle");
+    const sidebar = document.querySelector(".sidebar");
+    if (!toggleBtn || !sidebar) {
+      console.error("找不到 sidebar-toggle 或 sidebar 元素");
+      return;
+    }
+    toggleBtn.addEventListener("click", () => {
+      sidebar.classList.toggle("active");
+    });
+  })
+  .catch(err => console.error("加载 sidebar 失败:", err));
+
+</script>
+</body>
+</html>

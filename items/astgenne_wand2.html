@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>物品详情 - 残缺星光之愿</title>
+<style>
+  hr{
+    margin: 20px 0;
+  }
+    ul {
+    list-style-type: none;  /* 去除小圆点 */
+    padding-left: 0;        /* 去除默认的左内边距 */
+  }
+</style>
+  <link rel="stylesheet" href="../main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+  <button class="sidebar-toggle">目录</button>
+
+  <nav>
+    <a href="../index.html">首页</a>
+    <a href="../astesia.html">星极</a>
+    <a href="../astgenne.html">星源</a>
+  </nav>
+
+  <div id="sidebar-placeholder"></div>
+
+  <main>
+    <h1 style="font-size: 48px;">残缺星光之愿</h1>
+    <h3 style="margin-bottom: 20px;">一点勇气，一点决断，再来一点长远的眼光。</h3>
+    <div class="main-container">
+
+      <div class="left-container">
+        <div class="avatar-container">
+          <img src="../image/astesia2.webp" alt="星极" width="40px" height="40px" class="avatar" data-character="astesia">
+          <img src="../image/astgenne2.webp" alt="星源" width="40px" height="40px" class="avatar" data-character="astgenne">
+          <img src="../image/48px-Wilson_Portrait.webp" alt="威尔逊" width="40px" height="40px" class="avatar" data-character="wilson">
+
+
+        </div>
+        <div class="description-container" id="characterDescription">
+          <!-- 角色描述将在这里动态显示 -->
+        </div>
+        <div class="analysis-container">
+          <ul>
+            <li style="margin-bottom: 20px;"><span class="color-important">残缺星光之愿（astgenne_starwish_incomplete）</span>是一种仅【星源】可制作与使用的武器。</li>
+            <li>攻击力34，攻击距离8<br>
+              移速+12%，耐久150次<br>
+              最大弹射次数2<br>
+              攻击对目标造成伤害后，会令其进入0.5秒的【停顿】状态，即移速-80%。<br><br>
+
+              耐久降至0时不消失，<br>
+              但会立刻掉落至物品栏并无法装备。<br>
+              使用【生物数据】修补30次耐久。<br>
+              使用【星空修补套件】修补100%耐久。<br><br>
+              
+              <span class="color-important">说明-基础特性：</span><br>
+              ①拥有技能【星光的指引】。<br>
+
+              在距离自身24范围以内，<span class="color-important">右键</span>可在鼠标当前的位置生成一颗临时【矮星】，存在时间30秒。<br>
+              若【星源】与其距离超过32，则临时【矮星】立刻消失。
+              在该临时【矮星】存在期间，再次<span class="color-important">右键</span>会以【星源】为中心出现方向指示箭头，
+              且箭头末端固定指向临时【矮星】，此时右键会取消箭头，<span class="color-important">左键</span>会令【星源】立刻传送至临时【矮星】的位置，
+              并使临时【矮星】立刻消失。<br>
+              在临时【矮星】因任何原因消失后，此技能进入冷却状态，冷却30秒。<br><br>
+          
+              ②在月相为【满月】的夜晚，可将其插入【月亮石】触发【月亮石袭击】，并进行转化升级。
+            </li>
+            <hr>
+          </ul>
+        </div>
+      </div>
+      <div class="right-container">
+        <h2 style="color: #007acc;">残缺星光之愿</h2>
+        <p>astgenne_starwish_incomplete</p>
+        <hr>
+        <img src="../image/astgenne_wand2.webp" alt="残缺星光之愿" width="100px">
+        <hr>
+        <p>分类：装备/手部</p>
+        <p>解锁方式：“真理”</p>
+        <p>制作材料：<br>
+              ①硝石*20<br>
+              ②燧石*40<br>
+              ③烂电线*8<br>
+              ④电子元件*8</p>
+      </div>
+    </div>
+    <div class="main-container">
+
+      <div class="left-container">
+        <div class="avatar-container">
+          <img src="../image/astesia2.webp" alt="星极" width="40px" height="40px" class="avatar" data-character="astesia">
+          <img src="../image/astgenne2.webp" alt="星源" width="40px" height="40px" class="avatar" data-character="astgenne">
+          <img src="../image/48px-Wilson_Portrait.webp" alt="威尔逊" width="40px" height="40px" class="avatar" data-character="wilson">
+
+
+        </div>
+        <div class="description-container" id="characterDescription">
+          <!-- 角色描述将在这里动态显示 -->
+        </div>
+        <div class="analysis-container">
+          <ul>
+            <li style="margin-bottom: 20px;"></li>
+            <li></li>
+            <hr>
+            <li></li>
+          </ul>
+
+        </div>
+      </div>
+      <div class="right-container">
+        <h2 style="color: #007acc;">残缺星光之愿<br>（0%耐久时）</h2>
+        <p>astgenne_wand2</p>
+        <hr>
+        <img src="../image/astgenne_wand2.webp" alt="残缺星光之愿" width="100px">
+      </div>
+    </div>
+  </main>
+  
+
+  <script>
+  const characterDescriptions = {
+    astesia: "性能优异的源石法杖。",
+    astgenne: "让你们见识下科技的力量。",
+    wilson: "附带科学力量的法杖。"
+  };
+  const characterDescriptions2 = {
+    astesia: "充能已经耗尽了。",
+    astgenne: "这，我的计算怎么会……",
+    wilson: "或许需要一些手段来修复。",
+  };
+  function setupCharacterBlock(containerIndex) {
+    const container = document.querySelectorAll('.main-container')[containerIndex];
+    const avatars = container.querySelectorAll('.avatar');
+    const descriptionContainer = container.querySelector('.description-container');
+    if(containerIndex == 0){
+        // 初始化随机角色
+      const characters = Object.keys(characterDescriptions);
+      const randomCharacter = characters[Math.floor(Math.random() * characters.length)];
+      showCharacterDescription(randomCharacter);
+      updateActiveAvatar(randomCharacter);
+
+      function showCharacterDescription(character) {
+        descriptionContainer.textContent = characterDescriptions[character];
+      }
+
+      function updateActiveAvatar(character) {
+        avatars.forEach(avatar => {
+          if (avatar.dataset.character === character) {
+            avatar.classList.add('active');
+          } else {
+            avatar.classList.remove('active');
+          }
+        });
+      }
+
+      avatars.forEach(avatar => {
+        avatar.addEventListener('click', () => {
+          const character = avatar.dataset.character;
+          showCharacterDescription(character);
+          updateActiveAvatar(character);
+        });
+      });
+    }else if(containerIndex == 1){
+      // 初始化随机角色
+      const characters = Object.keys(characterDescriptions2);
+      const randomCharacter = characters[Math.floor(Math.random() * characters.length)];
+      showCharacterDescription(randomCharacter);
+      updateActiveAvatar(randomCharacter);
+
+      function showCharacterDescription(character) {
+        descriptionContainer.textContent = characterDescriptions2[character];
+      }
+
+      function updateActiveAvatar(character) {
+        avatars.forEach(avatar => {
+          if (avatar.dataset.character === character) {
+            avatar.classList.add('active');
+          } else {
+            avatar.classList.remove('active');
+          }
+        });
+      }
+      avatars.forEach(avatar => {
+        avatar.addEventListener('click', () => {
+          const character = avatar.dataset.character;
+          showCharacterDescription(character);
+          updateActiveAvatar(character);
+        });
+      });
+    }
+    
+  }
+
+  // 初始化两个容器
+  window.addEventListener('DOMContentLoaded', () => {
+    setupCharacterBlock(0); // 第一个 main-container
+    setupCharacterBlock(1); // 第二个 main-container
+  });
+
+
+fetch("./sidebar.html")
+  .then(response => response.text())
+  .then(html => {
+    document.getElementById("sidebar-placeholder").innerHTML = html;
+
+    // 目录内容加载完毕后，绑定折叠事件
+    const toggleBtn = document.querySelector(".sidebar-toggle");
+    const sidebar = document.querySelector(".sidebar");
+    if (!toggleBtn || !sidebar) {
+      console.error("找不到 sidebar-toggle 或 sidebar 元素");
+      return;
+    }
+    toggleBtn.addEventListener("click", () => {
+      sidebar.classList.toggle("active");
+    });
+  })
+  .catch(err => console.error("加载 sidebar 失败:", err));
+
+</script>
+
+</body>
+</html>
