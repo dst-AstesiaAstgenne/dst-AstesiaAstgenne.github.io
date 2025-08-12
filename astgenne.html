@@ -12,11 +12,7 @@
 <body>
   <button class="sidebar-toggle">目录</button>
 
-  <nav>
-    <a href="index.html">首页</a>
-    <a href="astesia.html">星极</a>
-    <a href="astgenne.html">星源</a>
-  </nav>
+  <div id="nav-placeholder"></div>
 
   <aside class="sidebar">
     <h3>目录</h3>
@@ -1639,6 +1635,12 @@ sidebarLinks.forEach(link => {
     }
   });
 });
+
+fetch('navigation.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('nav-placeholder').innerHTML = data;
+    });
 </script>
 </body>
 </html>

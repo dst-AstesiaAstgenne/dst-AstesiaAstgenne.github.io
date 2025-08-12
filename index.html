@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>饥荒模组 Wiki - 首页</title>
+  <title>饥荒模组 Wiki - 星极&星源</title>
 <style>
 .mod-info {
   text-align: center;
@@ -56,12 +56,7 @@ hr {
 </head>
 <body>
   <button class="sidebar-toggle">目录</button>
-  <nav>
-    <a href="index.html">首页</a>
-    <a href="astesia.html">星极</a>
-    <a href="astgenne.html">星源</a>
-    <a href="guide.html">攻略技巧</a>
-  </nav>
+  <div id="nav-placeholder"></div>
 
   <aside class="sidebar">
     <h3 style="color: #007acc;">模组角色</h3>
@@ -292,6 +287,11 @@ sidebarLinks.forEach(link => {
     }
   });
 });
+fetch('navigation.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('nav-placeholder').innerHTML = data;
+    });
 </script>
 </body>
 </html>
