@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>饥荒模组 Wiki - 空弦</title>
+<style>
+.mod-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.credits {
+  margin: 15px 0;
+}
+
+.notes {
+  font-style: italic;
+  color: #666;
+}
+
+.character-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.character {
+  text-align: center;
+}
+
+.character-name {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+hr {
+  margin: 20px 0;
+  border: 1px solid #eee;
+}
+/* 链接样式 */
+.character-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: transform 0.3s ease;
+}
+.character-link:hover {
+  transform: scale(1.1);
+}
+
+</style>
+  <link rel="stylesheet" href="../../main.css">
+</head>
+<body>
+  <button class="sidebar-toggle">目录</button>
+  <div id="nav-placeholder"></div>
+
+  <aside class="sidebar">
+    <h3 style="color: #007acc;">模组角色</h3>
+    <ul>
+      <li><a href="archetto.html">空弦</a></li>
+    </ul>
+
+    <h3 style="color: #007acc;">模组物品</h3>
+    <ul>
+      <li><a href="./items/ast_truth.html">“真理”</a></li>
+    </ul>
+  </aside>
+
+  <main>
+    <header class="mod-info">
+      <h1>测试页面</h1>
+    </header>
+    
+    <hr>
+    
+    <section class="characters">
+      <h4>模组角色</h4>
+      <div class="character-list">
+        <a href="./astesia.html" class="character-link">
+          <div class="character">
+            <img src="./image/astesia_none2.webp" alt="星极立绘" width="200px"><br>
+            <img src="./image/names_astesia.webp" alt="星极名字" width="200px">
+          </div>
+        </a>
+        <a href="./astgenne.html" class="character-link">
+          <div class="character">
+            <img src="./image/astgenne_none2.webp" alt="星源立绘" width="200px"><br>
+            <img src="./image/names_astgenne.webp" alt="星源名字" width="200px">
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="items">
+      <h4>模组物品</h4>
+      <div class="table-wrapper">
+        <table class="items-table">
+          <thead>
+            <tr>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="./items/astgenne_rabbitlamp.html"><img src="./image/ast_rabbitlamp.webp" alt="兔兔落地灯" width="60px"><br>兔兔落地灯</a></td>
+              <td><a href="./items/astgenne_candymachine.html"><img src="./image/ast_candymachine.webp" alt="“全是兔兔”糖果机" width="60px"><br>“全是兔兔”糖果机</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <script>
+  // 移动端侧边栏切换逻辑
+const sidebarToggle = document.querySelector('.sidebar-toggle');
+const sidebar = document.querySelector('.sidebar');
+
+// 点击按钮切换侧边栏状态
+sidebarToggle.addEventListener('click', () => {
+  sidebar.classList.toggle('active');
+});
+
+// 点击侧边栏链接后在移动设备上自动关闭侧边栏
+const sidebarLinks = sidebar.querySelectorAll('a');
+sidebarLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    if (window.innerWidth <= 768) {
+      sidebar.classList.remove('active');
+    }
+  });
+});
+fetch('navigation.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('nav-placeholder').innerHTML = data;
+    });
+</script>
+</body>
+</html>
