@@ -29,20 +29,17 @@
 
   <main>
     <h1 style="font-size: 48px;">史尔特尔服装</h1>
-    <!-- <h3 style="margin-bottom: 20px;">她没有离开。当我们抬头时，就会看到她。</h3> -->
+    <h3 style="margin-bottom: 20px;">史尔特尔的衣服，拥有无法解释的耐火性能</h3>
     <div class="main-container">
 
       <div class="left-container">
-        <!-- <div class="avatar-container">
-          <img src="../image/astesia2.webp" alt="星极" width="40px" height="40px" class="avatar" data-character="astesia">
-          <img src="../image/astgenne2.webp" alt="星源" width="40px" height="40px" class="avatar" data-character="astgenne">
-          <img src="../image/48px-Wilson_Portrait.webp" alt="威尔逊" width="40px" height="40px" class="avatar" data-character="wilson">
-
-
+        <div class="avatar-container">
+          <img src="../surtr_image/avatar_surtr.webp" alt="史尔特尔" width="40px" height="40px" class="avatar" data-character="surtr">
+          <img src="../../../image/48px-Wilson_Portrait.webp" alt="威尔逊" width="40px" height="40px" class="avatar" data-character="wilson">
         </div>
         <div class="description-container" id="characterDescription">
-          角色描述将在这里动态显示
-        </div> -->
+          <!-- 角色描述将在这里动态显示 -->
+        </div>
         <div class="analysis-container">
           <ul>
             <li style="margin-bottom: 20px;"><span class="color-important">史尔特尔服装</span>是【史尔特尔】的专属模组身体装备。</li>
@@ -67,6 +64,8 @@
                <span class="color-important">说明-其余设定：</span><br>
               ①因为升级组件和背包冲突，部分材料请脱掉衣服再塞东西升级。
           </li>
+                      <hr>
+            <li></li>
           </ul>
 
         </div>
@@ -86,6 +85,54 @@
   </main>
 
   <script>
+
+// 角色描述数据
+    const characterDescriptions = {
+      wilson: "史尔特尔的衣服，拥有无法解释的耐火性能",
+      surtr: "使用火焰法术时衣服这么容易烧掉的话，<br>明日方舟就会成为喜闻乐见的18+游戏。"
+
+    };
+
+    // 获取DOM元素
+    const avatars = document.querySelectorAll('.avatar');
+    const descriptionContainer = document.getElementById('characterDescription');
+
+    // 随机选择初始角色
+    function initializeRandomCharacter() {
+      const characters = Object.keys(characterDescriptions);
+      const randomCharacter = characters[Math.floor(Math.random() * characters.length)];
+      showCharacterDescription(randomCharacter);
+      updateActiveAvatar(randomCharacter);
+    }
+
+    // 显示角色描述
+    function showCharacterDescription(character) {
+      descriptionContainer.textContent = characterDescriptions[character];
+    }
+
+    // 更新活跃的头像样式
+    function updateActiveAvatar(character) {
+      avatars.forEach(avatar => {
+        if (avatar.dataset.character === character) {
+          avatar.classList.add('active');
+        } else {
+          avatar.classList.remove('active');
+        }
+      });
+    }
+
+    // 为每个头像添加点击事件
+    avatars.forEach(avatar => {
+      avatar.addEventListener('click', () => {
+        const character = avatar.dataset.character;
+        showCharacterDescription(character);
+        updateActiveAvatar(character);
+      });
+    });
+
+    // 页面加载时初始化随机角色
+    window.addEventListener('DOMContentLoaded', initializeRandomCharacter);
+  
 
 fetch("./sidebar.html")
   .then(response => response.text())

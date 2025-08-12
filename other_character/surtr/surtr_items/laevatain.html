@@ -29,20 +29,17 @@
 
   <main>
     <h1 style="font-size: 48px;">"莱万汀"</h1>
-    <!-- <h3 style="margin-bottom: 20px;">她没有离开。当我们抬头时，就会看到她。</h3> -->
+    <h3 style="margin-bottom: 20px;">史尔特尔的长剑，或者说更像一把剑形法杖。</h3>
     <div class="main-container">
 
       <div class="left-container">
-        <!-- <div class="avatar-container">
-          <img src="../image/astesia2.webp" alt="星极" width="40px" height="40px" class="avatar" data-character="astesia">
-          <img src="../image/astgenne2.webp" alt="星源" width="40px" height="40px" class="avatar" data-character="astgenne">
-          <img src="../image/48px-Wilson_Portrait.webp" alt="威尔逊" width="40px" height="40px" class="avatar" data-character="wilson">
-
-
+        <div class="avatar-container">
+          <img src="../surtr_image/avatar_surtr.webp" alt="史尔特尔" width="40px" height="40px" class="avatar" data-character="surtr">
+          <img src="../../../image/48px-Wilson_Portrait.webp" alt="威尔逊" width="40px" height="40px" class="avatar" data-character="wilson">
         </div>
         <div class="description-container" id="characterDescription">
           角色描述将在这里动态显示
-        </div> -->
+        </div>
         <div class="analysis-container">
           <ul>
             <li style="margin-bottom: 20px;"><span class="color-important">莱万汀</span>是【史尔特尔】的专属模组武器。</li>
@@ -66,10 +63,12 @@
             【火荨麻叶】*1：1点【位面攻击力】（最多给予10个）<br>
             【纯粹火焰】*1：5点【物理攻击力】、1点【位面攻击力】（最多给予5个）<br>
             【暗影香炉】*1：5点【物理攻击力】、5点【位面攻击力】（最多给予1个）<br>
-            【亮茄外壳】*1：2点【物理攻击力】、2点【位面攻击力】（最多给予10个）<br><br>
+            【亮茄外壳】*1：2点【物理攻击力】、2点【位面攻击力】（最多给予5个）<br><br>
 
             <span class="color-important">说明-其余设定：</span><br>
             ①其他人装备会-2血并脱手。</li>
+                        <hr>
+            <li></li>
           </ul>
 
         </div>
@@ -90,10 +89,8 @@
   <script>
     // 角色描述数据
     const characterDescriptions = {
-      astesia: "夜晚总会结束。",
-      astgenne: "梦想就在那里。",
-      wilson: "这是一个……微缩模型？"
-
+      wilson: "史尔特尔的长剑，或者说更像一把剑形法杖。",
+      surtr: "反应过来的时候，源石技艺和这把法杖已经伴随着我了。<br> 我一点也不记得什么时候得到了这样的能力，当然我也并不在意。"
     };
 
     // 获取DOM元素
@@ -110,7 +107,7 @@
 
     // 显示角色描述
     function showCharacterDescription(character) {
-      descriptionContainer.textContent = characterDescriptions[character];
+      descriptionContainer.innerHTML = characterDescriptions[character];
     }
 
     // 更新活跃的头像样式
