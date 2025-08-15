@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
-  <title>物品详情 - 群星·圆舞曲</title>
+  <title>物品详情 - 墨染幻甲</title>
 <style>
   hr{
     margin: 20px 0;
@@ -12,67 +12,57 @@
     padding-left: 0;        /* 去除默认的左内边距 */
   }
 </style>
-  <link rel="stylesheet" href="../main.css">
+  <link rel="stylesheet" href="../../../main.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
   <button class="sidebar-toggle">目录</button>
 
   <nav>
-    <a href="../index.html">首页</a>
-    <a href="../astesia.html">星极</a>
-    <a href="../astgenne.html">星源</a>
+    <a href="../../../index.html">首页</a>
+    <a href="../../index.html">人物分区1</a>
+    <a href="../index.html">Mod介绍</a>
+    <a href="../dusk.html">夕</a>
   </nav>
 
   <div id="sidebar-placeholder"></div>
 
   <main>
-    <h1 style="font-size: 48px;">群星·圆舞曲</h1>
-    <h3 style="margin-bottom: 20px;">照亮月光的舞步。</h3>
+    <h1 style="font-size: 48px;">墨染幻甲</h1>
+    <h3 style="margin-bottom: 20px;">“一笔勾销。”</h3>
     <div class="main-container">
 
       <div class="left-container">
         <div class="avatar-container">
-          <img src="../image/astesia2.webp" alt="星极" width="40px" height="40px" class="avatar" data-character="astesia">
-          <img src="../image/astgenne2.webp" alt="星源" width="40px" height="40px" class="avatar" data-character="astgenne">
-          <img src="../image/48px-Wilson_Portrait.webp" alt="威尔逊" width="40px" height="40px" class="avatar" data-character="wilson">
-
-
+          <img src="../dusk_images/avatar_dusk.webp" alt="夕" width="40px" height="40px" class="avatar" data-character="dusk">
+          <img src="../../../image/48px-Wilson_Portrait.webp" alt="威尔逊" width="40px" height="40px" class="avatar" data-character="wilson">
         </div>
         <div class="description-container" id="characterDescription">
           <!-- 角色描述将在这里动态显示 -->
         </div>
         <div class="analysis-container">
           <ul>
-            <li style="margin-bottom: 20px;"><span class="color-important">群星·圆舞曲（ast_book_speed）</span>是一种仅【星极】可制作的物品。</li>
-
+            <li style="margin-bottom: 20px;"><span class="color-important">墨染幻甲</span>是一种模组专属通用护甲。</li>
             <li>
-              耐久5次，阅读消耗20点理智值<br>
-              <span class="color-important">说明-基础特性：</span><br>
-              阅读后令半径距离6以内友方角色<br>
-              ①移速+20%<br>
-              ②行径上长出存在数秒的神秘植物，荧光花，蕨类植物。<br>
-              以上效果均持续2分钟。
-            </li>
-            <hr>
-            <li>配合【群星·练习曲】可快速获取大量小发光浆果，荧光果，蕨叶</li>
+            防御率50%，装备后提供25%减伤率（与护甲叠乘）、10%攻击力加成、10/min精神值恢复、 20%防水、绝缘效果。
+          </li>
+                        <hr>
+            <li></li>
           </ul>
 
         </div>
       </div>
       <div class="right-container">
-        <h2 style="color: #007acc;">群星·圆舞曲</h2>
-        <p>ast_book_speed</p>
+        <h2 style="color: #007acc;">墨染幻甲</h2>
         <hr>
-        <img src="../image/ast_book_speed.webp" alt="群星·圆舞曲" width="100px">
+        <img src="../dusk_images/dusk_armor.webp" alt="墨染幻甲" width="100px">
         <hr>
-        <p>分类：物品/书籍</p>
-        <p>解锁方式：一体式书桌</p>
-        <p>制作材料：<br>
-              ①描绘星空之羽<img src="../image/ast_penandbottle.webp" alt="描绘星空之羽" width="20px">*2<br>
-              ②莎草纸*4<br>
-              ③小发光浆果*2<br>
-              ④荧光果*2</p>
+        <p>分类：装备/身体</p>
+        <p>解锁方式：初始解锁</p>
+        <p>制作材料：<br>①莎草纸*1<br>
+            ②木炭*10<br>
+            ③蛞蝓龟粘液*10<br>
+            ④金块*10</p>
       </div>
     </div>
     
@@ -81,9 +71,8 @@
   <script>
     // 角色描述数据
     const characterDescriptions = {
-      astesia: "“言语的世界在光彩夺目之中翩翩起舞”",
-      astgenne: "“在被赐予之物成长至辉煌之前”",
-      wilson: "拥有短暂变得灵巧的效果。"
+      wilson: "奇怪，这只是一张纸而已。",
+      dusk: "或许它能够保护我。"
     };
 
     // 获取DOM元素
@@ -100,7 +89,7 @@
 
     // 显示角色描述
     function showCharacterDescription(character) {
-      descriptionContainer.textContent = characterDescriptions[character];
+      descriptionContainer.innerHTML = characterDescriptions[character];
     }
 
     // 更新活跃的头像样式
