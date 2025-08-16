@@ -10,4 +10,4 @@
 
 ## 夕
 
-点击前往介绍页面：[夕]（完善中）
+点击前往介绍页面：[夕](https://dst-astesiaastgenne.github.io/other_character/dusk/index.html)
