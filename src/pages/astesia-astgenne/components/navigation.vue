@@ -1,0 +1,11 @@
+<template>
+  <nav>
+    <router-link to="/">首页</router-link>
+    <router-link to="/astesia-astgenne">Mod介绍</router-link>
+    <router-link to="/astesia-astgenne/astesia">星极</router-link>
+    <router-link to="/astesia-astgenne/astgenne">星源</router-link>
+  </nav>
+</template>
+<script setup>
+// 这里暂时不用 JS，如果有逻辑可以写在这里
+</script>

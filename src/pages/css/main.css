@@ -1,0 +1,443 @@
+html, body, #app {
+  height: 100%;
+  margin: 0;
+}
+body {
+  display: flex;
+  flex-direction: column; /* 或你 HTML 里的方式 */
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0; font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+  display: flex; height: 100vh;
+}
+nav {
+  background: #333;
+  color: white;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+nav a {
+  color: white; text-decoration: none;
+  margin-right: 20px; font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+.sidebar {
+  width: 15%; background: #f4f4f4;
+  padding-top: 20px;
+  box-sizing: border-box;
+  position: fixed; top: 50px; bottom: 0; left: 0;
+  overflow-y: auto;
+  border-right: 1px solid #ddd;
+}
+.sidebar h3 {
+  padding-left: 15px;
+  font-weight: normal;
+  color: #666;
+}
+.sidebar ul {
+  list-style: none; padding-left: 0;
+}
+
+.sidebar ul ul {
+    padding-left: 20px;
+    font-size: 0.9em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* 目录折叠展开样式 */
+/* .sidebar .submenu {
+    display: none;
+} */
+
+.sidebar .has-submenu.active .submenu {
+    display: block;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle-icon {
+    cursor: pointer;
+    user-select: none;
+    color: #666;
+    transition: transform 0.2s;
+    font-size: 20px;
+}
+
+.toggle-icon:hover {
+    color: #333;
+}
+.sidebar ul li {
+  padding: 10px 15px;
+}
+.sidebar ul li a {
+  text-decoration: none; color: #333;
+}
+.sidebar ul li a:hover {
+  color: #007acc;
+}
+main {
+  margin-left: 15%;
+  padding: 80px 40px 40px 40px;
+  overflow-y: auto;
+  flex: 1;
+  background: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  scroll-margin-top: 60px; /* 与导航栏高度一致 */
+}
+h1 {
+  color: #007acc;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+h2 {
+  color: #333;
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+h3 {
+  color: #666;
+  font-size: 18px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+h4{
+  color: #007acc;
+  font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+h5{
+  color: #007acc;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+h6{
+  color: #e76a35;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+p {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+li {
+  margin-top: 10px;
+  line-height: 1.5;
+}
+a{
+  color: #007acc;
+  text-decoration: none;
+}
+
+/* 属性颜色类 */
+.color-hunger { color: #ffd700; } /* 饥饿-黄色 */
+.color-sanity { color: #ff69b4; } /* 理智-粉色 */
+.color-health { color: #ff0000; } /* 血量-红色 */
+
+/* 等级系统表格样式 */
+.level-system-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.level-system-table td, .level-system-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+/* 等级系统表格样式 */
+.other-system-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.other-system-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+.other-system-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.items-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.items-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  transition: transform 0.3s ease;
+}
+
+.items-table th{
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+}
+
+.items-table td:hover{
+  transform: scale(1.1);
+}
+
+
+.color-important { color: #eb4c40; font-weight: bold; } /* 重要 */
+.color-important2 { color: #355de0; } /* 重要 */
+
+.character-showcase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-portrait {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.character-image {
+  width: 200px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.character-image:hover {
+  transform: scale(1.03);
+}
+
+.character-title {
+  margin-top: 15px;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+}
+
+.variants {
+  display: flex;
+  flex-wrap: wrap; /* 添加这一行，允许项目换行 */
+  gap: 30px;
+  justify-content: center;
+  max-width: 100%; /* 确保不超过父容器宽度 */
+}
+
+.variant-item {
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.variant-item:hover {
+  transform: translateY(-5px);
+}
+
+.variant-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.variant-image:hover {
+  transform: scale(1.1);
+}
+
+.variant-label {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+/*模组物品*/
+    .main-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 80px;
+  }
+  
+  .left-container {
+    width: 70%;
+    padding: 20px 0;
+    margin-right: 20px;
+  }
+  
+  .right-container {
+    width: 20%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    text-align: center;
+    align-self: flex-start; 
+  }
+  .avatar-container {
+    display: flex;
+    gap: 20px; /* 添加图片之间的间隔 */
+    margin-bottom: 20px;
+  }
+
+  .avatar {
+    cursor: pointer; /* 添加鼠标指针样式 */
+    transition: transform 0.2s; /* 添加悬停效果 */
+    width: 40px;
+    height: 40px;
+  }
+
+  /* .avatar:hover {
+    transform: scale(1.1);
+  } */
+
+  .avatar.active {
+    border: 2px solid #007acc; /* 活跃状态的边框 */
+    border-radius: 5%;
+  }
+
+  .description-container {
+    padding: 20px;
+    margin: 40px 20px;
+    background-color: #f9f9f9;
+    min-height: 60px;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;          /* 使用flex布局 */
+    align-items: center;    /* 垂直居中 */
+    justify-content: center; /* 水平居中 */
+  }
+
+  /* 移动端响应式调整 */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 0;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  main {
+    margin-left: 0;
+    padding: 20px 15px;
+    margin-top: 110px;
+  }
+  
+  .character-list {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+    .table-wrapper {
+    overflow-x: auto;
+  }
+  .table-wrapper table {
+    min-width: 600px;
+  }
+  
+  .items-table td, .items-table th {
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+  }
+  
+  .main-container {
+    flex-direction: column;
+  }
+  
+  .left-container{
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .right-container {
+    width: 100%;
+    margin-right: 0;
+    padding-left: 20px;   /* 适当增加左内边距 */
+    padding-right: 20px;  /* 适当增加右内边距 */
+    box-sizing: border-box; /* 确保padding不会导致宽度溢出 */
+  }
+  
+  h1 {
+    font-size: 28px;
+  }
+  
+  h2 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 768px) {
+
+  .sidebar-toggle {
+    display: block;
+    position: fixed;
+    top: 60px;
+    left: 10px;
+    background: #333;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  .sidebar {
+    top: 60px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    position: fixed;
+    z-index: 998;
+  }
+  
+  .sidebar.active {
+    transform: translateX(0);
+  }
+
+  /* 新增：右容器排在左容器上面 */
+  .right-container {
+    order: -1;
+  }
+}

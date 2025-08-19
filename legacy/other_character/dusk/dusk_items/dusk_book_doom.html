@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>物品详情 - 湮墨殷染尽拙山</title>
+<style>
+  hr{
+    margin: 20px 0;
+  }
+    ul {
+    list-style-type: none;  /* 去除小圆点 */
+    padding-left: 0;        /* 去除默认的左内边距 */
+  }
+</style>
+  <link rel="stylesheet" href="../../../main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+  <button class="sidebar-toggle">目录</button>
+
+  <nav>
+    <a href="../../../index.html">首页</a>
+    <a href="../../index.html">人物分区1</a>
+    <a href="../index.html">Mod介绍</a>
+    <a href="../dusk.html">夕</a>
+  </nav>
+
+  <div id="sidebar-placeholder"></div>
+
+  <main>
+    <h1 style="font-size: 48px;">湮墨殷染尽拙山</h1>
+
+    <h3 style="margin-bottom: 20px;">毁灭，而毁灭的尽头即是终焉。</h3>
+    <div class="main-container">
+
+      <div class="left-container">
+        <div class="avatar-container">
+          <img src="../dusk_images/avatar_dusk.webp" alt="夕" width="40px" height="40px" class="avatar" data-character="dusk">
+          <img src="../../../image/48px-Wilson_Portrait.webp" alt="威尔逊" width="40px" height="40px" class="avatar" data-character="wilson">
+        </div>
+        <div class="description-container" id="characterDescription">
+          <!-- 角色描述将在这里动态显示 -->
+        </div>
+        <div class="analysis-container">
+          <ul>
+            <li style="margin-bottom: 20px;"><span class="color-important">湮墨殷染尽拙山</span>是一种模组专属通用书籍。</li>
+
+            <li>
+            无限耐久，阅读消耗400点理智值对25范围内的非史诗单位（除阅读者）秒杀，史诗单位受到2段900点 + 3%最大生命值的物理伤害，可破坏的结构摧毁，然后留下一个弹坑（会自动消失）。<br>
+            冷却4分钟
+          </li>
+                        <hr>
+            <li></li>
+          </ul>
+
+        </div>
+      </div>
+      <div class="right-container">
+        <h2 style="color: #007acc;">湮墨殷染尽拙山</h2>
+
+        <hr>
+        <img src="../dusk_images/dusk_book_doom.webp" alt="湮墨殷染尽拙山" width="100px">
+
+        <hr>
+        <p>分类：物品/书籍</p>
+        <p>解锁方式：初始解锁</p>
+        <p>制作材料：<br>①火药*10<br>
+            ②红宝石*5<br>
+            ③莎草纸*3</p>
+      </div>
+    </div>
+    
+  </main>
+
+  <script>
+    // 角色描述数据
+    const characterDescriptions = {
+      wilson: "一本奇怪的书。",
+      dusk: "毁灭即终焉。"
+    };
+
+    // 获取DOM元素
+    const avatars = document.querySelectorAll('.avatar');
+    const descriptionContainer = document.getElementById('characterDescription');
+
+    // 随机选择初始角色
+    function initializeRandomCharacter() {
+      const characters = Object.keys(characterDescriptions);
+      const randomCharacter = characters[Math.floor(Math.random() * characters.length)];
+      showCharacterDescription(randomCharacter);
+      updateActiveAvatar(randomCharacter);
+    }
+
+    // 显示角色描述
+    function showCharacterDescription(character) {
+      descriptionContainer.innerHTML = characterDescriptions[character];
+    }
+
+    // 更新活跃的头像样式
+    function updateActiveAvatar(character) {
+      avatars.forEach(avatar => {
+        if (avatar.dataset.character === character) {
+          avatar.classList.add('active');
+        } else {
+          avatar.classList.remove('active');
+        }
+      });
+    }
+
+    // 为每个头像添加点击事件
+    avatars.forEach(avatar => {
+      avatar.addEventListener('click', () => {
+        const character = avatar.dataset.character;
+        showCharacterDescription(character);
+        updateActiveAvatar(character);
+      });
+    });
+
+    // 页面加载时初始化随机角色
+    window.addEventListener('DOMContentLoaded', initializeRandomCharacter);
+  
+
+fetch("./sidebar.html")
+  .then(response => response.text())
+  .then(html => {
+    document.getElementById("sidebar-placeholder").innerHTML = html;
+
+    // 目录内容加载完毕后，绑定折叠事件
+    const toggleBtn = document.querySelector(".sidebar-toggle");
+    const sidebar = document.querySelector(".sidebar");
+    if (!toggleBtn || !sidebar) {
+      console.error("找不到 sidebar-toggle 或 sidebar 元素");
+      return;
+    }
+    toggleBtn.addEventListener("click", () => {
+      sidebar.classList.toggle("active");
+    });
+  })
+  .catch(err => console.error("加载 sidebar 失败:", err));
+
+</script>
+</body>
+</html>
