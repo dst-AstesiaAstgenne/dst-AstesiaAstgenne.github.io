@@ -3,9 +3,9 @@
 !.gitignore
 
 # === 保留需要追踪的内容 ===
-!/docs/
-!/legacy/
-!/src/
+!/docs
+!/legacy
+!/src
 !/readme.md
 !/vite.config.ts
 !/update.html
