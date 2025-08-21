@@ -1,21 +1,18 @@
-const ArkShuIndex = () => import('@/pages/othercharacter/arkshu/index.vue');
-const ArkShu = () => import('@/pages/othercharacter/arkshu/arkshu.vue');
-const ArkShuItems = () => import('@/pages/othercharacter/arkshu/items.vue');
 
 export default [
   {
     path: '/othercharacter/arkshuindex',
     name: 'ArkShuIndex',
-    component: ArkShuIndex
+    component: () => import('@/pages/othercharacter/arkshu/index.vue')
   },
   {
     path: '/othercharacter/arkshuindex/arkshu',
     name: 'ArkShu',
-    component: ArkShu
+    component: () => import('@/pages/othercharacter/arkshu/arkshu.vue')
   },
   {
     path: '/othercharacter/arkshuindex/items/:id',
     name: 'ArkShuItems',
-    component: ArkShuItems
+    component: () => import('@/pages/othercharacter/arkshu/items.vue')
   }
 ];

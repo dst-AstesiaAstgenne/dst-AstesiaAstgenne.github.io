@@ -9,9 +9,9 @@
     },
     "details": {
       "name": "莱万汀",
-      "code": "分类：武器/手部",
+      "code": "",
       "image": "laevatain.webp",
-      "category": "解锁方式：科学机器",
+      "category": "武器/手部",
       "unlock": "科学机器",
       "materials": []
     },
@@ -36,9 +36,9 @@
     },
     "details": {
       "name": "史尔特尔服装",
-      "code": "分类：装备/身体",
+      "code": "",
       "image": "surtrclothes.webp",
-      "category": "解锁方式：无法解锁",
+      "category": "装备/身体",
       "unlock": "无法解锁",
       "materials": []
     },
@@ -63,9 +63,9 @@
     },
     "details": {
       "name": "高级资深干员训练书",
-      "code": "分类：物品/功能",
+      "code": "",
       "image": "surtr_elitebook1.webp",
-      "category": "解锁方式：科学机器",
+      "category": "物品/功能",
       "unlock": "科学机器",
       "materials": [
         "金块*20",
@@ -76,7 +76,7 @@
     },
     "description": {
       "single": [
-        "<span class=\"color-important\">高级资深干员训练书</span>是一种的模组物品。",
+        "<span class=\"color-important\">高级资深干员训练书</span>是一种模组物品。",
         "\n            *仅【史尔特尔】可制作与使用<br/>\n            *使用后令对应角色精英化阶段提升至1<br/>\n",
         ""
       ]
@@ -95,9 +95,9 @@
     },
     "details": {
       "name": "高级资深干员特训书",
-      "code": "分类：物品/功能",
+      "code": "",
       "image": "surtr_elitebook2.webp",
-      "category": "解锁方式：科学机器",
+      "category": "物品/功能",
       "unlock": "科学机器",
       "materials": [
         "金块*40",
@@ -108,7 +108,7 @@
     },
     "description": {
       "single": [
-        "<span class=\"color-important\">高级资深干员特训书</span>是一种的模组物品。",
+        "<span class=\"color-important\">高级资深干员特训书</span>是一种模组物品。",
         "\n            *仅【史尔特尔】可制作与使用<br/>\n            *使用后令对应角色精英化阶段提升至2<br/>\n",
         ""
       ]
@@ -127,9 +127,9 @@
     },
     "details": {
       "name": "玻璃海苔",
-      "code": "分类：物品/功能",
+      "code": "",
       "image": "surtr_glassseaweed.webp",
-      "category": "解锁方式：初始解锁",
+      "category": "物品/功能",
       "unlock": "初始解锁",
       "materials": [
         "干海带叶*2",
@@ -138,7 +138,7 @@
     },
     "description": {
       "single": [
-        "<span class=\"color-important\">玻璃海苔</span>是一种的模组物品。",
+        "<span class=\"color-important\">玻璃海苔</span>是一种模组物品。",
         "\n            每次制作给予5个<br/>\n            属于好东西，保质期无限<br/>\n            +10饱食度，+10理智值，+2生命值<br/>\n            食用时20%概率受到10伤害（可被护甲防御抵消）\n          ",
         ""
       ]
@@ -157,15 +157,15 @@
     },
     "details": {
       "name": "灼热之息",
-      "code": "分类：好东西",
+      "code": "",
       "image": "surtr_lavabreath.webp",
-      "category": "烹饪时间：20秒",
+      "category": "好东西",
       "unlock": "",
       "materials": []
     },
     "description": {
       "single": [
-        "<span class=\"color-important\">灼热之息</span>是一种的模组料理。",
+        "<span class=\"color-important\">灼热之息</span>是一种模组料理。",
         "\n            保质期3天<br/>\n            +5饱食度，0理智值，+10生命值<br/>\n            体温锁最低70℃，持续1分钟<br/>\n<span class=\"color-important\">说明-其余设定：</span><br/>\n            ①女武神不吃。<br/>\n            ②食用后的语音：好热……你喂我吃了什么？\n          ",
         ""
       ]
@@ -184,15 +184,15 @@
     },
     "details": {
       "name": "熔岩之吻",
-      "code": "分类：好东西",
+      "code": "",
       "image": "surtr_lavakiss.webp",
-      "category": "烹饪时间：20秒",
+      "category": "好东西",
       "unlock": "",
       "materials": []
     },
     "description": {
       "single": [
-        "<span class=\"color-important\">熔岩之吻</span>是一种的模组料理。",
+        "<span class=\"color-important\">熔岩之吻</span>是一种模组料理。",
         "\n            保质期60天<br/>\n            +5饱食度，-50理智值，-25生命值<br/>\n            体温锁最低80℃，持续8分钟<br/>\n<span class=\"color-important\">说明-其余设定：</span><br/>\n            ①无法喂食给他人。<br/>\n            ②食用后的语音：呼……呼，感觉……浑身都燥热起来……<br/>\n            ③非史尔特尔角色10秒后额外说语音：热死了！热死了！啊啊啊啊啊啊啊啊啊啊！\n          ",
         ""
       ]
@@ -211,9 +211,9 @@
     },
     "details": {
       "name": "纯粹火焰",
-      "code": "分类：物品/材料",
+      "code": "",
       "image": "pureflame.webp",
-      "category": "解锁方式：科学机器",
+      "category": "物品/材料",
       "unlock": "科学机器",
       "materials": [
         "龙鳞*2",
@@ -224,7 +224,7 @@
     },
     "description": {
       "single": [
-        "<span class=\"color-important\">纯粹火焰</span>是一种的模组物品材料。",
+        "<span class=\"color-important\">纯粹火焰</span>是一种模组物品材料。",
         "              可用作180s燃料<br/><br/>\n<span class=\"color-important\">说明-获取方式：</span><br/>\n              ①击杀史诗生物有概率掉落，默认50%\n            "
       ]
     },
@@ -249,9 +249,9 @@
     },
     "details": {
       "name": "恐怖奶奶",
-      "code": "分类：物品",
+      "code": "",
       "image": "surtr_scarygrandma.webp",
-      "category": "解锁方式：远古一本",
+      "category": "物品",
       "unlock": "远古一本",
       "materials": [
         "地精奶奶*1",
@@ -260,7 +260,7 @@
     },
     "description": {
       "single": [
-        "<span class=\"color-important\">恐怖奶奶</span>是一种的模组物品。",
+        "<span class=\"color-important\">恐怖奶奶</span>是一种模组物品。",
         "\n              音乐播放器<br/>\n              给予1冰播放《亘古》<br/>\n              给予1噩梦燃料播放《andarsar》<br/>\n              给予1月岩播放《维度逃逸》<br/>\n              给予1化石碎片播放《主宰》<br/><br/>\n<span class=\"color-important\">说明-其余设定：</span><br/>\n              ①拾取时解除播放（不返还物品！）\n          ",
         ""
       ]
@@ -279,9 +279,9 @@
     },
     "details": {
       "name": "豪华冰激凌",
-      "code": "分类：物品/功能",
+      "code": "",
       "image": "surtr_supericecream.webp",
-      "category": "解锁方式：科学机器",
+      "category": "物品/功能",
       "unlock": "科学机器",
       "materials": [
         "金块*5",
@@ -293,7 +293,7 @@
     },
     "description": {
       "single": [
-        "<span class=\"color-important\">豪华冰激凌</span>是一种的模组物品。",
+        "<span class=\"color-important\">豪华冰激凌</span>是一种模组物品。",
         "\n            属于好东西，保质期10天<br/>\n            +0饱食度，+150理智值，+150生命值<br/>\n            食用后降温40℃，持续8分钟<br/><br/>\n<span class=\"color-important\">说明-其余设定：</span><br/>\n            ①大厨tag限定\n          "
       ]
     },
@@ -311,18 +311,16 @@
     },
     "details": {
       "name": "晶肝茸髓",
-      "code": "分类：物品/功能",
+      "code": "",
       "image": "surtr_sxys_deerleg.webp",
-      "category": "解锁方式：无法解锁",
+      "category": "物品/功能",
       "unlock": "无法解锁",
       "materials": []
     },
     "description": {
       "single": [
-        "<span class=\"color-important\">晶肝茸髓</span>是一种的模组物品。",
-        "1.5肉度，可入锅<br/>\n            +50饱食度，-25理智值，+20生命值<br/><br/>\n<span class=\"color-important\">说明-获取方式：</span><br/>\n            ①击杀【克劳斯】掉落2个<br/>\n            ②击杀【独眼巨鹿】掉落1个<br/>\n            ③击杀【麋鹿鹅】掉落1个<br/><br/>\n",
-        "\n<span class=\"color-important\">可烹饪料理：</span>\n<div class=\"craftable-items\" id=\"craftableItems\">\n<!-- 可制作物品图标将在这里动态显示 -->\n</div>\n",
-        ""
+        "<span class=\"color-important\">晶肝茸髓</span>是一种模组物品。",
+        "1.5肉度，可入锅<br/>\n            +50饱食度，-25理智值，+20生命值<br/><br/>\n<span class=\"color-important\">说明-获取方式：</span><br/>\n            ①击杀【克劳斯】掉落2个<br/>\n            ②击杀【独眼巨鹿】掉落1个<br/>\n            ③击杀【麋鹿鹅】掉落1个<br/><br/>\n"
       ]
     },
     "tip": [
@@ -339,15 +337,15 @@
     },
     "details": {
       "name": "炎国山水原液",
-      "code": "///",
+      "code": "",
       "image": "surtr_sxys_shanshui.webp",
-      "category": "烹饪时间：///",
+      "category": "///",
       "unlock": "",
       "materials": []
     },
     "description": {
       "single": [
-        "<span class=\"color-important\">炎国山水原液</span>是一种的模组料理。",
+        "<span class=\"color-important\">炎国山水原液</span>是一种模组料理。",
         "\n            +100饱食度，+80理智值，+100生命值<br/>\n            增加40%攻击力，持续24分钟<br/>\n",
         ""
       ]
@@ -366,15 +364,15 @@
     },
     "details": {
       "name": "脆肉薯条转醇",
-      "code": "///",
+      "code": "",
       "image": "surtr_sxys_shutiao.webp",
-      "category": "烹饪时间：///",
+      "category": "///",
       "unlock": "",
       "materials": []
     },
     "description": {
       "single": [
-        "<span class=\"color-important\">脆肉薯条转醇</span>是一种的模组料理。",
+        "<span class=\"color-important\">脆肉薯条转醇</span>是一种模组料理。",
         "\n            保质期20天<br/>\n            +25饱食度，+25理智值，+25生命值<br/>\n            恢复25%已损失的饱食度，理智值和生命值<br/>\n"
       ]
     },

@@ -4,6 +4,8 @@
     <router-link to="/astesia-astgenne">Mod介绍</router-link>
     <router-link to="/astesia-astgenne/astesia">星极</router-link>
     <router-link to="/astesia-astgenne/astgenne">星源</router-link>
+    <router-link to="/notice">公告</router-link>
+
   </nav>
 </template>
 <script setup>

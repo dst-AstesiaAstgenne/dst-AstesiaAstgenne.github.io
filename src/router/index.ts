@@ -1,6 +1,8 @@
 import { createRouter, createWebHashHistory, createWebHistory } from 'vue-router';
 
 import Main from '@/pages/main/index.vue';
+import Notice from '@/pages/notice/index.vue';
+
 
 import AstesiaAstgenneRoutes from './modules/astesia-astgenne';
 import SurtrRoutes from './modules/surtr';
@@ -15,6 +17,12 @@ const routes = [
     name: 'Main',
     component: Main
   },
+  {
+    path: '/notice',
+    name: 'Notice',
+    component: Notice
+  },
+
   ...AstesiaAstgenneRoutes,
   ...SurtrRoutes,
   ...DuskRoutes,

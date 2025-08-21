@@ -1,27 +1,23 @@
-const AstesiaAstgenne = () => import('@/pages/astesia-astgenne/index.vue');
-const Astesia = () => import('@/pages/astesia-astgenne/astesia.vue');
-const Astgenne = () => import('@/pages/astesia-astgenne/astgenne.vue');
-const AstesiaAstgenneItems = () => import('@/pages/astesia-astgenne/items.vue');
 
 export default [
   {
     path: '/astesia-astgenne',
     name: 'AstesiaAstgenne',
-    component: AstesiaAstgenne
+    component: () => import('@/pages/astesia-astgenne/index.vue')
   },
   {
     path: '/astesia-astgenne/astesia',
     name: 'Astesia',
-    component: Astesia
+    component: () => import('@/pages/astesia-astgenne/astesia.vue')
   },
   {
     path: '/astesia-astgenne/astgenne',
     name: 'Astgenne',
-    component: Astgenne
+    component: () => import('@/pages/astesia-astgenne/astgenne.vue')
   },
   {
     path: '/astesia-astgenne/items/:id',
     name: 'AstesiaAstgenneItems',
-    component: AstesiaAstgenneItems
+    component: () => import('@/pages/astesia-astgenne/items.vue')
   }
 ];

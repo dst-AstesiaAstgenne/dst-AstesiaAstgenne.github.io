@@ -15,7 +15,7 @@
           <img 
             v-for="(, key) in currentPage.avatars"
             :key="key"
-            :src="`/images/surtr/${key}2.webp`"
+            :src="`/images/arkshu/${key}2.webp`"
             :alt="key"
             class="avatar"
             :class="{ active: activeAvatar[currentPage.id] === key }"
@@ -80,12 +80,12 @@
         <h2 style="color: #007acc;">{{ currentPage.details.name }}</h2>
         <p>{{ currentPage.details.code }}</p>
         <hr>
-        <img :src="`/images/surtr/${currentPage.details.image}`" 
+        <img :src="`/images/arkshu/${currentPage.details.image}`" 
              :alt="currentPage.details.name" width="100px" />
         <hr>
         <p>分类：{{ currentPage.details.category }}</p>
         <p v-if="currentPage.details.stack">堆叠上限：{{ currentPage.details.stack }}</p>
-        <p>解锁方式：{{ currentPage.details.unlock }}</p>
+        <p>解锁方式：<span v-html="currentPage.details.unlock"></span></p>
         <p>制作材料：<br>
           <span v-for="mat in currentPage.details.materials" :key="mat">{{ mat }}<br></span>
         </p>
@@ -124,7 +124,7 @@ interface Page {
   id: string
   title: string
   subtitle: string
-  avatars: Record<string, string>
+  avatars: Record<string, string> 
   description?: { single: string[]; multi?: string[] }
   tip?: string[]
   craftableItems?: { name: string; image: string; link: string }[]

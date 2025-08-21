@@ -83,10 +83,10 @@
         <img :src="`/images/surtr/${currentPage.details.image}`" 
              :alt="currentPage.details.name" width="100px" />
         <hr>
-        <p>分类：{{ currentPage.details.category }}</p>
+        <p v-if="currentPage.details.category">分类：{{ currentPage.details.category }}</p>
         <p v-if="currentPage.details.stack">堆叠上限：{{ currentPage.details.stack }}</p>
-        <p>解锁方式：{{ currentPage.details.unlock }}</p>
-        <p>制作材料：<br>
+        <p v-if="currentPage.details.unlock">解锁方式：{{ currentPage.details.unlock }}</p>
+        <p v-if="currentPage.details.materials"><br>
           <span v-for="mat in currentPage.details.materials" :key="mat">{{ mat }}<br></span>
         </p>
       </div>
@@ -128,7 +128,7 @@ interface Page {
   description?: { single: string[]; multi?: string[] }
   tip?: string[]
   craftableItems?: { name: string; image: string; link: string }[]
-  details?: { name: string; code: string; image: string; category: string; stack?: number; unlock: string; materials: string[] }
+  details?: { name: string; code: string; image: string; category: string; stack?: number; unlock?: string; materials?: string[] }
   items?: { title: string; image: string; category: string; unlock: string; materials: string[] }[]
 }
 

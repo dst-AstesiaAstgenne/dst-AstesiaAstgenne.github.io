@@ -18,15 +18,13 @@
         </div>
         <ul v-show="open.traits" class="submenu">
           <li><a href="#trait-star-dance">1.初始特性</a></li>
-          <li><a href="#trait-moon-rotation">2.精一特性</a></li>
-          <li><a href="#trait-knowledge-seek">3.精二特性</a></li>
-          <li><a href="#trait-water-fish">4.水煮鱼</a></li>
-          <li><a href="#trait-burn">5.预熏烤</a></li>
+          <li><a href="#trait-moon-rotation">2.【春雷响，万物长】</a></li>
+          <li><a href="#trait-knowledge-seek">3.【稻禾厚，顺秋收】</a></li>
         </ul>
       </li>
       <li class="has-submenu">
         <div class="menu-item">
-          <a href="#level-system">③等级系统</a>
+          <a href="#level-system">③等级与潜能系统</a>
           <span class="toggle-icon" @click.stop="toggle('level')">
             {{ open.level ? '−' : '+' }}
           </span>
@@ -34,6 +32,7 @@
         <ul v-show="open.level" class="submenu">
           <li><a href="#level-conclusion">1. 结论，精一属性</a></li>
           <li><a href="#level-conclusion2">2. 结论，精二属性</a></li>
+          <li><a href="#level-conclusion3">3. 潜能升级</a></li>
         </ul>
       </li>
       <li class="has-submenu">
@@ -44,9 +43,9 @@
           </span>
         </div>
         <ul v-show="open.talent" class="submenu">
-          <li><a href="#ember">1.余烬</a></li>
-          <li><a href="#ember-dance">2.灼热的回忆</a></li>
-          <li><a href="#ember-rotation">3.绝烬重燃</a></li>
+          <li><a href="#ember">1.第一天赋·百谷长青</a></li>
+          <li><a href="#ember-dance">2.第二天赋·天有四时</a></li>
+          <li><a href="#ember-rotation">3.岁兽</a></li>
         </ul>
       </li>
       <li class="has-submenu">
@@ -59,6 +58,7 @@
         <ul v-show="open.skill" class="submenu">
           <li><a href="#skill-introduction">1.技能基础说明</a></li>
           <li><a href="#skill-special">2.技能专精/共鸣效果</a></li>
+          <li><a href="#skill-tree">3.技能树</a></li>
         </ul>
       </li>
       <li class="has-submenu">
@@ -71,12 +71,9 @@
         <ul v-show="open.item" class="submenu">
           <li><a href="#item-design-material">1.专属材料</a></li>
           <li><a href="#item-design-special-item">2.专属物品</a></li>
-          <li><a href="#item-design-special-item-weapon">3.专属武器</a></li>
-          <li><a href="#item-design-special-item-body">4.专属身体装备</a></li>
+          <li><a href="#item-design-special-item-weapon">3.专属建筑</a></li>
+          <li><a href="#item-design-special-item-body">4.专属武器</a></li>
           <li><a href="#item-design-special-item-item">5.晋升物品</a></li>
-          <li><a href="#item-design-special-item-recipe">6.专属料理</a></li>
-          <li><a href="#item-design-special-item-other">7.其余特殊物品</a></li>
-          <li><a href="#item-design-new-recipe">8.新增专属原版配方</a></li>
         </ul>
       </li>
       <li class="has-submenu">
@@ -87,8 +84,9 @@
           </span>
         </div>
         <ul v-show="open.other" class="submenu">
-          <li><a href="#other-original-change">1.原版改动</a></li>
-          <li><a href="#other-mod-config">2.模组配置</a></li>
+          <li><a href="#other-mod-config">1.模组配置</a></li>
+          <li><a href="#other-ui">2.UI</a></li>
+
           <li><a href="#other-mod-compatibility">3.模组兼容</a></li>
         </ul>
       </li>
@@ -121,7 +119,7 @@
         </div> -->
 
         <div class="variant-item">
-          <router-link :to="'/othercharacter/surtrindex/items/laevatain'" target="_blank"><img src="@/assets/othercharacter/surtr/laevatain.webp" alt="专属饰品" class="variant-image"></router-link>
+          <router-link :to="'/othercharacter/arkshuindex/items/arkshu_weapon'" target="_blank"><img src="@/assets/othercharacter/arkshu/arkshu_weapon.webp" alt="专属武器" class="variant-image"></router-link>
           <div class="variant-label">武器</div>
         </div>
       </div>
@@ -139,20 +137,22 @@
     <h5 id="trait-star-dance">1.初始特性</h5>
     <ul>
       <li>【黍】免疫<span class="color-important">【诅咒饰品】</span>的诅咒效果，<span class="color-important">【诅咒饰品】</span>不会自动吸附到身上。</li>
-      <li>【黍】可以制作并使用大厨厨具，烹饪大厨料理</li>
-      <li>【黍】可以施加【庇护】效果，仅可减免物理伤害，减免效果为乘算。</li>
+      <li>【黍】可以<span class="color-important">制作并使用大厨厨具，烹饪大厨料理</span></li>
+      <li>【黍】可以施加<span class="color-important">【庇护】</span>效果，仅可减免物理伤害，减免效果为乘算。（1%庇护提供1%伤害减免）</li>
+
     </ul>
 
     <h5 id="trait-moon-rotation">2.【春雷响，万物长】</h5>
     <ul>
-      <li>制作物品时有10%的概率不消耗材料。</li>
-      <li>【精二之后升级，制作物品时有15%的概率不消耗材料】</li>
+      <li>制作物品时有10%的概率<span class="color-important">不消耗材料</span>。</li>
+      <li>【精二之后升级，制作物品时有15%的概率<span class="color-important">不消耗材料</span>】</li>
     </ul>
 
     <h5 id="trait-knowledge-seek">3.【稻禾厚，顺秋收】</h5>
     <p>*精英二解锁</p>
     <ul>
-      <li>黍在每次与农作物对话时，同时对话以被对话植物为中心半径为5内所有的植物，使植物压力值减一，并使农作物的成长时间减少20%。</li>
+      <li>黍在每次与农作物对话时，同时对话以被对话植物为中心半径为5内所有的植物，使植物<span class="color-important">压力值减一</span>，并使农作物的<span class="color-important">成长时间减少20%</span>。</li>
+
     </ul>
 
     <h4 id="level-system">③等级与潜能系统</h4>
@@ -171,11 +171,11 @@
 
     <h5 id="level-conclusion3">3. 潜能升级：</h5>
     <ul>
-      <li>2级潜能使【黍】的所有技能减少1秒的冷却时间</li>
-      <li>3级潜能使【黍】的生命值上限增加30点</li>
-      <li>4级潜能使【黍】的攻击力增加25点</li>
+      <li>2级潜能使【黍】的所有技能减少<span class="color-important">1秒的冷却时间</span></li>
+      <li>3级潜能使【黍】的生命值上限增加<span class="color-important">30点</span></li>
+      <li>4级潜能使【黍】的攻击力增加<span class="color-important">25点</span></li>
       <li>5级潜能使【黍】的第一天赋·百谷长青效果增强</li>
-      <li>6级潜能使【黍】的所有技能减少1秒的冷却时间</li>
+      <li>6级潜能使【黍】的所有技能减少<span class="color-important">1秒的冷却时间</span></li>
     </ul>
     
     <h4 id="talent-system">④天赋系统</h4>
@@ -191,8 +191,8 @@
     <h5 id="ember-dance">2.第二天赋·天有四时</h5>
     <p>*精英二解锁</p>
     <ul>
-      <li>联机角色每多一位，【黍】的生命值上限加10【最多30】，并增加10点攻击力和20%的工作效率【最多叠加三层】。</li>
-      <li>存在4名岁家角色时，每3秒获得1点技力（重岳、令（暂未实装）、年（暂未实装）、夕）</li>
+      <li>联机角色每多一位，【黍】的<span class="color-important">生命值上限加10【最多30】</span>，并<span class="color-important">增加10点攻击力和20%的工作效率【最多叠加三层】</span>。</li>
+      <li>存在4名岁家角色时，每<span class="color-important">3秒获得1点技力</span>（重岳、令（暂未实装）、年（暂未实装）、夕）</li>
     </ul>
     <h5 id="ember-rotation">3.岁兽</h5>
     <ul>
@@ -242,7 +242,7 @@
           <td><img src="@/assets/othercharacter/arkshu/arkshu_jineng3.webp" alt="离离枯荣" width="40px"><br>离离枯荣</td>
           <td>达到精英等级2</td>
           <td>主动触发<br>（按键X）</td>
-          <td>20s【一级】
+          <td>20秒【一级】
             <br>22秒【四级】
             <br>25秒【七级】
           </td>
@@ -295,6 +295,226 @@
     </tbody>
     </table>
 
+    <h5 id="skill-tree">3.技能树</h5>
+    <h6 style="color: #007acc;">一分叉</h6>
+    <table class="level-system-table">
+      <thead>
+        <tr>
+          <th>技能树图标与名称</th>
+          <th>效果描述</th>
+          <th>前置节点</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_shengeng.webp" alt="深耕" width="40px"><br>深耕</td>
+          <td>【黍】在给农田浇水时可以直接使水分到达满值。
+          </td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_shuoguo.webp" alt="硕果" width="40px"><br>硕果</td>
+          <td>【黍】种植的农作物可以额外产出1个果实和2个种子。<br>
+            【黍】种植的普通种子没有额外产出。
+          </td>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_shengeng.webp" alt="深耕" width="40px"></td>
+        </tr>
+
+        <tr>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_fengrao.webp" alt="丰饶" width="40px"><br>丰饶</td>
+          <td>【黍】种植的农作物不会受到【家族】效应影响。<br>
+            但仍然会收到【拥挤】效应影响。
+          </td>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_shuoguo.webp" alt="硕果" width="40px"></td>
+        </tr>
+
+        <tr>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_fengshou.webp" alt="丰收" width="40px"><br>丰收</td>
+          <td>【黍】种植的农作物再额外产出2个果实和3个种子。
+          </td>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_fengrao.webp" alt="丰饶" width="40px"></td>
+        </tr>
+
+        <tr>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_hexiameng.webp" alt="禾下梦" width="40px"><br>禾下梦</td>
+          <td>【黍】种植的农作物不会受到【季节】效应影响。
+          </td>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_fengshou.webp" alt="丰收" width="40px"></td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <h6 style="color: #007acc;">二分叉</h6>
+    <table class="level-system-table">
+      <thead>
+        <tr>
+          <th>技能树图标与名称</th>
+          <th>效果描述</th>
+          <th>前置节点</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_chun.webp" alt="春" width="40px"><br>春</td>
+          <td>友方生命值低于60%时，【黍】对其技能治疗效果提高30%（乘算）。
+          </td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_xia.webp" alt="夏" width="40px"><br>夏</td>
+          <td>【黍】的攻击与技能恢复友方生命后，会获得5点额外伤害加成（最高30点），每次触发刷新效果持续时间，效果持续10秒。
+          </td>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_chun.webp" alt="春" width="40px"></td>
+        </tr>
+
+        <tr>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_qiu.webp" alt="秋" width="40px"><br>秋</td>
+          <td>【黍】治疗角色时，为角色提高2%的庇护【2%减伤】（最高20%庇护），每次触发刷新效果持续时间，效果持续10秒。
+          </td>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_xia.webp" alt="夏" width="40px"></td>
+        </tr>
+
+        <tr>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_dong.webp" alt="冬" width="40px"><br>冬</td>
+          <td>在【黍】播种范围内的角色每秒额外回复2点生命值并额外提高5%庇护【5%减伤】。
+          </td>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_qiu.webp" alt="秋" width="40px"></td>
+        </tr>
+
+        <tr>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_wanwu.webp" alt="万物" width="40px"><br>万物</td>
+          <td>【黍】的生命值上限提高60点，每次技能回血提高自身最大生命值15%的治疗量。
+          </td>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_dong.webp" alt="冬" width="40px"></td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <h6 style="color: #007acc;">三分叉</h6>
+    <table class="level-system-table">
+      <thead>
+        <tr>
+          <th>技能树图标与名称</th>
+          <th>效果描述</th>
+          <th>前置节点</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_hua.webp" alt="画" width="40px"><br>画</td>
+          <td>【黍】可以右键玩家鬼魂，消耗50点生命值使其无惩罚复活。
+          </td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_hu.webp" alt="护" width="40px"><br>护</td>
+          <td>被【画】复活的角色在15秒内获得一个可以抵抗3次攻击的护盾（免疫受击硬直，不免疫击飞）。
+          </td>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_hua.webp" alt="画" width="40px"></td>
+        </tr>
+
+        <tr>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_jiu.webp" alt="酒" width="40px"><br>酒</td>
+          <td>【黍】每次攻击或治疗一次队友后，提高自身0.02的攻击倍率（最高0.2），每次触发刷新效果持续时间，效果持续10秒。
+          </td>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_hu.webp" alt="护" width="40px"></td>
+        </tr>
+
+        <tr>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_wu.webp" alt="武" width="40px"><br>武</td>
+          <td>【黍】每次攻击后，提高自身3点额外伤害（最高30点），每次触发刷新效果持续时间，效果持续10秒。<br>
+            【黍】每攻击4下减少所有技能1秒的冷却时间。
+          </td>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_jiu.webp" alt="酒" width="40px"></td>
+        </tr>
+
+        <tr>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_sheng.webp" alt="生" width="40px"><br>生</td>
+          <td>【黍】半径15内友方角色（包括【黍】）生命值由15%以上下降至15%以下时，使其受到的治疗效果提高80%，持续10秒。
+          </td>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_wu.webp" alt="武" width="40px"></td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <h6 style="color: #007acc;">四分叉</h6>
+    <table class="level-system-table">
+      <thead>
+        <tr>
+          <th>技能树图标与名称</th>
+          <th>效果描述</th>
+          <th>前置节点</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_nian.webp" alt="年的小火锅" width="40px"><br>年的小火锅</td>
+          <td>【黍】可以制作【年的小火锅】。
+          </td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_xi.webp" alt="夕的小笔杆" width="40px"><br>夕的小笔杆</td>
+          <td>【黍】可以制作【夕的小笔杆】。
+          </td>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_nian.webp" alt="年的小火锅" width="40px"></td>
+        </tr>
+
+        <tr>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_chongyue.webp" alt="重岳的剑台" width="40px"><br>重岳的剑台</td>
+          <td>【黍】可以制作【剑台】。
+          </td>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_xi.webp" alt="夕的小笔杆" width="40px"></td>
+        </tr>
+
+        <tr>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_ling.webp" alt="令的小酒壶" width="40px"><br>令的小酒壶</td>
+          <td>【黍】可以制作【令的小酒壶】。
+          </td>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_chongyue.webp" alt="重岳的剑台" width="40px"></td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <h6 style="color: #007acc;">亲和分叉</h6>
+    <table class="level-system-table">
+      <thead>
+        <tr>
+          <th>技能树图标与名称</th>
+          <th>效果描述</th>
+          <th>前置节点</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_yueliang.webp" alt="月亮亲和" width="40px"><br>月亮亲和</td>
+          <td>【黍】对月亮生物造成的伤害提高10%，受到月亮生物伤害减少10%。
+          </td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_yinying.webp" alt="暗影亲和" width="40px"><br>暗影亲和</td>
+          <td>【黍】对暗影生物造成的伤害提高10%，受到暗影生物伤害减少10%。
+          </td>
+          <td></td>
+        </tr>
+
+      </tbody>
+    </table>
 
     <h4 id="item-design">⑥物品设计/制作</h4>
     <h5 id="item-design-material">1.专属材料</h5>
@@ -311,26 +531,224 @@
 
     <tbody>
         <!-- 第一组：SOH 行 -->
-        <!-- <tr>
-          <td><img src="@/assets/othercharacter/surtr/pureflame.webp" alt="纯粹火焰" width="40px"><br>纯粹火焰</td>
+
+        <tr>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_yitie.webp" alt="异铁" width="40px"><br>异铁</td>
           <td>物品/材料</td>
-          <td>科学机器</td>
-          <td>①龙鳞*2<br>
-              ②火荨麻叶*2<br>
-              ③辣椒*2<br>
-              ④灰烬*10
+          <td>无法解锁</td>
+          <td>无法制作
           </td>
           <td>
-              可用作180s燃料<br><br>
-
-              <span class="color-important">说明-获取方式：</span><br>
-              ①击杀史诗生物有概率掉落，默认50%
+              <span class="color-important">说明-获取方式</span><br>
+              挖掘【原版矿石】的时候有10%的概率掉落
           </td>
-        </tr> -->
+        </tr>
+
+        <tr>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_yitiezu.webp" alt="异铁组" width="40px"><br>异铁组</td>
+          <td>物品/材料</td>
+          <td>炼金引擎</td>
+          <td>①异铁*4
+          </td>
+          <td>
+              ///
+          </td>
+        </tr>
+
+        <tr>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_yanmoshi.webp" alt="研磨石" width="40px"><br>研磨石</td>
+          <td>物品/材料</td>
+          <td>无法解锁</td>
+          <td>无法制作
+          </td>
+          <td>
+              <span class="color-important">说明-获取方式</span><br>
+              挖掘【原版矿石】的时候有10%的概率掉落
+          </td>
+        </tr>
+
+        <tr>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_quanxinzhuangzhi.webp" alt="全新装置" width="40px"><br>全新装置</td>
+          <td>物品/材料</td>
+          <td>炼金引擎</td>
+          <td>①齿轮*2
+          </td>
+          <td>
+              ///
+          </td>
+        </tr>
+
+        <tr>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_chihejin.webp" alt="炽合金" width="40px"><br>炽合金</td>
+          <td>物品/材料</td>
+          <td>无法解锁</td>
+          <td>无法制作
+          </td>
+          <td>
+            <span class="color-important">说明-获取方式</span><br>
+            ①发条骑士，发条主教，损坏的发条骑士，损坏的发条主教有10%概率掉落<br>
+            ②发条战车，损坏的发条战车有20%概率掉落<br>
+          </td>
+        </tr>
+
+        <tr>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_chihejinkuai.webp" alt="炽合金块" width="40px"><br>炽合金块</td>
+          <td>物品/材料</td>
+          <td>炼金引擎</td>
+          <td>①全新装置*1
+            <br>②炽合金*1
+            <br>③研磨石*1
+          </td>
+          <td>
+              ///
+          </td>
+        </tr>
+
+        <tr>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_jingtidianlu.webp" alt="晶体电路" width="40px"><br>晶体电路</td>
+          <td>物品/材料</td>
+          <td>炼金引擎</td>
+          <td>①电子元件*4
+          </td>
+          <td>
+            <span class="color-important">说明-其他获取方式</span><br>
+            ①发条骑士，发条主教，损坏的发条骑士，损坏的发条主教有10%概率掉落<br>
+            ②发条战车，损坏的发条战车有20%概率掉落
+          </td>
+        </tr>
+
+        <tr>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_ningjiao.webp" alt="凝胶" width="40px"><br>凝胶</td>
+          <td>物品/材料</td>
+          <td>无法解锁</td>
+          <td>无法制作
+          </td>
+          <td>
+            <span class="color-important">说明-获取方式</span><br>
+            击杀水性生物获得【青蛙&明眼青蛙5%，触手10%，水獭10%，水獭掠夺者窝点100%】
+          </td>
+        </tr>
+
+        <tr>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_juheningjiao.webp" alt="聚合凝胶" width="40px"><br>聚合凝胶</td>
+          <td>物品/材料</td>
+          <td>炼金引擎</td>
+          <td>①凝胶*1
+            <br>②炽合金*1
+            <br>③异铁组*1
+          </td>
+          <td>
+            ///
+          </td>
+        </tr>
+
+        <tr>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_shujuzengbukuai.webp" alt="数据增补块" width="40px"><br>数据增补块</td>
+          <td>物品/材料</td>
+          <td>灵子分解器</td>
+          <td>①金块*5<br>
+              ②齿轮*1
+          </td>
+          <td>
+              *一次性制作5个
+          </td>
+        </tr>
+
+        <tr>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_shujuzengbuyi.webp" alt="数据增补仪" width="40px"><br>数据增补仪</td>
+          <td>物品/材料</td>
+          <td>灵子分解器</td>
+          <td>①金块*10<br>
+              ②齿轮*1
+          </td>
+          <td>
+              *一次性制作5个
+          </td>
+        </tr>
+
+        <tr>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_mozushujukuai.webp" alt="模组数据块" width="40px"><br>模组数据块</td>
+          <td>物品/材料</td>
+          <td>炼金引擎</td>
+          <td>①金块*10
+            <br>②硝石*10
+            <br>③齿轮*1
+          </td>
+          <td>
+            <span class="color-important">【高级材料】</span><br>
+          </td>
+        </tr>
+
+        <tr>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_jingtidianzidanyuan.webp" alt="晶体电子单元" width="40px"><br>晶体电子单元</td>
+          <td>物品/材料</td>
+          <td>炼金引擎</td>
+          <td>①晶体电路*5
+            <br>②聚合凝胶*5
+            <br>③炽合金块*5
+          </td>
+          <td>
+            <span class="color-important">【高级材料】</span><br>
+          </td>
+        </tr>
+
+        <tr>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_d32.webp" alt="D32钢" width="40px"><br>D32钢</td>
+          <td>物品/材料</td>
+          <td>无法解锁</td>
+          <td>无法制作
+          </td>
+          <td>
+            <span class="color-important">【高级材料】</span><br><br>
+            <span class="color-important">说明-获取方式</span><br>
+            ①与猪王兑换金子时有5%概率获得<br>
+            【每兑换50次，随机获得一个高级材料】<br>
+            ②击杀季节boss和区域boss必掉高级材料中的其中1个
+          </td>
+        </tr>
+
+        <tr>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_juheji.webp" alt="聚合剂" width="40px"><br>聚合剂</td>
+          <td>物品/材料</td>
+          <td>无法解锁</td>
+          <td>无法制作
+          </td>
+          <td>
+            <span class="color-important">【高级材料】</span><br><br>
+            <span class="color-important">说明-获取方式</span><br>
+            ①与猪王兑换金子时有5%概率获得<br>
+            【每兑换50次，随机获得一个高级材料】<br>
+            ②击杀季节boss和区域boss必掉高级材料中的其中1个
+          </td>
+        </tr>
+
+        <tr>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_qnsp.webp" alt="潜能碎片" width="40px"><br>潜能碎片</td>
+          <td>物品/材料</td>
+          <td>无法解锁</td>
+          <td>无法制作
+          </td>
+          <td>
+            用于制作<span class="color-important">【潜能印记】</span><br><br>
+            <span class="color-important">说明-获取方式</span><br>
+            仅【黍】在进行【击杀怪物】【采集】【播种】时有4%的概率获得
+          </td>
+        </tr>
 
       </tbody>
 
     </table>
+
+    <h6>E.【D32钢】与【聚合剂】掉落部分说明</h6>
+    <ul>
+      <li>
+        可获取【D32钢】与【聚合剂】的boss包括：<br>
+        【麋鹿鹅】【蚁狮】【熊獾】【装甲熊獾】【独眼巨鹿】【晶体独眼巨鹿】【附身座狼】<br>
+        【龙蝇】【蜂后】【克劳斯】【恐惧之眼】【激光眼】【魔焰眼】【大霜鲨】【邪天翁】【帝王蟹】【天体英雄】【拾荒疯猪】<br>
+        【毒菌蟾蜍】【悲惨的毒菌蟾蜍】【远古织影者】【梦魇疯猪】
+      </li>
+    </ul>
+
     <h5 id="item-design-special-item">2.专属物品</h5>
     <table class="other-system-table">
     <thead>
@@ -345,33 +763,219 @@
 
     <tbody>
         <!-- 第一组：SOH 行 -->
-        <!-- <tr>
-          <td><img src="@/assets/othercharacter/surtr/surtr_supericecream.webp" alt="豪华冰淇淋" width="40px"><br>豪华冰淇淋</td>
-          <td>物品/功能</td>
-          <td>科学机器</td>
-          <td>①金块*5<br>
-            ②月亮碎片*5<br>
-            ③冰激凌*3<br>
-            ④蜂王浆*3<br>
-            ⑤蓝宝石*1
-          </td>
-          <td>属于好东西，保质期10天<br>
-            +0饱食度，+150理智值，+150生命值<br>
-            食用后降温40℃，持续8分钟<br><br>
 
-            <span class="color-important">说明-其余设定：</span><br>
-            ①大厨tag限定
+        <tr>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_qn.webp" alt="潜能印记" width="40px"><br>潜能印记</td>
+          <td>物品/功能</td>
+          <td>炼金引擎</td>
+          <td>①潜能碎片*20
           </td>
-        </tr> -->
+          <td><span class="color-important">用来提升潜能</span><br>
+            <a href="./arkshu#level-conclusion3">具体潜能点击这里</a>
+          </td>
+        </tr>
+
+        <tr>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_mozu.webp" alt="钦天司时Lv1" width="40px"><br>钦天司时Lv1</td>
+          <td>物品/功能</td>
+          <td>暗影操控器<br>&角色精英二</td>
+          <td>①模组数据块*4<br>
+            ②晶体电子单元*2<br>
+            ③金块*30<br>
+            ④噩梦燃料*20<br>
+          </td>
+          <td><span class="color-important">【模组装在武器上】</span><br>
+            治疗生命值低于50%的友方单位时治疗量提升<span class="color-important">15%</span><br>
+            生命值上限提高16，理智值上限提高3，攻击力提高3<br><br>
+            天赋强化：治疗角色时使其如下效果：每秒恢复<span class="color-important">6点生命值</span>、获得<span class="color-important">12%庇护</span>【持续3秒】<br>
+            潜能提升至5后效果：治疗角色时使其如下效果：每秒恢复<span class="color-important">6.5点生命值</span>、获得<span class="color-important">14%庇护</span>【持续3秒】<br>
+
+          </td>
+        </tr>
+
+        <tr>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_mozu1.webp" alt="钦天司时Lv2" width="40px"><br>钦天司时Lv2</td>
+          <td>物品/功能</td>
+          <td>暗影操控器<br>&角色已解锁【钦天司时Lv1】</td>
+          <td>①模组数据块*4<br>
+            ②数据增补条*60<br>
+            ③D32钢*3<br>
+            ④金块*40<br>
+          </td>
+          <td><span class="color-important">【模组装在武器上】</span><br>
+            治疗生命值低于50%的友方单位时治疗量提升<span class="color-important">15%</span><br>
+            生命值上限提高16，理智值上限提高3，攻击力提高3<br><br>
+            天赋强化：治疗角色时使其如下效果：每秒恢复<span class="color-important">7点生命值</span>、获得<span class="color-important">15%庇护</span>【持续3秒】<br>
+            潜能提升至5后效果：治疗角色时使其如下效果：每秒恢复<span class="color-important">7.5点生命值</span>、获得<span class="color-important">17%庇护</span>【持续3秒】<br>
+
+          </td>
+        </tr>
+
+        <tr>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_mozu2.webp" alt="钦天司时Lv3" width="40px"><br>钦天司时Lv3</td>
+          <td>物品/功能</td>
+          <td>暗影操控器<br>&角色已解锁【钦天司时Lv2】</td>
+          <td>①模组数据块*4<br>
+            ②数据增补仪*20<br>
+            ③聚合剂*4<br>
+            ④金块*50<br>
+          </td>
+          <td><span class="color-important">【模组装在武器上】</span><br>
+            治疗生命值低于50%的友方单位时治疗量提升<span class="color-important">30%</span><br>
+            生命值上限提高16，理智值上限提高3，攻击力提高3<br><br>
+            天赋强化：治疗角色时使其如下效果：每秒恢复<span class="color-important">8点生命值</span>、获得<span class="color-important">19%庇护</span>【持续3秒】<br>
+            潜能提升至5后效果：治疗角色时使其如下效果：每秒恢复<span class="color-important">8.5点生命值</span>、获得<span class="color-important">21%庇护</span>【持续3秒】<br>
+
+          </td>
+        </tr>
+
+        <tr>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_jinengshu.webp" alt="技能升级书" width="40px"><br>技能升级书</td>
+          <td>物品/功能</td>
+          <td>灵子分解器</td>
+          <td>①莎草纸*3<br>
+            ②噩梦燃料*10<br>
+            ③黑色羽毛*5
+          </td>
+          <td>每个技能书可以提升一级
+          </td>
+        </tr>
+
+        <tr>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_jingyanshu0.webp" alt="基础作战记录" width="40px"><br>基础作战记录</td>
+          <td>物品/功能</td>
+          <td>无法解锁</td>
+          <td>无法制作
+          </td>
+          <td>使用后攻击力增加<span class="color-important">5%</span>，速度增加<span class="color-important">5%</span>，持续1分钟<br><br>
+
+            <span class="color-important">说明-获取方式</span><br>
+            ①击杀生物有10%概率获得
+          </td>
+        </tr>
+
+        <tr>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_jingyanshu1.webp" alt="初级作战记录" width="40px"><br>初级作战记录</td>
+          <td>物品/功能</td>
+          <td>灵子分解器</td>
+          <td>①基础作战记录*3
+          </td>
+          <td>使用后攻击力增加<span class="color-important">10%</span>，速度增加<span class="color-important">10%</span>，持续1分钟<br><br>
+
+            <span class="color-important">说明-其他获取方式</span><br>
+            ①击杀生物有7%概率获得
+          </td>
+        </tr>
+
+        <tr>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_jingyanshu2.webp" alt="中级作战记录" width="40px"><br>中级作战记录</td>
+          <td>物品/功能</td>
+          <td>灵子分解器</td>
+          <td>①初级作战记录*4
+          </td>
+          <td>使用后攻击力增加<span class="color-important">15%</span>，速度增加<span class="color-important">15%</span>，持续1分钟<br><br>
+
+            <span class="color-important">说明-其他获取方式</span><br>
+            ①击杀生物有5%概率获得
+          </td>
+        </tr>
+
+        <tr>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_jingyanshu3.webp" alt="高级作战记录" width="40px"><br>高级作战记录</td>
+          <td>物品/功能</td>
+          <td>灵子分解器</td>
+          <td>①中级作战记录*4
+          </td>
+          <td>使用后攻击力增加<span class="color-important">20%</span>，速度增加<span class="color-important">20%</span>，持续1分钟<br><br>
+
+            <span class="color-important">说明-其他获取方式</span><br>
+            ①击杀生物有1%概率获得
+          </td>
+        </tr>
+
+        <tr>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_guo_item.webp" alt="年的小火锅" width="40px"><br>年的小火锅</td>
+          <td>物品/烹饪</td>
+          <td>技能点【年的小火锅】</td>
+          <td>①电子元件*1
+            <br>②木炭*3
+            <br>③石砖*3
+          </td>
+          <td>可以随时放置/收起，拥有4格可放入肉类/素类食物的储物格。<br>
+            放入后点击【制作】按钮，10秒后烹饪完毕，每个烹饪好的火锅可以食用4次。<br><br>
+
+            <span class="color-important">说明-基础特性</span><br>
+            根据肉类与素类食物比重不同，回复的属性也不同：<br>
+            ①肉类占多时，每次食用回复<span class="color-important">20点</span>饱食度，<span class="color-important">5点</span>理智值，<span class="color-important">5点</span>生命值<br>
+            ②素类占多时，每次食用回复<span class="color-important">10点</span>饱食度，<span class="color-important">5点</span>理智值，<span class="color-important">20点</span>生命值<br>
+            ③肉类素类各占一半时，每次食用回复<span class="color-important">10点</span>饱食度，<span class="color-important">10点</span>理智值，<span class="color-important">10点</span>生命值
+          </td>
+        </tr>
+
+        <tr>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_bi.webp" alt="夕的小笔杆" width="40px"><br>夕的小笔杆</td>
+          <td>装备/手部</td>
+          <td>技能点【夕的小笔杆】</td>
+          <td>①羽毛笔*2
+            <br>②莎草纸*1
+          </td>
+          <td>右键地图已探索位置，消耗【夕的小笔杆】，开启一个持续10秒的时空裂隙。
+          </td>
+        </tr>
+
+        <tr>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_jiuhu.webp" alt="令的小酒壶" width="40px"><br>令的小酒壶</td>
+          <td>物品</td>
+          <td>技能点【令的小酒壶】</td>
+          <td>①木头*6
+            <br>②绳子*2
+          </td>
+          <td>可放入蔬菜，水果和冰进行酿造，酿成酒液存储在壶中，每次酝酿的酒可饮用5次。<br>
+            可喂给他人饮用。<br><br>
+
+            <span class="color-important">说明-基础特性</span><br>
+            根据酿酒配方提供不同的buff：<br>
+            ①蔬菜*2、冰*2：额外造成10点物理攻击，攻击倍率*1.15，移速*1.05，持续3分钟
+            <br>②水果*2、冰*2：额外造成15点物理攻击，移速*1.15，持续3分钟
+
+          </td>
+        </tr>
 
         
       </tbody>
 
     </table>
 
+    <h5 id="item-design-special-item-weapon">3.专属建筑</h5>
+    <table class="other-system-table">
+      <thead>
+        <tr>
+          <th>建筑图标与名称</th>
+          <th>解锁方式</th>
+          <th>制作材料</th>
+          <th>效果简述</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <!-- 第一组：SOH 行 -->
+        <tr>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_quanjidai.webp" alt="剑台" width="40px"><br>剑台</td>
+          <td>技能点【重岳的剑台】</td>
+          <td>①采下的草*5
+            <br>②猪皮*2
+            <br>③大理石*2
+          </td>
+          <td>
+            在以【剑台】为中心半径15范围内，【黍】每4s减少所有技能1秒的cd，最多只生效一个
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
     <h5 id="item-design-special-item-weapon">4.专属武器</h5>
     <table class="other-system-table">
-    <thead>
+      <thead>
         <tr>
           <th>物品图标与名称</th>
           <th>物品类型</th>
@@ -381,92 +985,24 @@
         </tr>
       </thead>
 
-    <tbody>
+      <tbody>
         <!-- 第一组：SOH 行 -->
-        <!-- <tr>
-          <td><img src="@/assets/othercharacter/surtr/laevatain.webp" alt="莱万汀" width="40px"><br>莱万汀</td>
+        <tr>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_weapon.webp" alt="怀离剑" width="40px"><br>怀离剑</td>
           <td>装备/手部</td>
-          <td>无法解锁</td>
-          <td>无法制作
+          <td>初始解锁</td>
+          <td>①生命值*30
           </td>
           <td>
-            攻击力40，攻击距离1<br>
-            无耐久，自带光源<br>
-            可以砍树，拥有当前伤害（位面+普通）*3%的效率<br>
-            砍树时会将产物替换为烧熟的或者灰烬木炭等东西<br>
-            使用时攻击造成5%（精一）/30%（精二）的真实伤害。<br>
-            右键可以进行位移（精二解锁），无CD<br><br>
-
-            <span class="color-important">右键已装备的莱万汀切换技能方案：</span><br>
-            ①关闭施法：右键不在瞬移<br>
-            ②仅位移：右键仅瞬移，不造成伤害，消耗15点理智值/5点生命值。<br>
-            ③位移且伤害：右键瞬移，位移并造成5码的150%范围伤害，消耗15点饥饿值+15点理智值/15点生命值。<br>
-            （黄昏持续期间改为消耗血量，斩击范围+2）<br><br>
-
-            <span class="color-important">说明-基础特性：</span><br>
-            ①可给予以下物品增强此装备的战斗向属性。<br>
-            【红宝石】*1：1点【物理攻击力】（最多给予30个）<br>
-            【红色孢子】*1：2点【物理攻击力】（最多给予5个）<br>
-            【火荨麻叶】*1：1点【位面攻击力】（最多给予10个）<br>
-            【纯粹火焰】*1：5点【物理攻击力】、1点【位面攻击力】（最多给予5个）<br>
-            【暗影香炉】*1：5点【物理攻击力】、5点【位面攻击力】（最多给予1个）<br>
-            【亮茄外壳】*1：2点【物理攻击力】、2点【位面攻击力】（最多给予5个）<br><br>
-
-            <span class="color-important">说明-其余设定：</span><br>
-            ①其他人装备会-2血并脱手。<br>
-            ②被猴子偷走会令猴子受到20伤害并脱手<br>
-            ③真实伤害转化计入物理伤害和位面伤害，吃所有加成。
+            物理攻击力60，位面防御30，无耐久<br>
+            装备时可用作3*3的园艺锄<br>
+            拥有一个储物栏，可以放入【模组】<br><br>
+            黍持有时自身获得30%的庇护(30%的免伤)
+            <br>其他角色无法持有<br><br>
+            
           </td>
-        </tr> -->
-      </tbody>
-
-    </table>
-    
-    <h5 id="item-design-special-item-body">4.专属身体装备</h5>
-    <table class="other-system-table">
-    <thead>
-        <tr>
-          <th>物品图标与名称</th>
-          <th>物品类型</th>
-          <th>解锁方式</th>
-          <th>制作材料</th>
-          <th>效果简述</th>
         </tr>
-      </thead>
-
-    <tbody>
-        <!-- 第一组：SOH 行 -->
-        <!-- <tr>
-          <td><img src="@/assets/othercharacter/surtr/surtrclothes.webp" alt="史尔特尔服装" width="40px"><br>史尔特尔服装</td>
-          <td>装备/身体</td>
-          <td>无法解锁</td>
-          <td>无法制作
-          </td>
-          <td>
-              储物空间格数8<br>
-              40%基础防御，无耐久<br>
-              基础50%保鲜，60%防水，死亡不掉落<br><br>
-
-              <span class="color-important">说明-基础特性：</span><br>
-              ①可给予以下物品增强此装备的生存向属性。<br>
-              【熊皮】：5%【保鲜】（最高95%）<br>
-              【巨鹿眼球】：540%【防水】、绝缘<br>
-              【弹性空间制造器】：储物空间格数变为14格<br><br>
-
-              ②可给予以下物品增强此装备的战斗向属性。<br>
-              【红宝石】*1：1%【防御】（最多给予10个）<br>
-              【鳞片】*1：3%【防御】（最多给予5个）<br>
-              【岩浆虫卵】*1：10%【防御】、10点【位面防御】（最多给予1个）<br>
-              【骨头盔甲】*1：5%【防御】、5点【位面防御】（最多给予1个）<br>
-              【暗影碎布】*1：1%【防御】、1点【位面防御】（最多给予10个）<br><br>
-              
-               <span class="color-important">说明-其余设定：</span><br>
-              ①因为升级组件和背包冲突，部分材料请脱掉衣服再塞东西升级。<br>
-              ②被猴子偷走会令猴子受到20伤害并脱手
-          </td>
-        </tr> -->
       </tbody>
-
     </table>
 
     <h5 id="item-design-special-item-item">5.晋升物品</h5>
@@ -482,164 +1018,60 @@
       </thead>
 
     <tbody>
-        <!-- <tr>
-          <td><img src="@/assets/othercharacter/surtr/surtr_elitebook1.webp" alt="高级资深干员训练书" width="40px"><br>高级资深干员训练书</td>
+        <tr>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_jingyishu.webp" alt="精英化一【书籍】" width="40px"><br>精英化一【书籍】</td>
 
           <td>物品/功能</td>
-          <td>科学机器</td>
-          <td>①金块*20<br>
-              ②木炭*20<br>
-              ③红宝石*5<br>
-              ④外壳碎片*3
+          <td>炼金引擎</td>
+          <td>①莎草纸*12<br>
+              ②黑色羽毛*12<br>
+              ③金块*12<br>
+              ④绿宝石*1
           </td>
-          <td>*仅【史尔特尔】可制作与使用<br>
+          <td>*仅【黍】可制作与使用<br>
               *使用后令对应角色精英化阶段提升至1<br>
           </td>
         </tr>
 
         <tr>
-          <td><img src="@/assets/othercharacter/surtr/surtr_elitebook2.webp" alt="高级资深干员特训书" width="40px"><br>高级资深干员特训书</td>
+          <td><img src="@/assets/othercharacter/arkshu/arkshu_jingershu.webp" alt="精英化二【书籍】" width="40px"><br>精英化二【书籍】</td>
 
           <td>物品/功能</td>
-          <td>科学机器</td>
-          <td>①金块*40<br>
-              ②绝望石*5/发芽的石果*10<br>
-              ③纯粹火焰*5<br>
-              ④橙宝石*5
+          <td>暗影操控器</td>
+          <td>①莎草纸*15<br>
+              ②黑色羽毛*24<br>
+              ③金块*30<br>
+              ④晶体电子单元*3
+              <br>⑤彩虹宝石*1
           </td>
-          <td>*仅【史尔特尔】可制作与使用<br>
+          <td>*仅【黍】可制作与使用<br>
               *使用后令对应角色精英化阶段提升至2<br>
           </td>
-        </tr> -->
-
-      </tbody>
-
-    </table>
-
-    <h5 id="item-design-special-item-recipe">6.专属料理</h5>
-    <table class="other-system-table">
-    <thead>
-        <tr>
-          <th>料理图标与名称</th>
-          <th>料理类型</th>
-          <th>烹饪时间</th>
-          <th>食材需求</th>
-          <th>料理效果</th>
         </tr>
-      </thead>
-
-    <tbody>
-        
 
       </tbody>
 
-    </table>
-
-
-    <h5 id="item-design-special-item-other">7.其余特殊物品</h5>
-    <table class="other-system-table">
-    <thead>
-        <tr>
-          <th>物品图标与名称</th>
-          <th>物品类型</th>
-          <th>解锁方式</th>
-          <th>制作材料</th>
-          <th>效果简述</th>
-        </tr>
-      </thead>
-
-    <tbody>
-        <!-- <tr>
-          <td><img src="@/assets/othercharacter/surtr/surtr_scarygrandma.webp" alt="恐怖奶奶" width="40px"><br>恐怖奶奶</td>
-          <td>物品</td>
-          <td>远古一本</td>
-          <td>①地精奶奶*1<br>
-              ②纯粹恐惧*4</td>
-          <td>
-              音乐播放器<br>
-              给予1冰播放《亘古》<br>
-              给予1噩梦燃料播放《andarsar》<br>
-              给予1月岩播放《维度逃逸》<br>
-              给予1化石碎片播放《主宰》<br><br>
-              <span class="color-important">说明-其余设定：</span><br>
-              ①拾取时解除播放（不返还物品！）
-          </td>
-        </tr> -->
-      </tbody>
-    </table>
-    <h5 id="item-design-new-recipe">8.新增专属原版配方</h5>
-
-   <table class="other-system-table">
-    <thead>
-        <tr>
-          <th>物品名称</th>
-          <th>解锁方式</th>
-          <th>制作材料</th>
-          <th>效果简述</th>
-        </tr>
-      </thead>
-
-    <tbody>
-        <!-- <tr>
-          <td>木炭</td>
-          <td>初始解锁</td>
-          <td>①木头*1</td>
-          <td>
-            *一次性制作1个
-          </td>
-        </tr> -->
-
-        
-      </tbody>
     </table>
 
     <h4 id="other-matters">⑦其余事项</h4>
-    <h5 id="other-original-change">1.原版改动</h5>
+    <h5 id="other-mod-config">1.模组配置</h5>
     <ul>
-      <li>
-        火荨麻叶/灰烬可以入锅
+      <li>按键设置：<br>
+          嘉禾盈仓键位设置<br>
+          离离枯荣键位设置<br>
       </li>
-      <li>莎草纸/空瓶子可以入锅，拥有1/4不可食用度</li>
-    </ul>
-    <h5 id="other-mod-config">2.模组配置</h5>
-    <ul>
-      <li>键位：<br>
-          熔核巨影键位<br>
-          黄昏键位<br>
-          技能ui显示/隐藏键位<br>
-          莱万汀自动召回开关键位<br>
-      </li>
-      <li>输出能力设置：<br>
-        技能倍率互相计算方式<br>
-        过热天赋攻击加成最高倍率<br>
-        位面伤害参与技能倍率<br>
-        造成真实伤害（后续合并至其他升级）<br>
-        莱万汀攻击力区间<br>
-      </li>
-      <li>
-        生存能力设置：<br>
-        余烬单次扣血数值<br>
-        余烬扣血速率限制<br>
-        史尔特尔自身移速加成<br>
-        史尔特尔武器移速加成<br>
-        新界/为爽部分控制免疫<br>
-      </li>
-      <li>
-        初始阶段设置：<br>
-        初始阶段<br>
-      </li>
-      <li>
-        其他：<br>
-        纯粹火焰掉率（参与击杀史诗生物）<br>
-        生息演算料理是否无新鲜值限制<br>
-        语音音量大小<br>
-        小彩蛋，嫌吵关掉<br>
-      </li>
-      <li>
-        不稳定测试选项：<br>
-        解除温度上限（不稳定）<br>
+      <li>游戏性配置：<br>
+          化被草木受击自动触发<br>
       </li>
     </ul>
+
+    <h5 id="other-ui">2.UI</h5>
+    <ul>
+      <li>
+        【黍】的潜能和技能均可右键拖动位置。
+      </li>
+    </ul>
+
     <h5 id="other-mod-compatibility">3.模组兼容</h5>
     <ul>
       <li>

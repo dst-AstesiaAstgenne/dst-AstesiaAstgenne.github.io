@@ -1,21 +1,19 @@
-const SurtrIndex = () => import('@/pages/othercharacter/surtr/index.vue');
-const Surtr = () => import('@/pages/othercharacter/surtr/surtr.vue');
-const SurtrItems = () => import('@/pages/othercharacter/surtr/items.vue');
+
 
 export default [
   {
     path: '/othercharacter/surtrindex',
     name: 'SurtrIndex',
-    component: SurtrIndex
+    component: () => import('@/pages/othercharacter/surtr/index.vue')
   },
   {
     path: '/othercharacter/surtrindex/surtr',
     name: 'Surtr',
-    component: Surtr
+    component: () => import('@/pages/othercharacter/surtr/surtr.vue')
   },
   {
     path: '/othercharacter/surtrindex/items/:id',
     name: 'SurtrItems',
-    component: SurtrItems
+    component: () => import('@/pages/othercharacter/surtr/items.vue')
   }
 ];

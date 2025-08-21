@@ -1,231 +1,23 @@
 [
   {
-    "id": "laevatain",
-    "title": "莱万汀",
-    "subtitle": "史尔特尔的长剑，或者说更像一把剑形法杖。",
+    "id": "arkshu_yitie",
+    "title": "异铁",
+    "subtitle": "",
     "avatars": {
-      "wilson": "史尔特尔的长剑，或者说更像一把剑形法杖。",
-      "surtr": "反应过来的时候，源石技艺和这把法杖已经伴随着我了。<br> 我一点也不记得什么时候得到了这样的能力，当然我也并不在意。"
+      "arkshu": "罕见的工业材料"
     },
     "details": {
-      "name": "莱万汀",
-      "code": "分类：武器/手部",
-      "image": "laevatain.webp",
-      "category": "解锁方式：科学机器",
-      "unlock": "科学机器",
-      "materials": []
-    },
-    "description": {
-      "single": [
-        "<span class=\"color-important\">莱万汀</span>是【史尔特尔】的专属模组武器。",
-        "\n            攻击力40，攻击距离1<br/>\n            无耐久，自带光源<br/>\n            可以砍树，拥有当前伤害（位面+普通）*3%的效率<br/>\n            砍树时会将产物替换为烧熟的或者灰烬木炭等东西<br/>\n            使用时攻击造成5%（精一）/30%（精二）的真实伤害。<br/>\n            右键可以进行位移（精二解锁），无CD<br/><br/>\n<span class=\"color-important\">右键已装备的莱万汀切换技能方案：</span><br/>\n            ①关闭施法：右键不在瞬移<br/>\n            ②仅位移：右键仅瞬移，不造成伤害，消耗15点理智值/5点生命值。<br/>\n            ③位移且伤害：右键瞬移，位移并造成5码的150%范围伤害，消耗15点饥饿值+15点理智值/15点生命值。<br/>\n            （黄昏持续期间改为消耗血量，斩击范围+2）<br/><br/>\n<span class=\"color-important\">说明-基础特性：</span><br/>\n            ①可给予以下物品增强此装备的战斗向属性。<br/>\n            【红宝石】*1：1点【物理攻击力】（最多给予30个）<br/>\n            【红色孢子】*1：2点【物理攻击力】（最多给予5个）<br/>\n            【火荨麻叶】*1：1点【位面攻击力】（最多给予10个）<br/>\n            【纯粹火焰】*1：5点【物理攻击力】、1点【位面攻击力】（最多给予5个）<br/>\n            【暗影香炉】*1：5点【物理攻击力】、5点【位面攻击力】（最多给予1个）<br/>\n            【亮茄外壳】*1：2点【物理攻击力】、2点【位面攻击力】（最多给予5个）<br/><br/>\n<span class=\"color-important\">说明-其余设定：</span><br/>\n            ①其他人装备会-2血并脱手。<br/>\n            ②被猴子偷走会令猴子受到20伤害并脱手<br/>\n            ③真实伤害转化计入物理伤害和位面伤害，吃所有加成。\n          ",
-        ""
-      ]
-    },
-    "tip": [
-      ""
-    ]
-  },
-  {
-    "id": "surtrclothes",
-    "title": "史尔特尔服装",
-    "subtitle": "史尔特尔的衣服，拥有无法解释的耐火性能",
-    "avatars": {
-      "wilson": "史尔特尔的衣服，拥有无法解释的耐火性能",
-      "surtr": "使用火焰法术时衣服这么容易烧掉的话，<br>明日方舟就会成为喜闻乐见的18+游戏。"
-    },
-    "details": {
-      "name": "史尔特尔服装",
-      "code": "分类：装备/身体",
-      "image": "surtrclothes.webp",
-      "category": "解锁方式：无法解锁",
+      "name": "异铁",
+      "code": "",
+      "image": "arkshu_yitie.webp",
+      "category": "物品/材料",
       "unlock": "无法解锁",
       "materials": []
     },
     "description": {
       "single": [
-        "<span class=\"color-important\">史尔特尔服装</span>是【史尔特尔】的专属模组身体装备。",
-        "\n              储物空间格数8<br/>\n              40%基础防御，无耐久<br/>\n              基础50%保鲜，60%防水，死亡不掉落<br/><br/>\n<span class=\"color-important\">说明-基础特性：</span><br/>\n              ①可给予以下物品增强此装备的生存向属性。<br/>\n              【熊皮】：5%【保鲜】（最高95%）<br/>\n              【巨鹿眼球】：540%【防水】、绝缘<br/>\n              【弹性空间制造器】：储物空间格数变为14格<br/><br/>\n\n              ②可给予以下物品增强此装备的战斗向属性。<br/>\n              【红宝石】*1：1%【防御】（最多给予10个）<br/>\n              【鳞片】*1：3%【防御】（最多给予5个）<br/>\n              【岩浆虫卵】*1：10%【防御】、10点【位面防御】（最多给予1个）<br/>\n              【骨头盔甲】*1：5%【防御】、5点【位面防御】（最多给予1个）<br/>\n              【暗影碎布】*1：1%【防御】、1点【位面防御】（最多给予10个）<br/><br/>\n<span class=\"color-important\">说明-其余设定：</span><br/>\n              ①因为升级组件和背包冲突，部分材料请脱掉衣服再塞东西升级。<br/>\n              ②被猴子偷走会令猴子受到20伤害并脱手\n          ",
-        ""
-      ]
-    },
-    "tip": [
-      ""
-    ]
-  },
-  {
-    "id": "surtr_elitebook1",
-    "title": "高级资深干员训练书",
-    "subtitle": "提升史尔特尔至精英化一阶段",
-    "avatars": {
-      "wilson": "用于为史尔特尔干员提升至精英化一阶段的道具",
-      "surtr": "见识过我的实力之后，开始重视我了？"
-    },
-    "details": {
-      "name": "高级资深干员训练书",
-      "code": "分类：物品/功能",
-      "image": "surtr_elitebook1.webp",
-      "category": "解锁方式：科学机器",
-      "unlock": "科学机器",
-      "materials": [
-        "金块*20",
-        "木炭*20",
-        "红宝石*5",
-        "外壳碎片*3"
-      ]
-    },
-    "description": {
-      "single": [
-        "<span class=\"color-important\">高级资深干员训练书</span>是一种的模组物品。",
-        "\n            *仅【史尔特尔】可制作与使用<br/>\n            *使用后令对应角色精英化阶段提升至1<br/>\n",
-        ""
-      ]
-    },
-    "tip": [
-      ""
-    ]
-  },
-  {
-    "id": "surtr_elitebook2",
-    "title": "高级资深干员特训书",
-    "subtitle": "提升史尔特尔至精英化二阶段",
-    "avatars": {
-      "wilson": "用于为史尔特尔干员提升至精英化二阶段的道具",
-      "surtr": "既然你都这样做了，那我也拿出相应的努力来回报你吧。"
-    },
-    "details": {
-      "name": "高级资深干员特训书",
-      "code": "分类：物品/功能",
-      "image": "surtr_elitebook2.webp",
-      "category": "解锁方式：科学机器",
-      "unlock": "科学机器",
-      "materials": [
-        "金块*40",
-        "绝望石*5/发芽的石果*10",
-        "纯粹火焰*5",
-        "橙宝石*5"
-      ]
-    },
-    "description": {
-      "single": [
-        "<span class=\"color-important\">高级资深干员特训书</span>是一种的模组物品。",
-        "\n            *仅【史尔特尔】可制作与使用<br/>\n            *使用后令对应角色精英化阶段提升至2<br/>\n",
-        ""
-      ]
-    },
-    "tip": [
-      ""
-    ]
-  },
-  {
-    "id": "surtr_glassseaweed",
-    "title": "玻璃海苔",
-    "subtitle": "海的味道我知道。",
-    "avatars": {
-      "wilson": "海的味道我知道。",
-      "surtr": "海的味道我知道。"
-    },
-    "details": {
-      "name": "玻璃海苔",
-      "code": "分类：物品/功能",
-      "image": "surtr_glassseaweed.webp",
-      "category": "解锁方式：初始解锁",
-      "unlock": "初始解锁",
-      "materials": [
-        "干海带叶*2",
-        "月亮碎片*1"
-      ]
-    },
-    "description": {
-      "single": [
-        "<span class=\"color-important\">玻璃海苔</span>是一种的模组物品。",
-        "\n            每次制作给予5个<br/>\n            属于好东西，保质期无限<br/>\n            +10饱食度，+10理智值，+2生命值<br/>\n            食用时20%概率受到10伤害（可被护甲防御抵消）\n          ",
-        ""
-      ]
-    },
-    "tip": [
-      ""
-    ]
-  },
-  {
-    "id": "surtr_lavabreath",
-    "title": "灼热之息",
-    "subtitle": "扑面而来的热浪。",
-    "avatars": {
-      "wilson": "扑面而来的热浪。",
-      "surtr": "除非战斗需要，我不喜欢这玩意。"
-    },
-    "details": {
-      "name": "灼热之息",
-      "code": "分类：好东西",
-      "image": "surtr_lavabreath.webp",
-      "category": "烹饪时间：20秒",
-      "unlock": "",
-      "materials": []
-    },
-    "description": {
-      "single": [
-        "<span class=\"color-important\">灼热之息</span>是一种的模组料理。",
-        "\n            保质期3天<br/>\n            +5饱食度，0理智值，+10生命值<br/>\n            体温锁最低70℃，持续1分钟<br/>\n<span class=\"color-important\">说明-其余设定：</span><br/>\n            ①女武神不吃。<br/>\n            ②食用后的语音：好热……你喂我吃了什么？\n          ",
-        ""
-      ]
-    },
-    "tip": [
-      ""
-    ]
-  },
-  {
-    "id": "surtr_lavakiss",
-    "title": "熔岩之吻",
-    "subtitle": "这玩意有点极端高温了吧...",
-    "avatars": {
-      "wilson": "这玩意有点极端高温了吧...",
-      "surtr": "试图在岩浆中洗澡。"
-    },
-    "details": {
-      "name": "熔岩之吻",
-      "code": "分类：好东西",
-      "image": "surtr_lavakiss.webp",
-      "category": "烹饪时间：20秒",
-      "unlock": "",
-      "materials": []
-    },
-    "description": {
-      "single": [
-        "<span class=\"color-important\">熔岩之吻</span>是一种的模组料理。",
-        "\n            保质期60天<br/>\n            +5饱食度，-50理智值，-25生命值<br/>\n            体温锁最低80℃，持续8分钟<br/>\n<span class=\"color-important\">说明-其余设定：</span><br/>\n            ①无法喂食给他人。<br/>\n            ②食用后的语音：呼……呼，感觉……浑身都燥热起来……<br/>\n            ③非史尔特尔角色10秒后额外说语音：热死了！热死了！啊啊啊啊啊啊啊啊啊啊！\n          ",
-        ""
-      ]
-    },
-    "tip": [
-      ""
-    ]
-  },
-  {
-    "id": "surtr_pureflame",
-    "title": "纯粹火焰",
-    "subtitle": "这是……火焰？好纯粹……",
-    "avatars": {
-      "surtr": "这片大地上自古至今永恒不息的最纯粹的火焰......",
-      "wilson": "这是……火焰？好纯粹……"
-    },
-    "details": {
-      "name": "纯粹火焰",
-      "code": "分类：物品/材料",
-      "image": "pureflame.webp",
-      "category": "解锁方式：科学机器",
-      "unlock": "科学机器",
-      "materials": [
-        "龙鳞*2",
-        "火荨麻叶*2",
-        "辣椒*2",
-        "灰烬*10"
-      ]
-    },
-    "description": {
-      "single": [
-        "<span class=\"color-important\">纯粹火焰</span>是一种的模组物品材料。",
-        "              可用作180s燃料<br/><br/>\n<span class=\"color-important\">说明-获取方式：</span><br/>\n              ①击杀史诗生物有概率掉落，默认50%\n            "
+        "<span class=\"color-important\">异铁</span>是一种模组材料。",
+        "<span class=\"color-important\">说明-获取方式</span><br>挖掘【原版矿石】的时候有10%的概率掉落"
       ]
     },
     "tip": [
@@ -233,96 +25,237 @@
     ],
     "craftableItems": [
       {
-        "name": "高级资深干员特训书",
-        "image": "/images/surtr/surtr_elitebook2.webp",
-        "link": "/othercharacter/surtrindex/items/surtr_elitebook2"
+        "name": "异铁组",
+        "image": "/images/arkshu/arkshu_yitiezu.webp",
+        "link": "/othercharacter/arkshuindex/items/arkshu_yitiezu"
       }
     ]
   },
   {
-    "id": "surtr_scarygrandma",
-    "title": "恐怖奶奶",
-    "subtitle": "啊呀，骇死我力",
+    "id": "arkshu_yitiezu",
+    "title": "异铁组",
+    "subtitle": "多块异铁在极少数非人为因素影响下，偶然产生的异铁组合，硬度下降，纯度进一步上升",
     "avatars": {
-      "wilson": "啊呀，骇死我力",
-      "surtr": "我看起来没有这么可怕吧..."
+      "arkshu": "珍贵的工业材料"
     },
     "details": {
-      "name": "恐怖奶奶",
-      "code": "分类：物品",
-      "image": "surtr_scarygrandma.webp",
-      "category": "解锁方式：远古一本",
-      "unlock": "远古一本",
+      "name": "异铁组",
+      "code": "",
+      "image": "arkshu_yitiezu.webp",
+      "category": "物品/材料",
+      "unlock": "炼金引擎",
       "materials": [
-        "地精奶奶*1",
-        "纯粹恐惧*4"
+        "异铁*4"
       ]
     },
     "description": {
       "single": [
-        "<span class=\"color-important\">恐怖奶奶</span>是一种的模组物品。",
-        "\n              音乐播放器<br/>\n              给予1冰播放《亘古》<br/>\n              给予1噩梦燃料播放《andarsar》<br/>\n              给予1月岩播放《维度逃逸》<br/>\n              给予1化石碎片播放《主宰》<br/><br/>\n<span class=\"color-important\">说明-其余设定：</span><br/>\n              ①拾取时解除播放（不返还物品！）\n          ",
+        "<span class=\"color-important\">异铁组</span>是一种模组材料。"
+      ]
+    },
+    "tip": [
+      ""
+    ],
+    "craftableItems": [
+      {
+        "name": "聚合凝胶",
+        "image": "/images/arkshu/arkshu_juheningjiao.webp",
+        "link": "/othercharacter/arkshuindex/items/arkshu_juheningjiao"
+      }
+    ]
+  },
+  {
+    "id": "arkshu_quanxinzhuangzhi",
+    "title": "全新装置",
+    "subtitle": "一套全新装配而成的装置，通过重构同类型装置的结构，主板原本一直存在的空间紧张的问题得到了解决，当然启动时的能耗要求也变高了。",
+    "avatars": {
+      "arkshu": "有意思的小东西"
+    },
+    "details": {
+      "name": "全新装置",
+      "code": "",
+      "image": "arkshu_quanxinzhuangzhi.webp",
+      "category": "物品/材料",
+      "unlock": "炼金引擎",
+      "materials": [
+        "齿轮*2"
+      ]
+    },
+    "description": {
+      "single": [
+        "<span class=\"color-important\">全新装置</span>是一种模组物品。"
+      ]
+    },
+    "tip": [
+      ""
+    ],
+    "craftableItems": [
+      {
+        "name": "炽合金块",
+        "image": "/images/arkshu/arkshu_chihejinkuai.webp",
+        "link": "/othercharacter/arkshuindex/items/arkshu_chihejinkuai"
+      }
+    ]
+  },
+  {
+    "id": "arkshu_chihejin",
+    "title": "炽合金",
+    "subtitle": "",
+    "avatars": {
+      "arkshu": "电子工业用特殊高熔点合金"
+    },
+    "details": {
+      "name": "炽合金",
+      "code": "",
+      "image": "arkshu_chihejin.webp",
+      "category": "物品/材料",
+      "unlock": "无法解锁",
+      "materials": [
+        "无法制作"
+      ]
+    },
+    "description": {
+      "single": [
+        "<span class=\"color-important\">炽合金</span>是一种模组物品。",
+        "<span class=\"color-important\">说明-获取方式</span><br>①发条骑士，发条主教，损坏的发条骑士，损坏的发条主教有10%概率掉落<br>②发条战车，损坏的发条战车有20%概率掉落<br>"
+      ]
+    },
+    "tip": [
+      ""
+    ],
+    "craftableItems": [
+      {
+        "name": "炽合金块",
+        "image": "/images/arkshu/arkshu_chihejinkuai.webp",
+        "link": "/othercharacter/arkshuindex/items/arkshu_chihejinkuai"
+      }
+    ]
+  },
+  {
+    "id": "arkshu_chihejinkuai",
+    "title": "炽合金块",
+    "subtitle": "产量稀少的电子工业用特殊高熔点合金。可用于多种强化场合。",
+    "avatars": {
+      "arkshu": "可以给年捣鼓这些玩意儿，当然也可能不需要，现在她更热衷于拍电影"
+    },
+    "details": {
+      "name": "炽合金块",
+      "code": "",
+      "image": "arkshu_chihejinkuai.webp",
+      "category": "物品/功能",
+      "unlock": "初始解锁",
+      "materials": [
+        "全新装置*1",
+        "炽合金*1",
+        "研磨石*1"
+      ]
+    },
+    "description": {
+      "single": [
+        "<span class=\"color-important\">炽合金块</span>是一种模组物品。",
         ""
       ]
     },
     "tip": [
       ""
+    ],
+    "craftableItems": [
+      {
+        "name": "晶体电子单元",
+        "image": "/images/arkshu/arkshu_jingtidianzidanyuan.webp",
+        "link": "/othercharacter/arkshuindex/items/arkshu_jingtidianzidanyuan"
+      }
     ]
   },
   {
-    "id": "surtr_supericecream",
-    "title": "豪华冰激凌",
-    "subtitle": "一份奢华而又细腻的冰淇淋。",
+    "id": "arkshu_jingtidianlu",
+    "title": "晶体电路",
+    "subtitle": "现代源石电子产业的核心产品，常见于泰拉诸国使用的大量电子产品中，晶体电路的大量使用也是泰拉工业现代化的体现",
     "avatars": {
-      "wilson": "一份奢华而又细腻的冰淇淋。",
-      "surtr": "这，这真的是给我的吗？！"
+      "arkshu": "重要的源石工业材料"
     },
     "details": {
-      "name": "豪华冰激凌",
-      "code": "分类：物品/功能",
-      "image": "surtr_supericecream.webp",
-      "category": "解锁方式：科学机器",
-      "unlock": "科学机器",
+      "name": "晶体电路",
+      "code": "arkshu_jingtidianlu",
+      "image": "arkshu_jingtidianlu.webp",
+      "category": "物品/材料",
+      "unlock": "炼金引擎",
       "materials": [
-        "金块*5",
-        "月亮碎片*5",
-        "冰激凌*3",
-        "蜂王浆*3",
-        "蓝宝石*1"
+        "电子元件*4"
       ]
     },
     "description": {
       "single": [
-        "<span class=\"color-important\">豪华冰激凌</span>是一种的模组物品。",
-        "\n            属于好东西，保质期10天<br/>\n            +0饱食度，+150理智值，+150生命值<br/>\n            食用后降温40℃，持续8分钟<br/><br/>\n<span class=\"color-important\">说明-其余设定：</span><br/>\n            ①大厨tag限定\n          "
+        "<span class=\"color-important\">晶体电路</span>是一种模组物品。",
+        "<span class=\"color-important\">说明-其他获取方式</span><br>①发条骑士，发条主教，损坏的发条骑士，损坏的发条主教有10%概率掉落<br> ②发条战车，损坏的发条战车有20%概率掉落"
       ]
     },
     "tip": [
       ""
+    ],
+    "craftableItems": [
+      {
+        "name": "晶体电子单元",
+        "image": "/images/arkshu/arkshu_jingtidianzidanyuan.webp",
+        "link": "/othercharacter/arkshuindex/items/arkshu_jingtidianzidanyuan"
+      }
     ]
   },
   {
-    "id": "surtr_sxys_deerleg",
-    "title": "晶肝茸髓",
-    "subtitle": "狩猎珍稀野兽时有机会获得的梦幻食材。口感柔滑细腻，滋味醇和浓郁，十分受高档餐厅追捧。",
+    "id": "arkshu_ningjiao",
+    "title": "凝胶",
+    "subtitle": "",
     "avatars": {
-      "surtr": "它在闪闪发光。",
-      "wilson": "起食欲了。"
+      "arkshu": "高强度的可塑性材料"
     },
     "details": {
-      "name": "晶肝茸髓",
-      "code": "分类：物品/功能",
-      "image": "surtr_sxys_deerleg.webp",
-      "category": "解锁方式：无法解锁",
+      "name": "凝胶",
+      "code": "arkshu_ningjiao",
+      "image": "arkshu_ningjiao.webp",
+      "category": "物品/材料",
       "unlock": "无法解锁",
       "materials": []
     },
     "description": {
       "single": [
-        "<span class=\"color-important\">晶肝茸髓</span>是一种的模组物品。",
-        "1.5肉度，可入锅<br/>\n            +50饱食度，-25理智值，+20生命值<br/><br/>\n<span class=\"color-important\">说明-获取方式：</span><br/>\n            ①击杀【克劳斯】掉落2个<br/>\n            ②击杀【独眼巨鹿】掉落1个<br/>\n            ③击杀【麋鹿鹅】掉落1个<br/><br/>\n",
-        "\n<span class=\"color-important\">可烹饪料理：</span>\n<div class=\"craftable-items\" id=\"craftableItems\">\n<!-- 可制作物品图标将在这里动态显示 -->\n</div>\n",
-        ""
+        "<span class=\"color-important\">凝胶</span>是一种模组物品。",
+        "<span class=\"color-important\">说明-获取方式</span><br>击杀水性生物获得【青蛙&明眼青蛙5%，触手10%，水獭10%，水獭掠夺者窝点100%】"
+      ]
+    },
+    "tip": [
+      ""
+    ],
+    "craftableItems": [
+      {
+        "name": "聚合凝胶",
+        "image": "/images/arkshu/arkshu_juheningjiao.webp",
+        "link": "/othercharacter/arkshuindex/items/arkshu_juheningjiao"
+      }
+    ]
+  },
+  {
+    "id": "arkshu_juheningjiao",
+    "title": "聚合凝胶",
+    "subtitle": "一种具备极高强度的可塑性材料。可用于多种强化场合。",
+    "avatars": {
+      "arkshu": "历经大量实验与反复测试诞生的人工材料"
+    },
+    "details": {
+      "name": "聚合凝胶",
+      "code": "arkshu_juheningjiao",
+      "image": "arkshu_juheningjiao.webp",
+      "category": "物品/材料",
+      "unlock": "炼金引擎",
+      "materials": [
+        "凝胶*1",
+        "炽合金*1",
+        "异铁组*1"
+      ]
+    },
+    "description": {
+      "single": [
+        "<span class=\"color-important\">聚合凝胶</span>是一种模组材料。",
+        "              可用作180s燃料<br/><br/>\n<span class=\"color-important\">说明-获取方式：</span><br/>\n              ①击杀史诗生物有概率掉落，默认50%\n            "
       ]
     },
     "tip": [
@@ -330,26 +263,27 @@
     ]
   },
   {
-    "id": "surtr_sxys_shanshui",
-    "title": "炎国山水原液",
-    "subtitle": "云山衔一梦。呼......酽茶醇酒，斜风细雪，似乎都能在这之中体味到。",
+    "id": "arkshu_shujuzengbukuai",
+    "title": "数据增补块",
+    "subtitle": "模组物品不可或缺的一个！",
     "avatars": {
-      "wilson": "云山衔一梦。<br>呼......酽茶醇酒，斜风细雪，似乎都能在这之中尝到。",
-      "surtr": "霜华满天。"
+      "arkshu": "或许年会喜欢捣鼓这些玩意儿，留着吧"
     },
     "details": {
-      "name": "炎国山水原液",
-      "code": "///",
-      "image": "surtr_sxys_shanshui.webp",
-      "category": "烹饪时间：///",
-      "unlock": "",
-      "materials": []
+      "name": "数据增补块",
+      "code": "arkshu_shujuzengbukuai",
+      "image": "arkshu_shujuzengbukuai.webp",
+      "category": "物品/材料",
+      "unlock": "灵子分解器",
+      "materials": [
+        "金块*5",
+        "齿轮*1"
+      ]
     },
     "description": {
       "single": [
-        "<span class=\"color-important\">炎国山水原液</span>是一种的模组料理。",
-        "\n            +100饱食度，+80理智值，+100生命值<br/>\n            增加40%攻击力，持续24分钟<br/>\n",
-        ""
+        "<span class=\"color-important\">数据增补块</span>是一种模组材料。",
+        "*一次性制作5个"
       ]
     },
     "tip": [
@@ -357,29 +291,617 @@
     ]
   },
   {
-    "id": "surtr_sxys_shutiao",
-    "title": "脆肉薯条转醇",
-    "subtitle": "为什么薯条里没有土豆？",
+    "id": "arkshu_shujuzengbuyi",
+    "title": "数据增补仪",
+    "subtitle": "模组物品不可或缺的一个！",
     "avatars": {
-      "wilson": "为什么薯条里没有土豆？",
-      "surtr": "为什么薯条里没有土豆？"
+      "arkshu": "或许年会喜欢捣鼓这些玩意儿，留着吧"
     },
     "details": {
-      "name": "脆肉薯条转醇",
-      "code": "///",
-      "image": "surtr_sxys_shutiao.webp",
-      "category": "烹饪时间：///",
+      "name": "数据增补仪",
+      "code": "arkshu_shujuzengbuyi",
+      "image": "arkshu_shujuzengbuyi.webp",
+      "category": "物品/材料",
+      "unlock": "灵子分解器",
+      "materials": [
+        "金块*10",
+        "齿轮*1"
+      ]
+    },
+    "description": {
+      "single": [
+        "<span class=\"color-important\">数据增补仪</span>是一种模组材料。",
+        "*一次性制作5个"
+      ]
+    },
+    "tip": [
+      ""
+    ],
+    "craftableItems": [
+      {
+        "name": "钦天司时Lv3",
+        "image": "/images/arkshu/arkshu_mozu2.webp",
+        "link": "/othercharacter/arkshuindex/items/arkshu_mozu3"
+      }
+    ]
+  },
+  {
+    "id": "arkshu_mozushujukuai",
+    "title": "模组数据块",
+    "subtitle": "数据块中记录了工程部干员们为制作模组而奋斗的每个日夜",
+    "avatars": {
+      "arkshu": "是心酸和汗水"
+    },
+    "details": {
+      "name": "模组数据块",
+      "code": "arkshu_mozushujukuai",
+      "image": "arkshu_mozushujukuai.webp",
+      "category": "物品/材料",
+      "unlock": "炼金引擎",
+      "materials": [
+        "金块*10",
+        "硝石*10",
+        "齿轮*1"
+      ]
+    },
+    "description": {
+      "single": [
+        "<span class=\"color-important\">模组数据块</span>是一种模组材料。",
+        "<span class=\"color-important\">【高级材料】</span><br>"
+      ]
+    },
+    "tip": [
+      ""
+    ],
+    "craftableItems": [
+      {
+        "name": "钦天司时Lv1",
+        "image": "/images/arkshu/arkshu_mozu.webp",
+        "link": "/othercharacter/arkshuindex/items/arkshu_mozu1"
+      },
+      {
+        "name": "钦天司时Lv2",
+        "image": "/images/arkshu/arkshu_mozu1.webp",
+        "link": "/othercharacter/arkshuindex/items/arkshu_mozu2"
+      },
+      {
+        "name": "钦天司时Lv3",
+        "image": "/images/arkshu/arkshu_mozu2.webp",
+        "link": "/othercharacter/arkshuindex/items/arkshu_mozu3"
+      }
+    ]
+  },
+  {
+    "id": "arkshu_jingtidianzidanyuan",
+    "title": "晶体电子单元",
+    "subtitle": "昂贵的源石工业产品，用于重要的强化场合。",
+    "avatars": {
+      "arkshu": "好东西！"
+    },
+    "details": {
+      "name": "晶体电子单元",
+      "code": "arkshu_jingtidianzidanyuan",
+      "image": "arkshu_jingtidianzidanyuan.webp",
+      "category": "物品/材料",
+      "unlock": "炼金引擎",
+      "materials": ["晶体电路*5", "聚合凝胶*5", "炽合金块*5"]
+
+    },
+    "description": {
+      "single": [
+        "<span class=\"color-important\">晶体电子单元</span>是一种模组材料。",
+        "<span class=\"color-important\">【高级材料】</span><br>"
+      ]
+    },
+    "tip": [
+      ""
+    ],
+    "craftableItems": [
+      {
+        "name": "钦天司时Lv1",
+        "image": "/images/arkshu/arkshu_mozu.webp",
+        "link": "/othercharacter/arkshuindex/items/arkshu_mozu1"
+      },
+      {
+        "name": "精英化二【书籍】",
+        "image": "/images/arkshu/arkshu_jingershu.webp",
+        "link": "/othercharacter/arkshuindex/items/arkshu_jingershu"
+      }
+    ]
+  },
+  {
+    "id": "arkshu_d32",
+    "title": "D32钢",
+    "subtitle": "",
+    "avatars": {
+      "arkshu": "坚硬的人造金属材料"
+    },
+    "details": {
+      "name": "D32钢",
+      "code": "arkshu_d32",
+      "image": "arkshu_d32.webp",
+      "category": "物品/材料",
       "unlock": "",
       "materials": []
     },
     "description": {
       "single": [
-        "<span class=\"color-important\">脆肉薯条转醇</span>是一种的模组料理。",
-        "\n            保质期20天<br/>\n            +25饱食度，+25理智值，+25生命值<br/>\n            恢复25%已损失的饱食度，理智值和生命值<br/>\n"
+        "<span class=\"color-important\">D32钢</span>是一种模组材料。",
+        "<span class=\"color-important\">【高级材料】</span><br><br><span class=\"color-important\">说明-获取方式</span><br> ①与猪王兑换金子时有5%概率获得【每兑换50次，随机获得一个高级材料】<br>②击杀季节boss和区域boss必掉高级材料中的其中1个"
       ]
     },
     "tip": [
-      "检查文件中，【史尔特尔】对该物品的检查存在注释“去码头整点大薯。”"
+      "可获取【D32钢】的boss包括：<br>【麋鹿鹅】【蚁狮】【熊獾】【装甲熊獾】【独眼巨鹿】【晶体独眼巨鹿】【附身座狼】<br>【龙蝇】【蜂后】【克劳斯】【恐惧之眼】【激光眼】【魔焰眼】【大霜鲨】【邪天翁】【帝王蟹】【天体英雄】【拾荒疯猪】<br>【毒菌蟾蜍】【悲惨的毒菌蟾蜍】【远古织影者】【梦魇疯猪】"
+    ],
+    "craftableItems": [
+      {
+        "name": "钦天司时Lv2",
+        "image": "/images/arkshu/arkshu_mozu1.webp",
+        "link": "/othercharacter/arkshuindex/items/arkshu_mozu2"
+      }
+    ]
+  },
+  {
+    "id": "arkshu_juheji",
+    "title": "聚合剂",
+    "subtitle": "",
+    "avatars": {
+      "arkshu": "复杂的液态工业产物"
+    },
+    "details": {
+      "name": "聚合剂",
+      "code": "arkshu_juheji",
+      "image": "arkshu_juheji.webp",
+      "category": "物品/材料",
+      "unlock": "",
+      "materials": []
+    },
+    "description": {
+      "single": [
+        "<span class=\"color-important\">聚合剂</span>是一种模组材料。",
+        "<span class=\"color-important\">【高级材料】</span><br><br><span class=\"color-important\">说明-获取方式</span><br> ①与猪王兑换金子时有5%概率获得【每兑换50次，随机获得一个高级材料】<br>②击杀季节boss和区域boss必掉高级材料中的其中1个"
+      ]
+    },
+    "tip": [
+      "可获取【聚合剂】的boss包括：<br>【麋鹿鹅】【蚁狮】【熊獾】【装甲熊獾】【独眼巨鹿】【晶体独眼巨鹿】【附身座狼】<br>【龙蝇】【蜂后】【克劳斯】【恐惧之眼】【激光眼】【魔焰眼】【大霜鲨】【邪天翁】【帝王蟹】【天体英雄】【拾荒疯猪】<br>【毒菌蟾蜍】【悲惨的毒菌蟾蜍】【远古织影者】【梦魇疯猪】"
+    ],
+    "craftableItems": [
+      {
+        "name": "钦天司时Lv3",
+        "image": "/images/arkshu/arkshu_mozu2.webp",
+        "link": "/othercharacter/arkshuindex/items/arkshu_mozu3"
+      }
+    ]
+  },
+  {
+    "id": "arkshu_qnsp",
+    "title": "潜能碎片",
+    "subtitle": "",
+    "avatars": {
+      "arkshu": "激发潜能，妙用无穷"
+    },
+    "details": {
+      "name": "潜能碎片",
+      "code": "arkshu_qnsp",
+      "image": "arkshu_qnsp.webp",
+      "category": "物品/材料",
+      "unlock": "",
+      "materials": []
+    },
+    "description": {
+      "single": [
+        "<span class=\"color-important\">潜能碎片</span>是一种模组材料。",
+        "用于制作<span class=\"color-important\">【潜能印记】</span><br><br><span class=\"color-important\">说明-获取方式</span><br>仅【黍】在进行【击杀怪物】【采集】【播种】时有4%的概率获得"
+      ]
+    },
+    "tip": [
+    ],
+    "craftableItems": [
+      {
+        "name": "潜能印记",
+        "image": "/images/arkshu/arkshu_qn.webp",
+        "link": "/othercharacter/arkshuindex/items/arkshu_qn"
+      }
+    ]
+  },
+  {
+    "id": "arkshu_qn",
+    "title": "潜能印记",
+    "subtitle": "用于提升潜能等级",
+    "avatars": {
+      "arkshu": "生于萌芽，始于复发"
+    },
+    "details": {
+      "name": "潜能印记",
+      "code": "arkshu_qn",
+      "image": "arkshu_qn.webp",
+      "category": "物品/功能",
+      "unlock": "炼金引擎",
+      "materials": ["潜能碎片*20"]
+    },
+    "description": {
+      "single": [
+        "<span class=\"color-important\">潜能印记</span>是一种模组物品。",
+        "<span class=\"color-important\">用来提升潜能</span><br><a href=\"../arkshu#level-conclusion3\">具体潜能点击这里</a>"
+      ]
+    },
+    "tip": [
+      ""
+    ]
+  },
+  {
+    "id": "arkshu_mozu1",
+    "title": "钦天司时Lv1",
+    "subtitle": "黍的模组，用于提升黍的强度",
+    "avatars": {
+      "arkshu": "有时候我也会去想，大家如今过的怎样"
+    },
+    "details": {
+      "name": "钦天司时Lv1",
+      "code": "arkshu_mozu1",
+      "image": "arkshu_mozu.webp",
+      "category": "物品/功能",
+      "unlock": "暗影操控器<br>&角色精英二",
+      "materials": ["模组数据块*4","晶体电子单元*2","金块*30","噩梦燃料*20"]
+    },
+    "description": {
+      "single": [
+        "<span class=\"color-important\">钦天司时Lv1</span>是一种模组物品。",
+        "<span class=\"color-important\">【模组装在武器上】</span><br>治疗生命值低于50%的友方单位时治疗量提升<span class=\"color-important\">15%</span><br>生命值上限提高16，理智值上限提高3，攻击力提高3<br><br>天赋强化：治疗角色时使其如下效果：每秒恢复<span class=\"color-important\">6点生命值</span>、获得<span class=\"color-important\">12%庇护</span>【持续3秒】<br>潜能提升至5后效果：治疗角色时使其如下效果：每秒恢复<span class=\"color-important\">6.5点生命值</span>、获得<span class=\"color-important\">14%庇护</span>【持续3秒】<br>"
+      ]
+    },
+    "tip": [
+      ""
+    ]
+  },
+  {
+    "id": "arkshu_mozu2",
+    "title": "钦天司时Lv2",
+    "subtitle": "用于提升黍的模组等级",
+    "avatars": {
+      "arkshu": "日丽风和，希望大家可以平安归来。"
+    },
+    "details": {
+      "name": "钦天司时Lv2",
+      "code": "arkshu_mozu2",
+      "image": "arkshu_mozu1.webp",
+      "category": "物品/功能",
+      "unlock": "暗影操控器<br>&角色已解锁【钦天司时Lv1】",
+      "materials": ["模组数据块*4","数据增补条*60","D32钢*3","金块*40"]
+    },
+    "description": {
+      "single": [
+        "<span class=\"color-important\">钦天司时Lv2</span>是一种模组物品。",
+        "<span class=\"color-important\">【模组装在武器上】</span><br>治疗生命值低于50%的友方单位时治疗量提升<span class=\"color-important\">15%</span><br>生命值上限提高16，理智值上限提高3，攻击力提高3<br><br>天赋强化：治疗角色时使其如下效果：每秒恢复<span class=\"color-important\">7点生命值</span>、获得<span class=\"color-important\">15%庇护</span>【持续3秒】<br>潜能提升至5后效果：治疗角色时使其如下效果：每秒恢复<span class=\"color-important\">7.5点生命值</span>、获得<span class=\"color-important\">17%庇护</span>【持续3秒】<br>"
+      ]
+    },
+    "tip": [
+      ""
+    ]
+  },
+  {
+    "id": "arkshu_mozu3",
+    "title": "钦天司时Lv3",
+    "subtitle": "黍的模组，用于提升黍的强度",
+    "avatars": {
+      "arkshu": "干戈相向，无休无止，莫种恶果"
+    },
+    "details": {
+      "name": "钦天司时Lv3",
+      "code": "arkshu_mozu3",
+      "image": "arkshu_mozu2.webp",
+      "category": "物品/功能",
+      "unlock": "暗影操控器<br>&角色精英二",
+      "materials": ["模组数据块*4","数据增补仪*20","聚合剂*4","金块*50"]
+    },
+    "description": {
+      "single": [
+        "<span class=\"color-important\">钦天司时Lv3</span>是一种模组物品。",
+        "<span class=\"color-important\">【模组装在武器上】</span><br>治疗生命值低于50%的友方单位时治疗量提升<span class=\"color-important\">30%</span><br>生命值上限提高16，理智值上限提高3，攻击力提高3<br><br>天赋强化：治疗角色时使其如下效果：每秒恢复<span class=\"color-important\">8点生命值</span>、获得<span class=\"color-important\">19%庇护</span>【持续3秒】<br>潜能提升至5后效果：治疗角色时使其如下效果：每秒恢复<span class=\"color-important\">8.5点生命值</span>、获得<span class=\"color-important\">21%庇护</span>【持续3秒】<br>"
+      ]
+    },
+    "tip": [
+      ""
+    ]
+  },
+  {
+    "id": "arkshu_jinengshu",
+    "title": "技能升级书",
+    "subtitle": "书籍就是力量！！",
+    "avatars": {
+      "arkshu": "有时我也会去写写东西"
+    },
+    "details": {
+      "name": "技能升级书",
+      "code": "arkshu_jinengshu",
+      "image": "arkshu_jinengshu.webp",
+      "category": "物品/功能",
+      "unlock": "灵子分解器",
+      "materials": ["莎草纸*3","噩梦燃料*10","黑色羽毛*5"]
+    },
+    "description": {
+      "single": [
+        "<span class=\"color-important\">技能升级书</span>是一种模组物品。",
+        "每个技能书可以提升一级"
+      ]
+    },
+    "tip": [
+      ""
+    ]
+  },
+  {
+    "id": "arkshu_jingyanshu0",
+    "title": "基础作战记录",
+    "subtitle": "",
+    "avatars": {
+      "arkshu": "干戈相向"
+    },
+    "details": {
+      "name": "基础作战记录",
+      "code": "arkshu_jingyanshu0",
+      "image": "arkshu_jingyanshu0.webp",
+      "category": "物品/功能",
+      "unlock": "",
+      "materials": []
+    },
+    "description": {
+      "single": [
+        "<span class=\"color-important\">基础作战记录</span>是一种模组物品。",
+        "使用后攻击力增加<span class=\"color-important\">5%</span>，速度增加<span class=\"color-important\">5%</span>，持续1分钟<br><br><span class=\"color-important\">说明-获取方式</span><br>①击杀生物有10%概率获得"
+      ]
+    },
+    "tip": [
+      ""
+    ]
+  },
+  {
+    "id": "arkshu_jingyanshu1",
+    "title": "初级作战记录",
+    "subtitle": "初级作战记录，可以有效的提升角色的战斗能力",
+    "avatars": {
+      "arkshu": "无休无止"
+    },
+    "details": {
+      "name": "初级作战记录",
+      "code": "arkshu_jingyanshu1",
+      "image": "arkshu_jingyanshu1.webp",
+      "category": "物品/功能",
+      "unlock": "灵子分解器",
+      "materials": ["基础作战记录*3"]
+    },
+    "description": {
+      "single": [
+        "<span class=\"color-important\">初级作战记录</span>是一种模组物品。",
+        "使用后攻击力增加<span class=\"color-important\">10%</span>，速度增加<span class=\"color-important\">10%</span>，持续1分钟<br><br><span class=\"color-important\">说明-获取方式</span><br>①击杀生物有7%概率获得"
+      ]
+    },
+    "tip": [
+      ""
+    ]
+  },
+  {
+    "id": "arkshu_jingyanshu2",
+    "title": "中级作战记录",
+    "subtitle": "中级作战记录，可以高效的提升角色的战斗能力",
+    "avatars": {
+      "arkshu": "莫种恶果"
+    },
+    "details": {
+      "name": "中级作战记录",
+      "code": "arkshu_jingyanshu2",
+      "image": "arkshu_jingyanshu2.webp",
+      "category": "物品/功能",
+      "unlock": "灵子分解器",
+      "materials": ["初级作战记录*4"]
+    },
+    "description": {
+      "single": [
+        "<span class=\"color-important\">中级作战记录</span>是一种模组物品。",
+        "使用后攻击力增加<span class=\"color-important\">15%</span>，速度增加<span class=\"color-important\">15%</span>，持续1分钟<br><br><span class=\"color-important\">说明-获取方式</span><br>①击杀生物有5%概率获得"
+      ]
+    },
+    "tip": [
+      ""
+    ]
+  },
+  {
+    "id": "arkshu_jingyanshu3",
+    "title": "高级作战记录",
+    "subtitle": "高级作战记录，可以强效的提升角色的战斗能力",
+    "avatars": {
+      "arkshu": "彼时的因果，是何时种下的？"
+    },
+    "details": {
+      "name": "高级作战记录",
+      "code": "arkshu_jingyanshu3",
+      "image": "arkshu_jingyanshu3.webp",
+      "category": "物品/功能",
+      "unlock": "灵子分解器",
+      "materials": ["中级作战记录*4"]
+    },
+    "description": {
+      "single": [
+        "<span class=\"color-important\">高级作战记录</span>是一种模组物品。",
+        "使用后攻击力增加<span class=\"color-important\">20%</span>，速度增加<span class=\"color-important\">20%</span>，持续1分钟<br><br><span class=\"color-important\">说明-获取方式</span><br>①击杀生物有1%概率获得"
+      ]
+    },
+    "tip": [
+      ""
+    ]
+  },
+  {
+    "id": "arkshu_guo_item",
+    "title": "年的小火锅",
+    "subtitle": "年泡泡小火锅，你会喜欢的！还有不要浪费！",
+    "avatars": {
+      "arkshu": "曾几何时我们聚在一起吃着火锅欢笑，现在却少有会面"
+    },
+    "details": {
+      "name": "年的小火锅",
+      "code": "arkshu_guo_item",
+      "image": "arkshu_guo_item.webp",
+      "category": "物品/烹饪",
+      "unlock": "技能点【年的小火锅】",
+      "materials": ["电子元件*1","木炭*3","石砖*3"]
+    },
+    "description": {
+      "single": [
+        "<span class=\"color-important\">年的小火锅</span>是一种模组物品。",
+        "可以随时放置/收起，拥有4格可放入肉类/素类食物的储物格。<br>放入后点击【制作】按钮，10秒后烹饪完毕，每个烹饪好的火锅可以食用4次。<br><br><span class=\"color-important\">说明-基础特性</span><br>根据肉类与素类食物比重不同，回复的属性也不同：<br>①肉类占多时，每次食用回复<span class=\"color-important\">20点</span>饱食度，<span class=\"color-important\">5点</span>理智值，<span class=\"color-important\">5点</span>生命值<br>②素类占多时，每次食用回复<span class=\"color-important\">10点</span>饱食度，<span class=\"color-important\">5点</span>理智值，<span class=\"color-important\">20点</span>生命值<br>③肉类素类各占一半时，每次食用回复<span class=\"color-important\">10点</span>饱食度，<span class=\"color-important\">10点</span>理智值，<span class=\"color-important\">10点</span>生命值"
+      ]
+    },
+    "tip": [
+      ""
+    ]
+  },
+  {
+    "id": "arkshu_bi",
+    "title": "夕的小笔杆",
+    "subtitle": "夕泡泡小笔杆！懒惰者的福音！",
+    "avatars": {
+      "arkshu": "每次看到，就会想起我那个妹妹，她现在过的好不好，有没有好好吃饭"
+    },
+    "details": {
+      "name": "夕的小笔杆",
+      "code": "arkshu_bi",
+      "image": "arkshu_bi.webp",
+      "category": "装备/手部",
+      "unlock": "技能点【夕的小笔杆】",
+      "materials": ["羽毛笔*2","莎草纸*1"]
+    },
+    "description": {
+      "single": [
+        "<span class=\"color-important\">夕的小笔杆</span>是一种模组物品。",
+        "右键地图已探索位置，消耗【夕的小笔杆】，开启一个持续10秒的时空裂隙。"
+      ]
+    },
+    "tip": [
+      ""
+    ]
+  },
+  {
+    "id": "arkshu_jiuhu",
+    "title": "令的小酒壶",
+    "subtitle": "酒壶呀酒壶，你是一个好宝贝，可惜没有令泡泡",
+    "avatars": {
+      "arkshu": "闲暇时可以饮酒，可不要学令姐"
+    },
+    "details": {
+      "name": "令的小酒壶",
+      "code": "arkshu_jiuhu",
+      "image": "arkshu_jiuhu.webp",
+      "category": "物品",
+      "unlock": "技能点【令的小酒壶】",
+      "materials": ["木头*6","绳子*2"]
+    },
+    "description": {
+      "single": [
+        "<span class=\"color-important\">令的小酒壶</span>是一种模组物品。",
+        "可放入蔬菜，水果和冰进行酿造，酿成酒液存储在壶中，每次酝酿的酒可饮用5次。<br>可喂给他人饮用。<br><br><span class=\"color-important\">说明-基础特性</span><br>根据酿酒配方提供不同的buff：<br>①蔬菜*2、冰*2：额外造成10点物理攻击，攻击倍率*1.15，移速*1.05，持续3分钟<br>②水果*2、冰*2：额外造成15点物理攻击，移速*1.15，持续3分钟"
+      ]
+    },
+    "tip": [
+      ""
+    ]
+  },
+  {
+    "id": "arkshu_quanjidai",
+    "title": "剑台",
+    "subtitle": "我觉得剑台上应该站个大哥的龙泡泡！",
+    "avatars": {
+      "arkshu": "这曾经是大哥常常使用的"
+    },
+    "details": {
+      "name": "剑台",
+      "code": "arkshu_quanjidai",
+      "image": "arkshu_quanjidai.webp",
+      "category": "建筑",
+      "unlock": "技能点【重岳的剑台】",
+      "materials": ["采下的草*5","猪皮*2","大理石*2"]
+    },
+    "description": {
+      "single": [
+        "<span class=\"color-important\">剑台</span>是一种模组建筑。",
+        "在以【剑台】为中心半径15范围内，【黍】每4s减少所有技能1秒的cd，最多只生效一个"
+      ]
+    },
+    "tip": [
+      ""
+    ]
+  },
+  {
+    "id": "arkshu_weapon",
+    "title": "怀离剑",
+    "subtitle": "或许可以在剑尾挂个黍泡泡",
+    "avatars": {
+      "arkshu": "清明宜晴，谷雨宜雨"
+    },
+    "details": {
+      "name": "怀离剑",
+      "code": "arkshu_weapon",
+      "image": "arkshu_weapon.webp",
+      "category": "装备/手部",
+      "unlock": "初始解锁",
+      "materials": ["生命值*30"]
+    },
+    "description": {
+      "single": [
+        "<span class=\"color-important\">怀离剑</span>是一种模组武器。",
+        "物理攻击力60，位面防御30，无耐久<br>装备时可用作3*3的园艺锄<br>拥有一个储物栏，可以放入【模组】<br><br> 黍持有时自身获得30%的庇护(30%的免伤)<br>其他角色无法持有<br><br>"
+      ]
+    },
+    "tip": [
+      ""
+    ]
+  },
+  {
+    "id": "arkshu_jingyishu",
+    "title": "精英化一【书籍】",
+    "subtitle": "用于给黍进行精英化一阶",
+    "avatars": {
+      "arkshu": "大荒城以玉琮礼地，敬祈四时安泰，风雨顺遂，那玉琮也是我手中所持的来源"
+    },
+    "details": {
+      "name": "精英化一【书籍】",
+      "code": "arkshu_jingyishu",
+      "image": "arkshu_jingyishu.webp",
+      "category": "物品/功能",
+      "unlock": "炼金引擎",
+      "materials": ["莎草纸*12","黑色羽毛*12","金块*12","绿宝石*1"]
+    },
+    "description": {
+      "single": [
+        "<span class=\"color-important\">精英化一【书籍】</span>是一种模组物品。",
+        "*仅【黍】可制作与使用<br>*使用后令对应角色精英化阶段提升至1<br>"
+      ]
+    },
+    "tip": [
+      ""
+    ]
+  },
+  {
+    "id": "arkshu_jingershu",
+    "title": "精英化二【书籍】",
+    "subtitle": "用于给黍进行精英化二阶",
+    "avatars": {
+      "arkshu": "稻花清香，万亩良田，日复一日，年复一年，终于不再远了"
+    },
+    "details": {
+      "name": "精英化二【书籍】",
+      "code": "arkshu_jingershu",
+      "image": "arkshu_jingershu.webp",
+      "category": "物品/功能",
+      "unlock": "暗影操控器",
+      "materials": ["莎草纸*15","黑色羽毛*24","金块*30","晶体电子单元*3","彩虹宝石*1"]
+    },
+    "description": {
+      "single": [
+        "<span class=\"color-important\">精英化二【书籍】</span>是一种模组物品。",
+        "*仅【黍】可制作与使用<br>*使用后令对应角色精英化阶段提升至2<br>"
+      ]
+    },
+    "tip": [
+      ""
     ]
   }
 ]

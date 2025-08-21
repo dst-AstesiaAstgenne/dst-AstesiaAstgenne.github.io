@@ -4,6 +4,9 @@
     <router-link to="/astesia-astgenne">星极&星源</router-link>
     <router-link to="/othercharacter/surtrindex">史尔特尔</router-link>
     <router-link to="/othercharacter/duskindex">夕</router-link>
+    <router-link to="/othercharacter/arkshuindex">黍</router-link>
+    <router-link to="/notice">公告</router-link>
+
 
   </nav>
 </template>
