@@ -9,11 +9,9 @@
     },
     "details": {
       "name": "莱万汀",
-      "code": "",
+      "code": "laevatain",
       "image": "laevatain.webp",
-      "category": "武器/手部",
-      "unlock": "科学机器",
-      "materials": []
+      "category": "武器/手部"
     },
     "description": {
       "single": [
@@ -36,11 +34,9 @@
     },
     "details": {
       "name": "史尔特尔服装",
-      "code": "",
+      "code": "surtrclothes",
       "image": "surtrclothes.webp",
-      "category": "装备/身体",
-      "unlock": "无法解锁",
-      "materials": []
+      "category": "装备/身体"
     },
     "description": {
       "single": [
@@ -63,7 +59,7 @@
     },
     "details": {
       "name": "高级资深干员训练书",
-      "code": "",
+      "code": "surtr_elitebook1",
       "image": "surtr_elitebook1.webp",
       "category": "物品/功能",
       "unlock": "科学机器",
@@ -95,7 +91,7 @@
     },
     "details": {
       "name": "高级资深干员特训书",
-      "code": "",
+      "code": "surtr_elitebook2",
       "image": "surtr_elitebook2.webp",
       "category": "物品/功能",
       "unlock": "科学机器",
@@ -127,7 +123,7 @@
     },
     "details": {
       "name": "玻璃海苔",
-      "code": "",
+      "code": "surtr_glassseaweed",
       "image": "surtr_glassseaweed.webp",
       "category": "物品/功能",
       "unlock": "初始解锁",
@@ -157,11 +153,10 @@
     },
     "details": {
       "name": "灼热之息",
-      "code": "",
+      "code": "surtr_lavabreath",
       "image": "surtr_lavabreath.webp",
-      "category": "好东西",
-      "unlock": "",
-      "materials": []
+      "category": "好东西"
+
     },
     "description": {
       "single": [
@@ -172,7 +167,15 @@
     },
     "tip": [
       ""
-    ]
+    ],
+    "cooking": {
+      "requirement": [
+        "①火荨麻叶",
+        "②辣椒","③冰","④灰烬"
+      ],
+      "time": "20秒"
+    }
+
   },
   {
     "id": "surtr_lavakiss",
@@ -184,11 +187,10 @@
     },
     "details": {
       "name": "熔岩之吻",
-      "code": "",
+      "code": "surtr_lavakiss",
       "image": "surtr_lavakiss.webp",
-      "category": "好东西",
-      "unlock": "",
-      "materials": []
+      "category": "好东西"
+
     },
     "description": {
       "single": [
@@ -199,7 +201,14 @@
     },
     "tip": [
       ""
-    ]
+    ],
+    "cooking": {
+      "requirement": [
+        "①火荨麻叶",
+        "②辣椒","③冰","④纯粹火焰"
+      ],
+      "time": "20秒"
+    }
   },
   {
     "id": "surtr_pureflame",
@@ -211,7 +220,7 @@
     },
     "details": {
       "name": "纯粹火焰",
-      "code": "",
+      "code": "pureflame",
       "image": "pureflame.webp",
       "category": "物品/材料",
       "unlock": "科学机器",
@@ -249,7 +258,7 @@
     },
     "details": {
       "name": "恐怖奶奶",
-      "code": "",
+      "code": "surtr_scarygrandma",
       "image": "surtr_scarygrandma.webp",
       "category": "物品",
       "unlock": "远古一本",
@@ -279,7 +288,7 @@
     },
     "details": {
       "name": "豪华冰激凌",
-      "code": "",
+      "code": "surtr_supericecream",
       "image": "surtr_supericecream.webp",
       "category": "物品/功能",
       "unlock": "科学机器",
@@ -311,11 +320,10 @@
     },
     "details": {
       "name": "晶肝茸髓",
-      "code": "",
+      "code": "surtr_sxys_deerleg",
       "image": "surtr_sxys_deerleg.webp",
       "category": "物品/功能",
-      "unlock": "无法解锁",
-      "materials": []
+      "unlock": "无法解锁"
     },
     "description": {
       "single": [
@@ -337,11 +345,10 @@
     },
     "details": {
       "name": "炎国山水原液",
-      "code": "",
+      "code": "surtr_sxys_shanshui",
       "image": "surtr_sxys_shanshui.webp",
-      "category": "///",
-      "unlock": "",
-      "materials": []
+      "category": "///"
+
     },
     "description": {
       "single": [
@@ -352,7 +359,15 @@
     },
     "tip": [
       ""
-    ]
+    ],
+    "cooking": {
+      "requirement": [
+        "①空瓶子*1/莎草纸*1",
+        "②炸鸟腿*1","③生大肉*2"
+      ],
+      "time": "20秒"
+    }
+
   },
   {
     "id": "surtr_sxys_shutiao",
@@ -364,11 +379,10 @@
     },
     "details": {
       "name": "脆肉薯条转醇",
-      "code": "",
+      "code": "surtr_sxys_shutiao",
       "image": "surtr_sxys_shutiao.webp",
-      "category": "///",
-      "unlock": "",
-      "materials": []
+      "category": "///"
+
     },
     "description": {
       "single": [
@@ -378,6 +392,14 @@
     },
     "tip": [
       "检查文件中，【史尔特尔】对该物品的检查存在注释“去码头整点大薯。”"
-    ]
+    ],
+    "cooking": {
+      "requirement": [
+        "①空瓶子*1/莎草纸*1",
+        "②晶肝茸髓*1","③肉干*2"
+      ],
+      "time": "20秒"
+    }
+
   }
 ]

@@ -1,9 +1,9 @@
 <template>
   <div class="notice-container">
-    <!-- 返回主页按钮 -->
+    <!-- 返回按钮 -->
     <div class="header">
-      <div class="back-button" @click="goToHome">
-        <span class="arrow">←</span> 返回主页
+      <div class="back-button" @click="goBack">
+        <span class="arrow">←</span> 返回
       </div>
       <h1>公告 Notice</h1>
       <p>关于本站的一些说明</p>
@@ -37,8 +37,8 @@
 <script setup lang="ts">
 import { useRouter } from "vue-router";
 const router = useRouter();
-const goToHome = () => {
-  router.push("/");
+const goBack = () => {
+  router.back(); // 或者 router.go(-1)
 };
 </script>
 

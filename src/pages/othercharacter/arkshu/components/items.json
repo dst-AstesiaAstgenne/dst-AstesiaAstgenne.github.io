@@ -8,7 +8,7 @@
     },
     "details": {
       "name": "异铁",
-      "code": "",
+      "code": "arkshu_yitie",
       "image": "arkshu_yitie.webp",
       "category": "物品/材料",
       "unlock": "无法解锁",
@@ -40,7 +40,7 @@
     },
     "details": {
       "name": "异铁组",
-      "code": "",
+      "code": "arkshu_yitiezu",
       "image": "arkshu_yitiezu.webp",
       "category": "物品/材料",
       "unlock": "炼金引擎",
@@ -66,14 +66,14 @@
   },
   {
     "id": "arkshu_quanxinzhuangzhi",
-    "title": "全新装置",
+    "title": "",
     "subtitle": "一套全新装配而成的装置，通过重构同类型装置的结构，主板原本一直存在的空间紧张的问题得到了解决，当然启动时的能耗要求也变高了。",
     "avatars": {
       "arkshu": "有意思的小东西"
     },
     "details": {
       "name": "全新装置",
-      "code": "",
+      "code": "arkshu_quanxinzhuangzhi",
       "image": "arkshu_quanxinzhuangzhi.webp",
       "category": "物品/材料",
       "unlock": "炼金引擎",
@@ -106,7 +106,7 @@
     },
     "details": {
       "name": "炽合金",
-      "code": "",
+      "code": "arkshu_chihejin",
       "image": "arkshu_chihejin.webp",
       "category": "物品/材料",
       "unlock": "无法解锁",
@@ -140,7 +140,7 @@
     },
     "details": {
       "name": "炽合金块",
-      "code": "",
+      "code": "arkshu_chihejinkuai",
       "image": "arkshu_chihejinkuai.webp",
       "category": "物品/功能",
       "unlock": "初始解锁",

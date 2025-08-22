@@ -3,6 +3,8 @@
     <router-link to="/">首页</router-link>
     <router-link to="/othercharacter/duskindex">Mod介绍</router-link>
     <router-link to="/othercharacter/duskindex/dusk">夕</router-link>
+    <router-link to="/notice">公告</router-link>
+
   </nav>
 </template>
 <script setup>

@@ -1,4 +1,5 @@
 <template>
+
   <html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
@@ -9,7 +10,6 @@
   <body>
     <button class="sidebar-toggle" @click="toggleSidebar">目录</button>
     <navigation />
-
 
     <aside class="sidebar" :class="{ active: isSidebarActive }">
       <h3 style="color: #007acc;">模组角色</h3>
@@ -236,14 +236,18 @@
         </div>
       </section>
     </main>
+
   </body>
+  
   </html>
+
 </template>
 
 <script setup lang="ts">
 // import '@/pages/css/main.css';
 import navigation from './components/navigation.vue';
 import { onMounted, ref } from 'vue';
+
 
 // 侧边栏交互逻辑
 const sidebarToggle = ref<HTMLButtonElement | null>(null);
