@@ -10,7 +10,7 @@
     "details": {
       "name": "墨染幻甲",
       "code": "dusk_armor",
-      "image": "dusk_armor.webp",
+      "image": "/images/dusk/dusk_armor.webp",
       "category": "装备/身体",
       "unlock": "初始解锁",
       "materials": [
@@ -42,7 +42,7 @@
     "details": {
       "name": "墨染幻甲-强化",
       "code": "dusk_armor2",
-      "image": "dusk_armor2.webp",
+      "image": "/images/dusk/dusk_armor2.webp",
       "category": "装备/身体",
       "unlock": "完整的远古伪科技站",
       "materials": [
@@ -73,7 +73,7 @@
     "details": {
       "name": "湮墨殷染尽拙山",
       "code": "dusk_book_doom",
-      "image": "dusk_book_doom.webp",
+      "image": "/images/dusk/dusk_book_doom.webp",
       "category": "物品/书籍",
       "unlock": "初始解锁",
       "materials": [
@@ -104,7 +104,7 @@
     "details": {
       "name": "拙山方晓尽梦长",
       "code": "dusk_book_sleep",
-      "image": "dusk_book_sleep.webp",
+      "image": "/images/dusk/dusk_book_sleep.webp",
       "category": "物品/书籍",
       "unlock": "初始解锁",
       "materials": [
@@ -135,7 +135,7 @@
     "details": {
       "name": "绘境藏玄",
       "code": "dusk_chest",
-      "image": "dusk_chest.webp",
+      "image": "/images/dusk/dusk_chest.webp",
       "category": "物品/容器",
       "unlock": "初始解锁",
       "materials": [
@@ -167,7 +167,7 @@
     "details": {
       "name": "幻造·月时计",
       "code": "dusk_dial",
-      "image": "dusk_dial.webp",
+      "image": "/images/dusk/dusk_dial.webp",
       "category": "装备/手部",
       "unlock": "完整的远古伪科技站",
       "materials": [
@@ -197,7 +197,7 @@
     "details": {
       "name": "一级精英化券",
       "code": "dusk_elite_1",
-      "image": "dusk_elite_1.webp",
+      "image": "/images/dusk/dusk_elite_1.webp",
       "category": "物品/功能",
       "unlock": "初始解锁",
       "materials": [
@@ -228,7 +228,7 @@
     "details": {
       "name": "二级精英化券",
       "code": "dusk_elite_2",
-      "image": "dusk_elite_2.webp",
+      "image": "/images/dusk/dusk_elite_2.webp",
       "category": "物品/功能",
       "unlock": "初始解锁",
       "materials": [
@@ -261,7 +261,7 @@
     "details": {
       "name": "幻造·第三只眼",
       "code": "dusk_eye",
-      "image": "dusk_eye_open.webp",
+      "image": "/images/dusk/dusk_eye_open.webp",
       "category": "装备/头部",
       "unlock": "完整的远古伪科技站",
       "materials": [
@@ -292,7 +292,7 @@
     "details": {
       "name": "宇智波团扇",
       "code": "dusk_fan",
-      "image": "dusk_fan.webp",
+      "image": "/images/dusk/dusk_fan.webp",
       "category": "装备/手部",
       "unlock": "初始解锁",
       "materials": [
@@ -324,7 +324,7 @@
     "details": {
       "name": "岩崩锤",
       "code": "dusk_hammer",
-      "image": "dusk_hammer.webp",
+      "image": "/images/dusk/dusk_hammer.webp",
       "category": "装备/手部",
       "unlock": "蓝图解锁",
       "materials": [
@@ -354,7 +354,7 @@
     "details": {
       "name": "墨染勋章",
       "code": "dusk_medal",
-      "image": "dusk_medal.webp",
+      "image": "/images/dusk/dusk_medal.webp",
       "category": "装备/身体",
       "unlock": "初始解锁",
       "materials": [
@@ -385,7 +385,7 @@
     "details": {
       "name": "幻墨神笔",
       "code": "dusk_pen",
-      "image": "dusk_pen.webp",
+      "image": "/images/dusk/dusk_pen.webp",
       "category": "装备/手部",
       "unlock": "初始解锁",
       "materials": [
@@ -414,7 +414,7 @@
     "details": {
       "name": "意义非凡的法杖",
       "code": "dusk_staff",
-      "image": "dusk_staff.webp",
+      "image": "/images/dusk/dusk_staff.webp",
       "category": "装备/手部",
       "unlock": "完整的远古伪科学站",
       "materials": [
@@ -444,7 +444,7 @@
     "details": {
       "name": "“星稀”",
       "code": "dusk_star",
-      "image": "dusk_star.webp",
+      "image": "/images/dusk/dusk_star.webp",
       "category": "装备/手部",
       "unlock": "初始解锁",
       "materials": [
@@ -474,7 +474,7 @@
     "details": {
       "name": "夕泡泡雕像",
       "code": "dusk_statue",
-      "image": "dusk_statue.webp",
+      "image": "/images/dusk/dusk_statue.webp",
       "category": "建筑",
       "unlock": "初始解锁",
       "materials": [
@@ -505,7 +505,7 @@
     "details": {
       "name": "涂鬼神",
       "code": "dusk_sword",
-      "image": "dusk_sword.webp",
+      "image": "/images/dusk/dusk_sword.webp",
       "category": "装备/手部",
       "unlock": "初始解锁",
       "materials": [
@@ -536,7 +536,7 @@
     "details": {
       "name": "无题长卷",
       "code": " spell_dusk_level",
-      "image": "spell_dusk_level.webp",
+      "image": "/images/dusk/spell_dusk_level.webp",
       "category": "物品/功能",
       "unlock": "初始解锁",
       "materials": [
@@ -568,7 +568,7 @@
     "details": {
       "name": "“终夜无寐”（上卷）",
       "code": "spell_dusk_level2",
-      "image": "spell_dusk_level2.webp",
+      "image": "/images/dusk/spell_dusk_level2.webp",
       "category": "物品/功能",
       "unlock": "初始解锁",
       "materials": [

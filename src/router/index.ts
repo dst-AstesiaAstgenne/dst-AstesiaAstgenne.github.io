@@ -8,6 +8,7 @@ import AstesiaAstgenneRoutes from './modules/astesia-astgenne';
 import SurtrRoutes from './modules/surtr';
 import DuskRoutes from './modules/dusk';
 import ArkShuRoutes from './modules/arkshu';
+import ArchettoRoutes from './modules/archetto'
 
 
 
@@ -27,7 +28,7 @@ const routes = [
   ...SurtrRoutes,
   ...DuskRoutes,
   ...ArkShuRoutes,
-
+  ...ArchettoRoutes,
 ];
 
 const router = createRouter({

@@ -9,7 +9,7 @@
     "details": {
       "name": "异铁",
       "code": "arkshu_yitie",
-      "image": "arkshu_yitie.webp",
+      "image": "/images/arkshu/arkshu_yitie.webp",
       "category": "物品/材料",
       "unlock": "无法解锁",
       "materials": []
@@ -41,7 +41,7 @@
     "details": {
       "name": "异铁组",
       "code": "arkshu_yitiezu",
-      "image": "arkshu_yitiezu.webp",
+      "image": "/images/arkshu/arkshu_yitiezu.webp",
       "category": "物品/材料",
       "unlock": "炼金引擎",
       "materials": [
@@ -74,7 +74,7 @@
     "details": {
       "name": "全新装置",
       "code": "arkshu_quanxinzhuangzhi",
-      "image": "arkshu_quanxinzhuangzhi.webp",
+      "image": "/images/arkshu/arkshu_quanxinzhuangzhi.webp",
       "category": "物品/材料",
       "unlock": "炼金引擎",
       "materials": [
@@ -107,7 +107,7 @@
     "details": {
       "name": "炽合金",
       "code": "arkshu_chihejin",
-      "image": "arkshu_chihejin.webp",
+      "image": "/images/arkshu/arkshu_chihejin.webp",
       "category": "物品/材料",
       "unlock": "无法解锁",
       "materials": [
@@ -141,7 +141,7 @@
     "details": {
       "name": "炽合金块",
       "code": "arkshu_chihejinkuai",
-      "image": "arkshu_chihejinkuai.webp",
+      "image": "/images/arkshu/arkshu_chihejinkuai.webp",
       "category": "物品/功能",
       "unlock": "初始解锁",
       "materials": [
@@ -177,7 +177,7 @@
     "details": {
       "name": "晶体电路",
       "code": "arkshu_jingtidianlu",
-      "image": "arkshu_jingtidianlu.webp",
+      "image": "/images/arkshu/arkshu_jingtidianlu.webp",
       "category": "物品/材料",
       "unlock": "炼金引擎",
       "materials": [
@@ -211,7 +211,7 @@
     "details": {
       "name": "凝胶",
       "code": "arkshu_ningjiao",
-      "image": "arkshu_ningjiao.webp",
+      "image": "/images/arkshu/arkshu_ningjiao.webp",
       "category": "物品/材料",
       "unlock": "无法解锁",
       "materials": []
@@ -243,7 +243,7 @@
     "details": {
       "name": "聚合凝胶",
       "code": "arkshu_juheningjiao",
-      "image": "arkshu_juheningjiao.webp",
+      "image": "/images/arkshu/arkshu_juheningjiao.webp",
       "category": "物品/材料",
       "unlock": "炼金引擎",
       "materials": [
@@ -272,7 +272,7 @@
     "details": {
       "name": "数据增补块",
       "code": "arkshu_shujuzengbukuai",
-      "image": "arkshu_shujuzengbukuai.webp",
+      "image": "/images/arkshu/arkshu_shujuzengbukuai.webp",
       "category": "物品/材料",
       "unlock": "灵子分解器",
       "materials": [
@@ -300,7 +300,7 @@
     "details": {
       "name": "数据增补仪",
       "code": "arkshu_shujuzengbuyi",
-      "image": "arkshu_shujuzengbuyi.webp",
+      "image": "/images/arkshu/arkshu_shujuzengbuyi.webp",
       "category": "物品/材料",
       "unlock": "灵子分解器",
       "materials": [
@@ -335,7 +335,7 @@
     "details": {
       "name": "模组数据块",
       "code": "arkshu_mozushujukuai",
-      "image": "arkshu_mozushujukuai.webp",
+      "image": "/images/arkshu/arkshu_mozushujukuai.webp",
       "category": "物品/材料",
       "unlock": "炼金引擎",
       "materials": [
@@ -381,7 +381,7 @@
     "details": {
       "name": "晶体电子单元",
       "code": "arkshu_jingtidianzidanyuan",
-      "image": "arkshu_jingtidianzidanyuan.webp",
+      "image": "/images/arkshu/arkshu_jingtidianzidanyuan.webp",
       "category": "物品/材料",
       "unlock": "炼金引擎",
       "materials": ["晶体电路*5", "聚合凝胶*5", "炽合金块*5"]
@@ -419,7 +419,7 @@
     "details": {
       "name": "D32钢",
       "code": "arkshu_d32",
-      "image": "arkshu_d32.webp",
+      "image": "/images/arkshu/arkshu_d32.webp",
       "category": "物品/材料",
       "unlock": "",
       "materials": []
@@ -451,7 +451,7 @@
     "details": {
       "name": "聚合剂",
       "code": "arkshu_juheji",
-      "image": "arkshu_juheji.webp",
+      "image": "/images/arkshu/arkshu_juheji.webp",
       "category": "物品/材料",
       "unlock": "",
       "materials": []
@@ -483,7 +483,7 @@
     "details": {
       "name": "潜能碎片",
       "code": "arkshu_qnsp",
-      "image": "arkshu_qnsp.webp",
+      "image": "/images/arkshu/arkshu_qnsp.webp",
       "category": "物品/材料",
       "unlock": "",
       "materials": []
@@ -514,7 +514,7 @@
     "details": {
       "name": "潜能印记",
       "code": "arkshu_qn",
-      "image": "arkshu_qn.webp",
+      "image": "/images/arkshu/arkshu_qn.webp",
       "category": "物品/功能",
       "unlock": "炼金引擎",
       "materials": ["潜能碎片*20"]
@@ -539,7 +539,7 @@
     "details": {
       "name": "钦天司时Lv1",
       "code": "arkshu_mozu1",
-      "image": "arkshu_mozu.webp",
+      "image": "/images/arkshu/arkshu_mozu.webp",
       "category": "物品/功能",
       "unlock": "暗影操控器<br>&角色精英二",
       "materials": ["模组数据块*4","晶体电子单元*2","金块*30","噩梦燃料*20"]
@@ -564,7 +564,7 @@
     "details": {
       "name": "钦天司时Lv2",
       "code": "arkshu_mozu2",
-      "image": "arkshu_mozu1.webp",
+      "image": "/images/arkshu/arkshu_mozu1.webp",
       "category": "物品/功能",
       "unlock": "暗影操控器<br>&角色已解锁【钦天司时Lv1】",
       "materials": ["模组数据块*4","数据增补条*60","D32钢*3","金块*40"]
@@ -589,7 +589,7 @@
     "details": {
       "name": "钦天司时Lv3",
       "code": "arkshu_mozu3",
-      "image": "arkshu_mozu2.webp",
+      "image": "/images/arkshu/arkshu_mozu2.webp",
       "category": "物品/功能",
       "unlock": "暗影操控器<br>&角色精英二",
       "materials": ["模组数据块*4","数据增补仪*20","聚合剂*4","金块*50"]
@@ -614,7 +614,7 @@
     "details": {
       "name": "技能升级书",
       "code": "arkshu_jinengshu",
-      "image": "arkshu_jinengshu.webp",
+      "image": "/images/arkshu/arkshu_jinengshu.webp",
       "category": "物品/功能",
       "unlock": "灵子分解器",
       "materials": ["莎草纸*3","噩梦燃料*10","黑色羽毛*5"]
@@ -639,7 +639,7 @@
     "details": {
       "name": "基础作战记录",
       "code": "arkshu_jingyanshu0",
-      "image": "arkshu_jingyanshu0.webp",
+      "image": "/images/arkshu/arkshu_jingyanshu0.webp",
       "category": "物品/功能",
       "unlock": "",
       "materials": []
@@ -664,7 +664,7 @@
     "details": {
       "name": "初级作战记录",
       "code": "arkshu_jingyanshu1",
-      "image": "arkshu_jingyanshu1.webp",
+      "image": "/images/arkshu/arkshu_jingyanshu1.webp",
       "category": "物品/功能",
       "unlock": "灵子分解器",
       "materials": ["基础作战记录*3"]
@@ -689,7 +689,7 @@
     "details": {
       "name": "中级作战记录",
       "code": "arkshu_jingyanshu2",
-      "image": "arkshu_jingyanshu2.webp",
+      "image": "/images/arkshu/arkshu_jingyanshu2.webp",
       "category": "物品/功能",
       "unlock": "灵子分解器",
       "materials": ["初级作战记录*4"]
@@ -714,7 +714,7 @@
     "details": {
       "name": "高级作战记录",
       "code": "arkshu_jingyanshu3",
-      "image": "arkshu_jingyanshu3.webp",
+      "image": "/images/arkshu/arkshu_jingyanshu3.webp",
       "category": "物品/功能",
       "unlock": "灵子分解器",
       "materials": ["中级作战记录*4"]
@@ -739,7 +739,7 @@
     "details": {
       "name": "年的小火锅",
       "code": "arkshu_guo_item",
-      "image": "arkshu_guo_item.webp",
+      "image": "/images/arkshu/arkshu_guo_item.webp",
       "category": "物品/烹饪",
       "unlock": "技能点【年的小火锅】",
       "materials": ["电子元件*1","木炭*3","石砖*3"]
@@ -764,7 +764,7 @@
     "details": {
       "name": "夕的小笔杆",
       "code": "arkshu_bi",
-      "image": "arkshu_bi.webp",
+      "image": "/images/arkshu/arkshu_bi.webp",
       "category": "装备/手部",
       "unlock": "技能点【夕的小笔杆】",
       "materials": ["羽毛笔*2","莎草纸*1"]
@@ -789,7 +789,7 @@
     "details": {
       "name": "令的小酒壶",
       "code": "arkshu_jiuhu",
-      "image": "arkshu_jiuhu.webp",
+      "image": "/images/arkshu/arkshu_jiuhu.webp",
       "category": "物品",
       "unlock": "技能点【令的小酒壶】",
       "materials": ["木头*6","绳子*2"]
@@ -814,7 +814,7 @@
     "details": {
       "name": "剑台",
       "code": "arkshu_quanjidai",
-      "image": "arkshu_quanjidai.webp",
+      "image": "/images/arkshu/arkshu_quanjidai.webp",
       "category": "建筑",
       "unlock": "技能点【重岳的剑台】",
       "materials": ["采下的草*5","猪皮*2","大理石*2"]
@@ -839,7 +839,7 @@
     "details": {
       "name": "怀离剑",
       "code": "arkshu_weapon",
-      "image": "arkshu_weapon.webp",
+      "image": "/images/arkshu/arkshu_weapon.webp",
       "category": "装备/手部",
       "unlock": "初始解锁",
       "materials": ["生命值*30"]
@@ -864,7 +864,7 @@
     "details": {
       "name": "精英化一【书籍】",
       "code": "arkshu_jingyishu",
-      "image": "arkshu_jingyishu.webp",
+      "image": "/images/arkshu/arkshu_jingyishu.webp",
       "category": "物品/功能",
       "unlock": "炼金引擎",
       "materials": ["莎草纸*12","黑色羽毛*12","金块*12","绿宝石*1"]
@@ -889,7 +889,7 @@
     "details": {
       "name": "精英化二【书籍】",
       "code": "arkshu_jingershu",
-      "image": "arkshu_jingershu.webp",
+      "image": "/images/arkshu/arkshu_jingershu.webp",
       "category": "物品/功能",
       "unlock": "暗影操控器",
       "materials": ["莎草纸*15","黑色羽毛*24","金块*30","晶体电子单元*3","彩虹宝石*1"]

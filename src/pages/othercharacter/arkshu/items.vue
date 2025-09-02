@@ -15,7 +15,7 @@
           <img 
             v-for="(, key) in currentPage.avatars"
             :key="key"
-            :src="`/images/arkshu/${key}2.webp`"
+            :src="`/images/description/${key}2.webp`"
             :alt="key"
             class="avatar"
             :class="{ active: activeAvatar[currentPage.id] === key }"
@@ -72,38 +72,32 @@
           </ul>
 
           
+          </div>
         </div>
-      </div>
 
       <!-- 右侧：详情页 -->
       <div class="right-container" v-if="currentPage.details">
         <h2 style="color: #007acc;">{{ currentPage.details.name }}</h2>
         <p>{{ currentPage.details.code }}</p>
         <hr>
-        <img :src="`/images/arkshu/${currentPage.details.image}`" 
+        <img :src="`${currentPage.details.image}`" 
              :alt="currentPage.details.name" width="100px" />
         <hr>
-        <p>分类：{{ currentPage.details.category }}</p>
+        <p v-if="currentPage.details.category">分类：{{ currentPage.details.category }}</p>
         <p v-if="currentPage.details.stack">堆叠上限：{{ currentPage.details.stack }}</p>
-        <p>解锁方式：<span v-html="currentPage.details.unlock"></span></p>
-        <p>制作材料：<br>
+        <p v-if="currentPage.details.unlock">解锁方式：<span v-html="currentPage.details.unlock"></span></p>
+        <p v-if="currentPage.details.materials">制作材料：<br>
           <span v-for="mat in currentPage.details.materials" :key="mat">{{ mat }}<br></span>
+        </p>
+        <p v-if="currentPage.cooking?.requirement">
+          烹饪条件：<br>
+          <span v-for="(mat, index) in currentPage.cooking.requirement" :key="'cookingmat-' + index">{{ mat }}<br></span>
+        </p>
+        <p v-if="currentPage.cooking?.time">
+          烹饪时间：{{ currentPage.cooking.time }}
         </p>
       </div>
 
-      <!-- 技能书类型 -->
-      <div class="right-container" v-else-if="currentPage.items">
-        <div v-for="item in currentPage.items" :key="item.title">
-          <h2>{{ item.title }}</h2>
-          <img :src="`/images/astesia-astgenne/${item.image}`" :alt="item.title" width="100px" />
-          <p>分类：{{ item.category }}</p>
-          <p>解锁方式：{{ item.unlock }}</p>
-          <p>制作材料：<br>
-            <span v-for="(mat, index) in item.materials" :key="'itemmat-' + index" v-html="mat"></span>
-          </p>
-          <hr />
-        </div>
-      </div>
     </div>
   </main>
 
@@ -124,12 +118,13 @@ interface Page {
   id: string
   title: string
   subtitle: string
-  avatars: Record<string, string> 
+  avatars: Record<string, string>
   description?: { single: string[]; multi?: string[] }
   tip?: string[]
   craftableItems?: { name: string; image: string; link: string }[]
-  details?: { name: string; code: string; image: string; category: string; stack?: number; unlock: string; materials: string[] }
+  details?: { name: string; code: string; image: string; category: string; stack?: number; unlock?: string; materials?: string[] }
   items?: { title: string; image: string; category: string; unlock: string; materials: string[] }[]
+  cooking?:{ requirement?: string[]; time?: string }
 }
 
 const typedPages: Page[] = items

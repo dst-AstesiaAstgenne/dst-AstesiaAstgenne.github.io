@@ -11,7 +11,7 @@
     "details": {
       "name": "“真理”",
       "code": "ast_truth",
-      "image": "ast_truth.webp",
+      "image": "/images/astesia-astgenne/ast_truth.webp",
       "category": "建筑/科技台",
       "unlock": "初始解锁",
       "materials": [
@@ -47,7 +47,7 @@
     "details": {
       "name": "“同一片星空下”",
       "code": "ast_understar",
-      "image": "ast_understar.webp",
+      "image": "/images/astesia-astgenne/ast_understar.webp",
       "category": "物品/功能",
       "unlock": "“真理”",
       "materials": [
@@ -84,7 +84,7 @@
     "details": {
       "name": "D32钢",
       "code": "ast_d32steel",
-      "image": "ast_d32steel.webp",
+      "image": "/images/astesia-astgenne/ast_d32steel.webp",
       "category": "物品/材料",
       "unlock": "蓝图解锁",
       "materials": [
@@ -144,7 +144,7 @@
     "details": {
       "name": "星空修补套件",
       "code": "ast_starkit",
-      "image": "ast_starkit.webp",
+      "image": "/images/astesia-astgenne/ast_starkit.webp",
       "category": "物品/功能",
       "unlock": "“真理”",
       "materials": [
@@ -178,7 +178,7 @@
     "details": {
       "name": "一级晋升凭证【星极】",
       "code": "astesia_bosslevel_upgrader1",
-      "image": "ast_elite_books1.webp",
+      "image": "/images/astesia-astgenne/ast_elite_books1.webp",
       "category": "物品/功能",
       "unlock": "制图桌",
       "materials": [
@@ -208,7 +208,7 @@
     "details": {
       "name": "一级晋升凭证【星源】",
       "code": "astgenne_bosslevel_upgrader1",
-      "image": "ast_elite_books1.webp",
+      "image": "/images/astesia-astgenne/ast_elite_books1.webp",
       "category": "物品/功能",
       "unlock": "制图桌",
       "materials": ["莎草纸*1", "羽毛笔*1", "红色月眼*2"]
@@ -234,7 +234,7 @@
     "details": {
       "name": "二级晋升凭证【星极】",
       "code": "astesia_bosslevel_upgrader2",
-      "image": "ast_elite_books2.webp",
+      "image": "/images/astesia-astgenne/ast_elite_books2.webp",
       "category": "物品/功能",
       "unlock": "制图桌",
       "materials": [
@@ -264,7 +264,7 @@
     "details": {
       "name": "二级晋升凭证【星源】",
       "code": "astgenne_bosslevel_upgrader2",
-      "image": "ast_elite_books2.webp",
+      "image": "/images/astesia-astgenne/ast_elite_books2.webp",
       "category": "物品/功能",
       "unlock": "制图桌",
       "materials": ["莎草纸*1", "羽毛笔*1", "绿色月眼*2"]
@@ -290,7 +290,7 @@
     "details": {
       "name": "三级晋升凭证【星极】",
       "code": "astesia_bosslevel_upgrader3",
-      "image": "ast_elite_books3.webp",
+      "image": "/images/astesia-astgenne/ast_elite_books3.webp",
       "category": "物品/功能",
       "unlock": "制图桌",
       "materials": ["莎草纸*1", "羽毛笔*1", "星之羽*66"]
@@ -316,7 +316,7 @@
     "details": {
       "name": "三级晋升凭证【星源】",
       "code": "astgenne_bosslevel_upgrader3",
-      "image": "ast_elite_books3.webp",
+      "image": "/images/astesia-astgenne/ast_elite_books3.webp",
       "category": "物品/功能",
       "unlock": "制图桌",
       "materials": ["莎草纸*1", "羽毛笔*1", "飞燕草*66"]
@@ -342,7 +342,7 @@
     "details": {
       "name": "星之羽",
       "code": "ast_starfeather",
-      "image": "ast_starfeather.webp",
+      "image": "/images/astesia-astgenne/ast_starfeather.webp",
       "category": "物品/功能 堆叠上限10"
     },
     "description": {
@@ -388,7 +388,7 @@
     "details": {
       "name": "描绘星空之羽",
       "code": "astesia_pencil",
-      "image": "ast_penandbottle.webp",
+      "image": "/images/astesia-astgenne/ast_penandbottle.webp",
       "category": "物品/功能 堆叠上限10",
       "unlock": "初始解锁",
       "materials": [
@@ -450,7 +450,7 @@
     "details": {
       "name": "星象天体仪",
       "code": "astesia_resonator_item",
-      "image": "ast_globes.webp",
+      "image": "/images/astesia-astgenne/ast_globes.webp",
       "category": "物品/功能",
       "unlock": "“真理”",
       "materials": [
@@ -484,7 +484,7 @@
     "details": {
       "name": "奇工纳物箱",
       "code": "astesia_storagebox",
-      "image": "ast_box.webp",
+      "image": "/images/astesia-astgenne/ast_box.webp",
       "category": "物品/功能",
       "unlock": "“真理”",
       "materials": [
@@ -520,7 +520,7 @@
     "details": {
       "name": "一体式书桌",
       "code": "ast_bookshelf",
-      "image": "ast_bookshelf.webp",
+      "image": "/images/astesia-astgenne/ast_bookshelf.webp",
       "category": "建筑/制作站",
       "unlock": "“真理”",
       "materials": [
@@ -586,12 +586,11 @@
     "details": {
       "name": "群星·随想曲",
       "code": "astesia_book_capriccio",
-      "image": "ast_book_flavor.webp",
+      "image": "/images/astesia-astgenne/ast_book_flavor.webp",
       "category": "物品/书籍",
       "unlock": "一体式书桌",
       "materials": [
-        "描绘星空之羽",
-        "*4",
+        "描绘星空之羽*4",
         "莎草纸*4",
         "大蒜*3",
         "蜂蜜*3",
@@ -624,12 +623,11 @@
     "details": {
       "name": "群星·幻想曲",
       "code": "astesia_book_fantasia",
-      "image": "ast_book_map.webp",
+      "image": "/images/astesia-astgenne/ast_book_map.webp",
       "category": "物品/书籍",
       "unlock": "一体式书桌",
       "materials": [
-        "描绘星空之羽",
-        "*4",
+        "描绘星空之羽*4",
         "莎草纸*4",
         "瓶中信*2",
         "指南针*1"
@@ -659,12 +657,11 @@
     "details": {
       "name": "群星·变奏曲",
       "code": "astesia_book_variations",
-      "image": "ast_book_moon.webp",
+      "image": "/images/astesia-astgenne/ast_book_moon.webp",
       "category": "物品/书籍",
       "unlock": "一体式书桌",
       "materials": [
-        "描绘星空之羽",
-        "*6",
+        "描绘星空之羽*6",
         "莎草纸*4",
         "暗影心房*1",
         "彩虹宝石*1"
@@ -694,12 +691,11 @@
     "details": {
       "name": "群星·练习曲",
       "code": "astesia_book_practise",
-      "image": "ast_book_pick.webp",
+      "image": "/images/astesia-astgenne/ast_book_pick.webp",
       "category": "物品/书籍",
       "unlock": "一体式书桌",
       "materials": [
-        "描绘星空之羽",
-        "*2",
+        "描绘星空之羽*2",
         "莎草纸*4",
         "种子*4",
         "懒人护符*1"
@@ -729,7 +725,7 @@
     "details": {
       "name": "群星·颂扬曲",
       "code": "astesia_book_carol",
-      "image": "ast_book_rebirth.webp",
+      "image": "/images/astesia-astgenne/ast_book_rebirth.webp",
       "category": "物品/书籍",
       "unlock": "一体式书桌",
       "materials": [
@@ -763,12 +759,11 @@
     "details": {
       "name": "群星·圆舞曲",
       "code": "astesia_book_dance",
-      "image": "ast_book_speed.webp",
+      "image": "/images/astesia-astgenne/ast_book_speed.webp",
       "category": "物品/书籍",
       "unlock": "一体式书桌",
       "materials": [
-        "描绘星空之羽",
-        "*2",
+        "描绘星空之羽*2",
         "莎草纸*4",
         "小发光浆果*2",
         "荧光果*2"
@@ -798,7 +793,7 @@
     "details": {
       "name": "星极证章",
       "code": "ast_badge_astesia",
-      "image": "ast_badge_astesia.webp",
+      "image": "/images/astesia-astgenne/ast_badge_astesia.webp",
       "category": "物品/功能"
     },
     "description": {
@@ -826,7 +821,7 @@
     "details": {
       "name": "翱翔星海之翼",
       "code": "astgenne_wings",
-      "image": "astgenne_wings.webp",
+      "image": "/images/astesia-astgenne/astgenne_wings.webp",
       "category": "装备/身体",
       "unlock": "“真理”",
       "materials": [
@@ -860,7 +855,7 @@
     "details": {
       "name": "制式源石短杖",
       "code": "astgenne_wand1",
-      "image": "astgenne_wand1.webp",
+      "image": "/images/astesia-astgenne/astgenne_wand1.webp",
       "category": "装备/手部",
       "unlock": "炼金引擎",
       "materials": [
@@ -893,7 +888,7 @@
     "details": {
       "name": "残缺星光之愿",
       "code": "astgenne_starwish_incomplete",
-      "image": "astgenne_wand2.webp",
+      "image": "/images/astesia-astgenne/astgenne_wand2.webp",
       "category": "装备/手部",
       "unlock": "“真理”",
       "materials": [
@@ -925,7 +920,7 @@
     "details": {
       "name": "昭示星光之愿",
       "code": "astgenne_starwish_complete",
-      "image": "astgenne_wand3.webp",
+      "image": "/images/astesia-astgenne/astgenne_wand3.webp",
       "category": "装备/手部",
       "unlock": "“真理”",
       "materials": [
@@ -960,7 +955,7 @@
     "details": {
       "name": "兔兔落地灯",
       "code": "astesia_rabbit_campfire",
-      "image": "ast_rabbitlamp.webp",
+      "image": "/images/astesia-astgenne/ast_rabbitlamp.webp",
       "category": "建筑/光源",
       "unlock": "蓝图解锁",
       "materials": [
@@ -994,7 +989,7 @@
     "details": {
       "name": "实验操作台",
       "code": "ast_rack",
-      "image": "ast_rack.webp",
+      "image": "/images/astesia-astgenne/ast_rack.webp",
       "category": "建筑/功能",
       "unlock": "“真理”",
       "materials": [
@@ -1060,7 +1055,7 @@
     "details": {
       "name": "飞燕草",
       "code": "ast_swallowgrass",
-      "image": "ast_swallowgrass.webp",
+      "image": "/images/astesia-astgenne/ast_swallowgrass.webp",
       "category": "物品/功能 堆叠上限10"
     },
     "description": {
@@ -1109,7 +1104,7 @@
     "details": {
       "name": "瓶装活力混合剂",
       "code": "astgenne_experiment_energy_small",
-      "image": "ast_potions_energy.webp",
+      "image": "/images/astesia-astgenne/ast_potions_energy.webp",
       "category": "好东西/功能 堆叠上限20",
       "unlock": "实验操作台/无法解锁",
       "materials": [
@@ -1141,7 +1136,7 @@
     "details": {
       "name": "壶装活力混合剂",
       "code": "astgenne_experiment_energy_large",
-      "image": "ast_potions_energy_big.webp",
+      "image": "/images/astesia-astgenne/ast_potions_energy_big.webp",
       "category": "好东西/功能 堆叠上限20",
       "unlock": "实验操作台/无法解锁",
       "materials": [
@@ -1173,7 +1168,7 @@
     "details": {
       "name": "少许沉沦悲意",
       "code": "astgenne_experiment_sadness_small",
-      "image": "ast_potions_sadness.webp",
+      "image": "/images/astesia-astgenne/ast_potions_sadness.webp",
       "category": "好东西/功能 堆叠上限20",
       "unlock": "实验操作台/无法解锁",
       "materials": [
@@ -1205,7 +1200,7 @@
     "details": {
       "name": "杯装沉沦悲意",
       "code": "astgenne_experiment_sadness_large",
-      "image": "ast_potions_sadness_big.webp",
+      "image": "/images/astesia-astgenne/ast_potions_sadness_big.webp",
       "category": "好东西/功能 堆叠上限20",
       "unlock": "实验操作台/无法解锁",
       "materials": [
@@ -1237,9 +1232,9 @@
     "details": {
       "name": "飞燕草花束",
       "code": "astgenne_bouquet",
-      "image": "ast_bouquet.webp",
+      "image": "/images/astesia-astgenne/ast_bouquet.webp",
       "category": "装备/手部",
-      "unlock": "炼金引擎",
+      "unlock": "“真理”",
       "materials": [
         "飞燕草*4",
         "花瓣*4",
@@ -1252,12 +1247,11 @@
         "<span class=\"color-important\">飞燕草花束（astgenne_bouquet）</span>是一种仅【星源】可制作的物品。"
       ],
       "multi": [
-        "攻击力4.25，攻击范围2<br/>\n              移速+20%，无耐久<br/>\n<span class=\"color-important\">说明-基础特性：</span><br/>\n              ①拥有【锤】功能，效率100%<br/>\n              ②攻击不会引起连锁仇恨。<br/>\n              ③手持时可快速收获【蜂箱】并且不会引起【蜜蜂】仇恨。<br/>\n              ④手持时不会引起【杀人蜂】以及春季【蜜蜂】的主动仇恨。\n            ",
-        "<span class=\"color-important\">事实上的基础特性：</span><br/>           \n              ③手持时可快速采集。<br/>\n              ④手持时不会引起绝大多数生物的仇恨。\n            "
+        "攻击力4.25，攻击范围2<br/>\n              移速+20%，无耐久<br/>\n<span class=\"color-important\">说明-基础特性：</span><br/>\n              ①拥有【锤】功能，效率100%<br/>\n              ②攻击不会引起连锁仇恨。<br/>\n              ③手持时可快速收获【蜂箱】并且不会引起【蜜蜂】仇恨。<br/>\n              ④手持时不会引起【杀人蜂】以及春季【蜜蜂】的主动仇恨。\n            "
       ]
     },
     "tip": [
-      "事实上的基础特性：③手持时可快速采集。④手持时不会引起绝大多数生物的仇恨。",
+      "<span class=\"color-important\">事实上的基础特性：</span>③手持时可快速采集。④手持时不会引起绝大多数生物的仇恨。",
       "好用，伟大，无需多言。",
       "bug给的快速采集在日常使用很舒适。",
       "不要修啊啊啊啊啊，修了我还怎么无风险路过暴动，无风险扫描暴动影怪——暴动影怪给的生物数据实在太多了。"
@@ -1275,7 +1269,7 @@
     "details": {
       "name": "“全是兔兔”糖果机",
       "code": "astesia_candy_machine",
-      "image": "ast_candymachine.webp",
+      "image": "/images/astesia-astgenne/ast_candymachine.webp",
       "category": "建筑/功能",
       "unlock": "蓝图解锁",
       "materials": [
@@ -1308,7 +1302,7 @@
     "details": {
       "name": "科研者之愿",
       "code": "astgenne_researcher_wish",
-      "image": "astgenne_hat.webp",
+      "image": "/images/astesia-astgenne/astgenne_hat.webp",
       "category": "装备/头部",
       "unlock": "“真理”",
       "materials": [
@@ -1343,7 +1337,7 @@
     "details": {
       "name": "黯淡星河之钥",
       "code": "astgenne_key",
-      "image": "ast_key.webp",
+      "image": "/images/astesia-astgenne/ast_key.webp",
       "category": "物品/功能",
       "unlock": "“真理”",
       "materials": [
@@ -1376,7 +1370,7 @@
     "details": {
       "name": "微星投影仪",
       "code": "astgenne_projector",
-      "image": "ast_base.webp",
+      "image": "/images/astesia-astgenne/ast_base.webp",
       "category": "建筑/功能",
       "unlock": "“真理”",
       "materials": [
@@ -1409,7 +1403,7 @@
     "details": {
       "name": "位面晶体炸弹",
       "code": "astgenne_bomb",
-      "image": "ast_bombs_husk.webp",
+      "image": "/images/astesia-astgenne/ast_bombs_husk.webp",
       "category": "装备/手部 堆叠上限20",
       "unlock": "实验操作台/无法解锁",
       "materials": [
@@ -1441,7 +1435,7 @@
     "details": {
       "name": "辉煌晶体炸弹",
       "code": "astgenne_bomb_plus",
-      "image": "ast_bombs_purebrilliance.webp",
+      "image": "/images/astesia-astgenne/ast_bombs_purebrilliance.webp",
       "category": "装备/手部 堆叠上限20",
       "unlock": "实验操作台/无法解锁",
       "materials": [
@@ -1473,7 +1467,7 @@
     "details": {
       "name": "科研者之星",
       "code": "astgenne_researcher_star",
-      "image": "astgenne_armor.webp",
+      "image": "/images/astesia-astgenne/astgenne_armor.webp",
       "category": "装备/身体",
       "unlock": "“真理”",
       "materials": [
@@ -1508,7 +1502,7 @@
     "details": {
       "name": "星源证章",
       "code": "ast_badge_astgenne",
-      "image": "ast_badge_astgenne.webp",
+      "image": "/images/astesia-astgenne/ast_badge_astgenne.webp",
       "category": "物品/功能"
     },
     "description": {
@@ -1534,7 +1528,7 @@
     "details": {
       "name": "制式源石长剑",
       "code": "astesia_sword1",
-      "image": "astesia_sword1.webp",
+      "image": "/images/astesia-astgenne/astesia_sword1.webp",
       "category": "装备/手部",
       "unlock": "暗影操纵器",
       "materials": [
@@ -1565,7 +1559,7 @@
     "details": {
       "name": "残响星辰之语",
       "code": "astesia_starlanguage_incomplete",
-      "image": "astesia_sword2.webp",
+      "image": "/images/astesia-astgenne/astesia_sword2.webp",
       "category": "装备/手部",
       "unlock": "“真理”",
       "materials": [
@@ -1598,7 +1592,7 @@
     "details": {
       "name": "祷告星辰之语",
       "code": "astesia_starlanguage_complete",
-      "image": "astesia_sword3.webp",
+      "image": "/images/astesia-astgenne/astesia_sword3.webp",
       "category": "装备/手部",
       "unlock": "“真理”",
       "materials": [
@@ -1632,7 +1626,7 @@
     "details": {
       "name": "探索者之星",
       "code": "astesia_explorer_star",
-      "image": "astesia_armor.webp",
+      "image": "/images/astesia-astgenne/astesia_armor.webp",
       "category": "装备/身体",
       "unlock": "“真理”",
       "materials": [
@@ -1664,7 +1658,7 @@
     "details": {
       "name": "技巧概要·卷1【星座守护】",
       "code": "astesia_skill1level_upgrader1",
-      "image": "ast_skill_books1.webp",
+      "image": "/images/astesia-astgenne/ast_skill_books1.webp",
       "category": "物品/功能",
       "unlock": "制图桌",
       "materials": [
@@ -1696,7 +1690,7 @@
     "details": {
       "name": "技巧概要·卷1【星辉剑】",
       "code": "astesia_skill2level_upgrader1",
-      "image": "ast_skill_books1.webp",
+      "image": "/images/astesia-astgenne/ast_skill_books1.webp",
       "category": "物品/功能",
       "unlock": "制图桌",
       "materials": [
@@ -1728,7 +1722,7 @@
     "details": {
       "name": "技巧概要·卷2【星座守护】",
       "code": "astesia_skill1level_upgrader2",
-      "image": "ast_skill_books2.webp",
+      "image": "/images/astesia-astgenne/ast_skill_books2.webp",
       "category": "物品/功能",
       "unlock": "制图桌",
       "materials": [
@@ -1760,7 +1754,7 @@
     "details": {
       "name": "技巧概要·卷2【星辉剑】",
       "code": "astesia_skill2level_upgrader2",
-      "image": "ast_skill_books2.webp",
+      "image": "/images/astesia-astgenne/ast_skill_books2.webp",
       "category": "物品/功能",
       "unlock": "制图桌",
       "materials": [
@@ -1792,7 +1786,7 @@
     "details": {
       "name": "技巧概要·卷3【星座守护】",
       "code": "astesia_skill1level_upgrader3",
-      "image": "ast_skill_books3.webp",
+      "image": "/images/astesia-astgenne/ast_skill_books3.webp",
       "category": "物品/功能",
       "unlock": "制图桌",
       "materials": [
@@ -1824,7 +1818,7 @@
     "details": {
       "name": "技巧概要·卷3【星辉剑】",
       "code": "astesia_skill2level_upgrader3",
-      "image": "ast_skill_books3.webp",
+      "image": "/images/astesia-astgenne/ast_skill_books3.webp",
       "category": "物品/功能",
       "unlock": "制图桌",
       "materials": [
@@ -1856,7 +1850,7 @@
     "details": {
       "name": "技巧概要·卷1【双端导流】",
       "code": "astgenne_skill1level_upgrader1",
-      "image": "ast_skill_books1.webp",
+      "image": "/images/astesia-astgenne/ast_skill_books1.webp",
       "category": "物品/功能",
       "unlock": "制图桌",
       "materials": [
@@ -1888,7 +1882,7 @@
     "details": {
       "name": "技巧概要·卷1【星束交汇】",
       "code": "astgenne_skill2level_upgrader1",
-      "image": "ast_skill_books1.webp",
+      "image": "/images/astesia-astgenne/ast_skill_books1.webp",
       "category": "物品/功能",
       "unlock": "制图桌",
       "materials": [
@@ -1920,7 +1914,7 @@
     "details": {
       "name": "技巧概要·卷2【双端导流】",
       "code": "astgenne_skill1level_upgrader2",
-      "image": "ast_skill_books2.webp",
+      "image": "/images/astesia-astgenne/ast_skill_books2.webp",
       "category": "物品/功能",
       "unlock": "制图桌",
       "materials": [
@@ -1952,7 +1946,7 @@
     "details": {
       "name": "技巧概要·卷2【星束交汇】",
       "code": "astgenne_skill2level_upgrader2",
-      "image": "ast_skill_books2.webp",
+      "image": "/images/astesia-astgenne/ast_skill_books2.webp",
       "category": "物品/功能",
       "unlock": "制图桌",
       "materials": [
@@ -1984,7 +1978,7 @@
     "details": {
       "name": "技巧概要·卷3【双端导流】",
       "code": "astgenne_skill1level_upgrader3",
-      "image": "ast_skill_books3.webp",
+      "image": "/images/astesia-astgenne/ast_skill_books3.webp",
       "category": "物品/功能",
       "unlock": "制图桌",
       "materials": [
@@ -2016,7 +2010,7 @@
     "details": {
       "name": "技巧概要·卷3【星束交汇】",
       "code": "astgenne_skill2level_upgrader3",
-      "image": "ast_skill_books3.webp",
+      "image": "/images/astesia-astgenne/ast_skill_books3.webp",
       "category": "物品/功能",
       "unlock": "制图桌",
       "materials": [
@@ -2048,7 +2042,7 @@
     "details": {
       "name": "探索者之愿",
       "code": "astesia_explorer_wish",
-      "image": "astesia_hat.webp",
+      "image": "/images/astesia-astgenne/astesia_hat.webp",
       "category": "装备/头部",
       "unlock": "“真理”",
       "materials": [

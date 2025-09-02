@@ -10,7 +10,7 @@
     "details": {
       "name": "莱万汀",
       "code": "laevatain",
-      "image": "laevatain.webp",
+      "image": "/images/surtr/laevatain.webp",
       "category": "武器/手部"
     },
     "description": {
@@ -35,7 +35,7 @@
     "details": {
       "name": "史尔特尔服装",
       "code": "surtrclothes",
-      "image": "surtrclothes.webp",
+      "image": "/images/surtr/surtrclothes.webp",
       "category": "装备/身体"
     },
     "description": {
@@ -60,7 +60,7 @@
     "details": {
       "name": "高级资深干员训练书",
       "code": "surtr_elitebook1",
-      "image": "surtr_elitebook1.webp",
+      "image": "/images/surtr/surtr_elitebook1.webp",
       "category": "物品/功能",
       "unlock": "科学机器",
       "materials": [
@@ -92,7 +92,7 @@
     "details": {
       "name": "高级资深干员特训书",
       "code": "surtr_elitebook2",
-      "image": "surtr_elitebook2.webp",
+      "image": "/images/surtr/surtr_elitebook2.webp",
       "category": "物品/功能",
       "unlock": "科学机器",
       "materials": [
@@ -124,7 +124,7 @@
     "details": {
       "name": "玻璃海苔",
       "code": "surtr_glassseaweed",
-      "image": "surtr_glassseaweed.webp",
+      "image": "/images/surtr/surtr_glassseaweed.webp",
       "category": "物品/功能",
       "unlock": "初始解锁",
       "materials": [
@@ -154,7 +154,7 @@
     "details": {
       "name": "灼热之息",
       "code": "surtr_lavabreath",
-      "image": "surtr_lavabreath.webp",
+      "image": "/images/surtr/surtr_lavabreath.webp",
       "category": "好东西"
 
     },
@@ -188,7 +188,7 @@
     "details": {
       "name": "熔岩之吻",
       "code": "surtr_lavakiss",
-      "image": "surtr_lavakiss.webp",
+      "image": "/images/surtr/surtr_lavakiss.webp",
       "category": "好东西"
 
     },
@@ -221,7 +221,7 @@
     "details": {
       "name": "纯粹火焰",
       "code": "pureflame",
-      "image": "pureflame.webp",
+      "image": "/images/surtr/pureflame.webp",
       "category": "物品/材料",
       "unlock": "科学机器",
       "materials": [
@@ -259,7 +259,7 @@
     "details": {
       "name": "恐怖奶奶",
       "code": "surtr_scarygrandma",
-      "image": "surtr_scarygrandma.webp",
+      "image": "/images/surtr/surtr_scarygrandma.webp",
       "category": "物品",
       "unlock": "远古一本",
       "materials": [
@@ -289,7 +289,7 @@
     "details": {
       "name": "豪华冰激凌",
       "code": "surtr_supericecream",
-      "image": "surtr_supericecream.webp",
+      "image": "/images/surtr/surtr_supericecream.webp",
       "category": "物品/功能",
       "unlock": "科学机器",
       "materials": [
@@ -321,7 +321,7 @@
     "details": {
       "name": "晶肝茸髓",
       "code": "surtr_sxys_deerleg",
-      "image": "surtr_sxys_deerleg.webp",
+      "image": "/images/surtr/surtr_sxys_deerleg.webp",
       "category": "物品/功能",
       "unlock": "无法解锁"
     },
@@ -346,7 +346,7 @@
     "details": {
       "name": "炎国山水原液",
       "code": "surtr_sxys_shanshui",
-      "image": "surtr_sxys_shanshui.webp",
+      "image": "/images/surtr/surtr_sxys_shanshui.webp",
       "category": "///"
 
     },
@@ -380,13 +380,15 @@
     "details": {
       "name": "脆肉薯条转醇",
       "code": "surtr_sxys_shutiao",
-      "image": "surtr_sxys_shutiao.webp",
+      "image": "/images/surtr/surtr_sxys_shutiao.webp",
       "category": "///"
 
     },
     "description": {
       "single": [
-        "<span class=\"color-important\">脆肉薯条转醇</span>是一种模组料理。",
+        "<span class=\"color-important\">脆肉薯条转醇</span>是一种模组料理。"
+      ],
+      "multi": [
         "\n            保质期20天<br/>\n            +25饱食度，+25理智值，+25生命值<br/>\n            恢复25%已损失的饱食度，理智值和生命值<br/>\n"
       ]
     },
@@ -400,6 +402,5 @@
       ],
       "time": "20秒"
     }
-
   }
 ]

@@ -15,7 +15,7 @@
           <img 
             v-for="(, key) in currentPage.avatars"
             :key="key"
-            :src="`/images/surtr/${key}2.webp`"
+            :src="`/images/description/${key}2.webp`"
             :alt="key"
             class="avatar"
             :class="{ active: activeAvatar[currentPage.id] === key }"
@@ -72,20 +72,20 @@
           </ul>
 
           
+          </div>
         </div>
-      </div>
 
       <!-- 右侧：详情页 -->
       <div class="right-container" v-if="currentPage.details">
         <h2 style="color: #007acc;">{{ currentPage.details.name }}</h2>
         <p>{{ currentPage.details.code }}</p>
         <hr>
-        <img :src="`/images/surtr/${currentPage.details.image}`" 
+        <img :src="`${currentPage.details.image}`" 
              :alt="currentPage.details.name" width="100px" />
         <hr>
         <p v-if="currentPage.details.category">分类：{{ currentPage.details.category }}</p>
         <p v-if="currentPage.details.stack">堆叠上限：{{ currentPage.details.stack }}</p>
-        <p v-if="currentPage.details.unlock">解锁方式：{{ currentPage.details.unlock }}</p>
+        <p v-if="currentPage.details.unlock">解锁方式：<span v-html="currentPage.details.unlock"></span></p>
         <p v-if="currentPage.details.materials">制作材料：<br>
           <span v-for="mat in currentPage.details.materials" :key="mat">{{ mat }}<br></span>
         </p>
@@ -98,19 +98,6 @@
         </p>
       </div>
 
-      <!-- 技能书类型 -->
-      <div class="right-container" v-else-if="currentPage.items">
-        <div v-for="item in currentPage.items" :key="item.title">
-          <h2>{{ item.title }}</h2>
-          <img :src="`/images/astesia-astgenne/${item.image}`" :alt="item.title" width="100px" />
-          <p>分类：{{ item.category }}</p>
-          <p>解锁方式：{{ item.unlock }}</p>
-          <p>制作材料：<br>
-            <span v-for="(mat, index) in item.materials" :key="'itemmat-' + index" v-html="mat"></span>
-          </p>
-          <hr />
-        </div>
-      </div>
     </div>
   </main>
 

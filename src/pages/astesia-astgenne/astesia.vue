@@ -97,7 +97,7 @@
       
       <div class="variants">
         <div class="variant-item">
-          <img src="@/assets/astesia-astgenne/avatar_astesia.webp" alt="星源头像" class="variant-image">
+          <img src="@/assets/astesia-astgenne/avatar_astesia.webp" alt="星极头像" class="variant-image">
           <div class="variant-label">头像</div>
         </div>
         
