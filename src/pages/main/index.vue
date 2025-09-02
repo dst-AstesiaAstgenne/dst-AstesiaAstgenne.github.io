@@ -9,7 +9,7 @@
         <li><router-link to="/othercharacter/surtrindex">史尔特尔</router-link></li>
         <li><router-link to="/othercharacter/duskindex">夕</router-link></li>
         <li><router-link to="/othercharacter/arkshuindex">黍</router-link></li>
-
+        <li><router-link to="/othercharacter/archettoindex">空弦</router-link></li>
       </ul>
 
     </aside>
@@ -53,6 +53,12 @@
             <div class="character">
               <img src="@/assets/othercharacter/arkshu/arkshu_none.webp" alt="黍立绘" width="150px"><br/>
               <h5>黍</h5>
+            </div>
+          </router-link>
+          <router-link to="/othercharacter/archettoindex" class="character-link">
+            <div class="character">
+              <img src="@/assets/othercharacter/archetto/archetto_none2.webp" alt="空弦立绘" width="150px"><br/>
+              <h5>空弦</h5>
             </div>
           </router-link>
         </div>
