@@ -98,6 +98,36 @@
     ]
   },
   {
+    "id": "arkshu_yanmoshi",
+    "title": "",
+    "subtitle": "",
+    "avatars": {
+      "arkshu": "还不错"
+    },
+    "details": {
+      "name": "研磨石",
+      "code": "arkshu_yanmoshi",
+      "image": "/images/arkshu/arkshu_yanmoshi.webp",
+      "category": "物品/材料"
+    },
+    "description": {
+      "single": [
+        "<span class=\"color-important\">研磨石</span>是一种模组物品。",
+        "<span class=\"color-important\">说明-获取方式</span><br>挖掘【原版矿石】的时候有10%的概率掉落"
+      ]
+    },
+    "tip": [
+      ""
+    ],
+    "craftableItems": [
+      {
+        "name": "炽合金块",
+        "image": "/images/arkshu/arkshu_chihejinkuai.webp",
+        "link": "/othercharacter/arkshuindex/items/arkshu_chihejinkuai"
+      }
+    ]
+  },
+  {
     "id": "arkshu_chihejin",
     "title": "炽合金",
     "subtitle": "",
@@ -591,7 +621,7 @@
       "code": "arkshu_mozu3",
       "image": "/images/arkshu/arkshu_mozu2.webp",
       "category": "物品/功能",
-      "unlock": "暗影操控器<br>&角色精英二",
+      "unlock": "暗影操控器<br>&角色已解锁【钦天司时Lv2】",
       "materials": ["模组数据块*4","数据增补仪*20","聚合剂*4","金块*50"]
     },
     "description": {

@@ -50,5 +50,28 @@ const router = createRouter({
   }
 });
 
+// 全局导航守卫
+router.beforeEach((to, _from, next) => {
+  // 设置标题
+  if (to.meta && to.meta.title) {
+    document.title = to.meta.title as string;
+  } else {
+    document.title = '饥荒联机版Mod介绍';
+  }
+
+  // 设置图标
+  const icon = to.meta?.icon as string | undefined;
+  const link: HTMLLinkElement =
+    document.querySelector("link[rel~='icon']") ||
+    document.createElement("link");
+
+  link.rel = "icon";
+  link.href = icon || "/images/astesia-astgenne/ast_swallowgrass.webp";
+  if (!document.head.contains(link)) {
+    document.head.appendChild(link);
+  }
+
+  next();
+});
 
 export default router;

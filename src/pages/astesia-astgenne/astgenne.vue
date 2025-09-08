@@ -3,8 +3,8 @@
 
 <body>
   <navigation />
-
-  <aside class="sidebar">
+  <button class="sidebar-toggle" @click="toggleSidebar">目录</button>
+  <aside class="sidebar" :class="{ active: isSidebarActive }">
     <h3>目录</h3>
     <ul>
       <li><a href="#basic-attributes">①基础属性</a></li>
@@ -1620,11 +1620,14 @@
       </li>
     </ul>
     <h5 id="other-mod-compatibility">2.模组兼容</h5>
+    <p>目前已知的在模组兼容上可能存在的问题包括：</p>
     <ul>
       <li>
-        目前已知的在模组兼容上可能存在的问题包括：<br>
-        与其余有修改过【月亮石】相关内容的模组可能存在冲突。<br>
+        1.与其余有修改过【月亮石】相关内容的模组可能存在冲突。<br>
         例如：Uncompromising Mode（永不妥协）
+      </li>
+      <li>
+        2.与【神话书说】存在未知冲突，会导致家燕无法正常生成。
       </li>
     </ul>
   </main>
@@ -1635,7 +1638,7 @@
 <script setup lang="ts">
 import navigation from './components/navigation.vue'
 
-import { reactive, onMounted, watch } from 'vue'
+import { reactive, onMounted, watch, ref } from 'vue'
 
 type MenuKey = 'traits' | 'level' | 'skill' | 'item' | 'other'
 
@@ -1670,5 +1673,43 @@ function scrollToHash(hash: string) {
     el.scrollIntoView({ behavior: 'instant' });
   }
 }
+
+// 侧边栏交互逻辑
+const sidebarToggle = ref<HTMLButtonElement | null>(null);
+const sidebar = ref<HTMLDivElement | null>(null);
+
+onMounted(() => {
+  // 点击按钮切换侧边栏状态
+  sidebarToggle.value?.addEventListener('click', () => {
+    sidebar.value?.classList.toggle('active');
+  });
+
+  // 点击侧边栏链接后在移动设备上自动关闭侧边栏
+  const sidebarLinks = sidebar.value?.querySelectorAll('a');
+  sidebarLinks?.forEach(link => {
+    link.addEventListener('click', () => {
+      if (window.innerWidth <= 768 && sidebar.value) {
+        sidebar.value.classList.remove('active');
+      }
+    });
+  });
+
+});
+
+// 侧边栏状态
+const isSidebarActive = ref(false);
+
+// 切换侧边栏状态
+const toggleSidebar = () => {
+  isSidebarActive.value = !isSidebarActive.value;
+};
+
+watch(
+  () => route.fullPath,
+  () => {
+    isSidebarActive.value = false
+  }
+)
+
 
 </script>

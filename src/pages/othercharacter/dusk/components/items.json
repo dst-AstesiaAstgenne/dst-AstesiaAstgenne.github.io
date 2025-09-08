@@ -581,8 +581,39 @@
     "description": {
       "single": [
         "<span class=\"color-important\">“终夜无寐”（上卷）</span>是一种仅【夕】可制作与使用的模组物品。",
-        "\n            每级使夕在造成真实伤害时，恢复伤害值0.005% * 等级 的墨染值<br/><br/>\n<span class=\"color-important\">说明-等级效果：</span><br/>\n            1级：每隔4秒，若夕的周围32范围内存在“小自在”，则恢复1墨染值；<br/>\n            3级：所有“小自在”生成时获得2层护盾，且攻击力提高至68，生命值提高至200；<br/>\n            5级：夕造成真实伤害时，恢复伤害值0.0025% * 等级 的生命值；<br/>\n            8级：夕使用涂鬼神攻击时，额外再对目标周围8范围内的一个非友方单位造成一次攻击；<br/>\n            10级：夕变为鬼魂后可以随时右键作祟自己复活，其它玩家可以作祟夕复活。<br/>\n",
-        ""
+        "每级使夕在造成真实伤害时，恢复伤害值0.005% * 等级 的墨染值<br><br>  <span class=\"color-important\">说明-等级效果：</span><br>   <span class=\"color-important\">1级：</span>每隔4秒，若夕的周围32范围内存在“小自在”，则恢复1墨染值；<br> <span class=\"color-important\">3级：</span>所有“小自在”生成时获得2层护盾，且攻击力提高至68，生命值提高至200；<br>   <span class=\"color-important\">5级：</span>夕造成真实伤害时，恢复伤害值0.0025% * 等级 的生命值；<br>   <span class=\"color-important\">8级：</span>夕使用涂鬼神攻击时，额外再对目标周围8范围内的一个非友方单位造成一次攻击；<br>  <span class=\"color-important\">10级：</span>夕变为鬼魂后可以随时右键作祟自己复活，其它玩家可以作祟夕复活。<br><br>"
+      ]
+    },
+    "tip": [
+      ""
+    ]
+  },
+  {
+    "id": "spell_dusk_level3",
+    "title": "“终夜无寐”（下卷）",
+    "subtitle": "或许能够找回你更多的力量。",
+    "avatars": {
+      "wilson": "一些精巧的物件。",
+      "dusk": "力量渐渐回来了。"
+    },
+    "details": {
+      "name": "“终夜无寐”（下卷）",
+      "code": "spell_dusk_level3",
+      "image": "/images/dusk/spell_dusk_level3.webp",
+      "category": "物品/功能",
+      "unlock": "初始解锁",
+      "materials": [
+        "莎草纸*1",
+        "绿宝石*10",
+        "纯粹恐惧*10",
+        "金块*10",
+        "暗影心房*1"
+      ]
+    },
+    "description": {
+      "single": [
+        "<span class=\"color-important\">“终夜无寐”（下卷）</span>是一种仅【夕】可制作与使用的模组物品。",
+        "<span class=\"color-important\">说明-等级效果：</span><br><span class=\"color-important\">11级：</span>所有“小自在”的存在时间延长至50秒；夕的攻击触发【工笔入画】时，若命中单位不为史诗生物则打断其动作，并使所有命中目标停顿2秒（停顿：移动速度降低80%）；<br> <span class=\"color-important\">13级：</span>夕受到致命伤害时，恢复所有生命值并在10秒内无敌，冷却480秒；<br>   <span class=\"color-important\">15级：</span>所有“小自在”因任何原因死亡/消失时会产生爆炸，造成4范围480点真实伤害（不摧毁可破坏结构）；所有“小自在”受到攻击时，反射攻击者68点真实伤害（不触发造成伤害/受到伤害相关事件）；<br>  <span class=\"color-important\">18级：</span>夕可以右键地图上的任意一点，消耗50墨染值（无论距离）打开跃迁隙间（同旺达裂隙表）；<br>   <span class=\"color-important\">20级：</span>“涂鬼神”的攻击速度提高，攻击不再消耗墨染值。<br><br>"
       ]
     },
     "tip": [

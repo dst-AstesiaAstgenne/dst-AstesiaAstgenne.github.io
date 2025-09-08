@@ -17,28 +17,53 @@
         <li><router-link to="/othercharacter/duskindex/dusk">夕</router-link></li>
       </ul>
 
-      <h3 style="color: #007acc;">模组物品</h3>
-      <ul>
-        <li><router-link to="/othercharacter/duskindex/items/dusk_armor">墨染幻甲</router-link></li>
-        <li><router-link to="/othercharacter/duskindex/items/dusk_armor2">墨染幻甲-强化</router-link></li>
-        <li><router-link to="/othercharacter/duskindex/items/dusk_sword">涂鬼神</router-link></li>
-        <li><router-link to="/othercharacter/duskindex/items/dusk_chest">绘境藏玄</router-link></li>
-        <li><router-link to="/othercharacter/duskindex/items/dusk_medal">墨染勋章</router-link></li>
-        <li><router-link to="/othercharacter/duskindex/items/dusk_pen">幻墨神笔</router-link></li>
-        <li><router-link to="/othercharacter/duskindex/items/spell_dusk_level">无题长卷</router-link></li>
-        <li><router-link to="/othercharacter/duskindex/items/spell_dusk_level2">“终夜无寐”（上卷）</router-link></li>
-        <li><router-link to="/othercharacter/duskindex/items/dusk_elite_1">一级精英化券</router-link></li>
-        <li><router-link to="/othercharacter/duskindex/items/dusk_elite_2">二级精英化券</router-link></li>
-        <li><router-link to="/othercharacter/duskindex/items/dusk_book_doom">湮墨殷染尽拙山</router-link></li>
-        <li><router-link to="/othercharacter/duskindex/items/dusk_book_sleep">拙山方晓尽梦长</router-link></li>
-        <li><router-link to="/othercharacter/duskindex/items/dusk_statue">夕泡泡雕像</router-link></li>
-        <li><router-link to="/othercharacter/duskindex/items/dusk_star">“星稀”</router-link></li>
-        <li><router-link to="/othercharacter/duskindex/items/dusk_eye_open">幻造·第三只眼</router-link></li>
-        <li><router-link to="/othercharacter/duskindex/items/dusk_hammer">岩崩锤</router-link></li>
-        <li><router-link to="/othercharacter/duskindex/items/dusk_dial">幻造·月时计</router-link></li>
-        <li><router-link to="/othercharacter/duskindex/items/dusk_staff">意义非凡的法杖</router-link></li>
-        <li><router-link to="/othercharacter/duskindex/items/dusk_fan">宇智波团扇</router-link></li>
-      </ul>
+      <div class="sidebar-section">
+        <h3 style="color: #007acc;" @click="toggleSection('buildings')">
+          模组建筑
+        <span>{{ openSections.buildings ? '▲' : '▼' }}</span>
+        </h3>
+        <ul v-show="openSections.buildings">
+          <li><router-link to="/othercharacter/duskindex/items/dusk_statue">夕泡泡雕像</router-link></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <h3 style="color: #007acc;" @click="toggleSection('items')">
+          模组物品
+        <span>{{ openSections.items ? '▲' : '▼' }}</span>
+        </h3>
+        <ul v-show="openSections.items">
+          <li><router-link to="/othercharacter/duskindex/items/dusk_armor">墨染幻甲</router-link></li>
+          <li><router-link to="/othercharacter/duskindex/items/dusk_armor2">墨染幻甲-强化</router-link></li>
+          <li><router-link to="/othercharacter/duskindex/items/dusk_sword">涂鬼神</router-link></li>
+          <li><router-link to="/othercharacter/duskindex/items/dusk_chest">绘境藏玄</router-link></li>
+          <li><router-link to="/othercharacter/duskindex/items/dusk_medal">墨染勋章</router-link></li>
+          <li><router-link to="/othercharacter/duskindex/items/dusk_pen">幻墨神笔</router-link></li>
+          <li><router-link to="/othercharacter/duskindex/items/dusk_star">“星稀”</router-link></li>
+          <li><router-link to="/othercharacter/duskindex/items/spell_dusk_level">无题长卷</router-link></li>
+          <li><router-link to="/othercharacter/duskindex/items/spell_dusk_level2">“终夜无寐”（上卷）</router-link></li>
+          <li><router-link to="/othercharacter/duskindex/items/spell_dusk_level3">“终夜无寐”（下卷）</router-link></li>
+          <li><router-link to="/othercharacter/duskindex/items/dusk_elite_1">一级精英化券</router-link></li>
+          <li><router-link to="/othercharacter/duskindex/items/dusk_elite_2">二级精英化券</router-link></li>
+          <li><router-link to="/othercharacter/duskindex/items/dusk_book_doom">湮墨殷染尽拙山</router-link></li>
+          <li><router-link to="/othercharacter/duskindex/items/dusk_book_sleep">拙山方晓尽梦长</router-link></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <h3 style="color: #007acc;" @click="toggleSection('surprise')">
+          彩蛋物品
+        <span>{{ openSections.surprise ? '▲' : '▼' }}</span>
+        </h3>
+        <ul v-show="openSections.surprise">
+          <li><router-link to="/othercharacter/duskindex/items/dusk_eye_open">幻造·第三只眼</router-link></li>
+          <li><router-link to="/othercharacter/duskindex/items/dusk_hammer">岩崩锤</router-link></li>
+          <li><router-link to="/othercharacter/duskindex/items/dusk_dial">幻造·月时计</router-link></li>
+          <li><router-link to="/othercharacter/duskindex/items/dusk_staff">意义非凡的法杖</router-link></li>
+          <li><router-link to="/othercharacter/duskindex/items/dusk_fan">宇智波团扇</router-link></li>
+        </ul>
+      </div>
+
     </aside>
 
     <main>
@@ -51,6 +76,7 @@
         </div>
         <div class="notes">
           <p>*作者的创意工坊介绍页：<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3467205041">【明日方舟】夕（正式版）</a></p>
+          <p>*请注意页面的时效性，信息更新时间：2025.9.7（v1.17.32）</p>
           <p>*该页面仍有不少错误，欢迎指正。</p>
         </div>
       </header>
@@ -70,7 +96,23 @@
       </section>
 
       <section class="items">
-        <h4>模组物品</h4>
+        <h4 id="building">模组建筑</h4>
+        <div class="table-wrapper">
+          <table class="items-table">
+            <thead>
+              <tr>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><router-link to="/othercharacter/duskindex/items/dusk_statue"><img src="@/assets/othercharacter/dusk/dusk_statue.webp" alt="夕泡泡雕像" width="60px"><br>夕泡泡雕像</router-link></td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+
+        <h4 id="items">模组物品</h4>
         <div class="table-wrapper">
           <table class="items-table">
             <thead>
@@ -92,15 +134,27 @@
 
             <tr>
               <td><router-link to="/othercharacter/duskindex/items/spell_dusk_level2"><img src="@/assets/othercharacter/dusk/spell_dusk_level2.webp" alt="“终夜无寐”（上卷）" width="60px"><br>“终夜无寐”（上卷）</router-link></td>
+              <td><router-link to="/othercharacter/duskindex/items/spell_dusk_level3"><img src="@/assets/othercharacter/dusk/spell_dusk_level3.webp" alt="“终夜无寐”（下卷）" width="60px"><br>“终夜无寐”（下卷）</router-link></td>
               <td><router-link to="/othercharacter/duskindex/items/dusk_elite_1"><img src="@/assets/othercharacter/dusk/dusk_elite_1.webp" alt="一级精英化券" width="60px"><br>一级精英化券</router-link></td>
               <td><router-link to="/othercharacter/duskindex/items/dusk_elite_2"><img src="@/assets/othercharacter/dusk/dusk_elite_2.webp" alt="二级精英化券" width="60px"><br>二级精英化券</router-link></td>
               <td><router-link to="/othercharacter/duskindex/items/dusk_book_doom"><img src="@/assets/othercharacter/dusk/dusk_book_doom.webp" alt="湮墨殷染尽拙山" width="60px"><br>湮墨殷染尽拙山</router-link></td>
               <td><router-link to="/othercharacter/duskindex/items/dusk_book_sleep"><img src="@/assets/othercharacter/dusk/dusk_book_sleep.webp" alt="拙山方晓尽梦长" width="60px"><br>拙山方晓尽梦长</router-link></td>
-              <td><router-link to="/othercharacter/duskindex/items/dusk_statue"><img src="@/assets/othercharacter/dusk/dusk_statue.webp" alt="夕泡泡雕像" width="60px"><br>夕泡泡雕像</router-link></td>
               <td></td>
               <td></td>
-              
             </tr>
+              
+            </tbody>
+          </table>
+        </div>
+
+        <h4 id="surprise">彩蛋物品</h4>
+        <div class="table-wrapper">
+          <table class="items-table">
+            <thead>
+              <tr>
+              </tr>
+            </thead>
+            <tbody>
 
             <tr>
               
@@ -117,6 +171,8 @@
             </tbody>
           </table>
         </div>
+
+
       </section>
     </main>
   </body>
@@ -158,7 +214,27 @@ const toggleSidebar = () => {
   isSidebarActive.value = !isSidebarActive.value;
 };
 
+// 控制每个 section 是否展开
+const openSections = ref<Record<string, boolean>>({
+  character: false,
+  building: false,
+  material: false,
+  cuisine: false,
+  items: false,
+  follower: false,
+  surprise: false
+});
 
+const toggleSection = (key: string) => {
+  openSections.value[key] = !openSections.value[key];
+  if(openSections.value[key]){
+    // 滑动至对应位置
+    const element = document.getElementById(key);
+    if (element) {
+      element.scrollIntoView({ behavior: 'auto' });
+    }
+  }
+};
 
 </script>
 

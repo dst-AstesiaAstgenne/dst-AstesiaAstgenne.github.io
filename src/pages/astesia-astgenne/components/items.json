@@ -436,6 +436,9 @@
         "image": "/images/astesia-astgenne/ast_book_speed.webp",
         "link": "/astesia-astgenne/items/ast_book_speed"
       }
+    ],
+    "tip": [
+      "原型似乎是星极的信物与中坚信物。"
     ]
   },
   {
@@ -595,12 +598,12 @@
         "大蒜*3",
         "蜂蜜*3",
         "辣椒*3",
-        "⑥盐晶*3"
+        "盐晶*3"
       ]
     },
     "description": {
       "single": [
-        "<span class=\"color-important\">群星·随想曲（ast_book_flavor）</span>是一种仅【星极】可制作的物品。"
+        "<span class=\"color-important\">群星·随想曲（astesia_book_capriccio）</span>是一种仅【星极】可制作的物品。"
       ],
       "multi": [
         "耐久5次，阅读消耗20点理智值<br/><br/>\n<span class=\"color-important\">说明-基础特性：</span><br/>\n              阅读后对半径距离6以内最多10个可调位的料理进行随机调味，并回复满新鲜度。\n            "
@@ -635,14 +638,14 @@
     },
     "description": {
       "single": [
-        "<span class=\"color-important\">群星·幻想曲（ast_book_map）</span>是一种仅【星极】可制作的物品。"
+        "<span class=\"color-important\">群星·幻想曲（astesia_book_fantasia）</span>是一种仅【星极】可制作的物品。"
       ],
       "multi": [
         "\n              耐久5次，阅读消耗20点理智值<br/><br/>\n<span class=\"color-important\">说明-基础特性：</span><br/>\n              若世界存在的【沉底宝箱】＜10，则阅读后在海洋上生成一个【沉底宝箱】并显示位置。<br/>\n              若世界存在的【沉底宝箱】≥10，则在阅读后显示一个已有的【沉底宝箱】的位置。\n            "
       ]
     },
     "tip": [
-      ""
+      "描述取自《私は雨》片段：<br>夜明けに導かれている雨<br>（都模糊的黎明里　得到指引的雨）<br> 流れ着いた海の隠し味を知るまで<br>（直到汇流入海　知晓那其中隐藏的真味）<br>"
     ]
   },
   {
@@ -669,14 +672,15 @@
     },
     "description": {
       "single": [
-        "<span class=\"color-important\">群星·变奏曲（ast_book_moon）</span>是一种仅【星极】可制作的物品。"
+        "<span class=\"color-important\">群星·变奏曲（astesia_book_variations）</span>是一种仅【星极】可制作的物品。"
       ],
       "multi": [
         "\n              耐久5次，阅读消耗20点理智值<br/><br/>\n<span class=\"color-important\">说明-基础特性：</span><br/>\n              只能在【森林世界】阅读，阅读后将当前月相推进5天。\n            "
       ]
     },
     "tip": [
-      "带有【光电电路】的【星源】在新月阅读该书，会使得【光电电路】失效。"
+      "带有【光电电路】的【星源】在新月阅读该书，会使得【光电电路】失效。",
+      "描述取自《独創収差》片段：<br>見上げた空の透明感が<br>（仰首所见的天空如此透明）<br>心の闇を透過していく<br>（正透过我心中的阴暗）<br> 見下ろす街が染まっていく<br>（正浸染俯首所望的街道）<br>  明日は何か変われる？<br>（而明日将做何变化？）<br>"
     ]
   },
   {
@@ -703,14 +707,14 @@
     },
     "description": {
       "single": [
-        "<span class=\"color-important\">群星·练习曲（ast_book_pick）</span>是一种仅【星极】可制作的物品。"
+        "<span class=\"color-important\">群星·练习曲（astesia_book_practise）</span>是一种仅【星极】可制作的物品。"
       ],
       "multi": [
         "\n              耐久5次，阅读消耗20点理智值<br/><br/>\n<span class=\"color-important\">说明-基础特性：</span><br/>\n              阅读后可群体采集半径距离16以内的植物、作物、蜂箱。\n            "
       ]
     },
     "tip": [
-      ""
+      "描述取自《私は、私達は》片段：<br>涙はもう二度と見せない もう見せないから <br>明日はどうだろう昨日より笑えたかな<br>（不再让你见到我落泪 明明不再让你见到<br>明天又如何是好 会比昨天绽放更多笑容吗）<br>"
     ]
   },
   {
@@ -737,14 +741,15 @@
     },
     "description": {
       "single": [
-        "<span class=\"color-important\">群星·颂扬曲（ast_book_rebirth）</span>是一种仅【星极】可制作的物品。"
+        "<span class=\"color-important\">群星·颂扬曲（astesia_book_carol）</span>是一种仅【星极】可制作的物品。"
       ],
       "multi": [
         "\n              耐久2次，阅读消耗100点理智值。<br/><br/>\n<span class=\"color-important\">说明-基础特性：</span><br/>\n              阅读后随机选取一位当前世界死亡的玩家，令其在原地复活，<br/>\n              且在复活后持续拥有【铥矿皇冠】立场护盾的效果，持续30秒。<br/>\n<span class=\"color-important\">若无人死亡，则阅读后不会产生任何效果，但依旧会消耗耐久与理智值。</span>\n"
       ]
     },
     "tip": [
-      "【铥矿皇冠】立场护盾并不能减免位面伤害，若死亡玩家是因带有位面伤害的敌人死亡，请谨慎复活，避免二次死亡。"
+      "【铥矿皇冠】立场护盾并不能减免位面伤害，若死亡玩家是因带有位面伤害的敌人死亡，请谨慎复活，避免二次死亡。",
+      "描述取自《PASSIONATE ANTHEM》片段：<br>(Breaking out)　产声が激しくぶつかり合う宴<br>（这是一场新生之声回荡之宴会）<br>竞い咲くように命のAnthem 鸣らして<br>（如百花争艳般奏响生命的赞歌）"
     ]
   },
   {
@@ -771,14 +776,15 @@
     },
     "description": {
       "single": [
-        "<span class=\"color-important\">群星·圆舞曲（ast_book_speed）</span>是一种仅【星极】可制作的物品。"
+        "<span class=\"color-important\">群星·圆舞曲（astesia_book_dance）</span>是一种仅【星极】可制作的物品。"
       ],
       "multi": [
         "\n              耐久5次，阅读消耗20点理智值<br/><br/>\n<span class=\"color-important\">说明-基础特性：</span><br/>\n              阅读后令半径距离6以内友方角色<br/>\n              ①移速+20%<br/>\n              ②行径上长出存在数秒的神秘植物，荧光花，蕨类植物。<br/>\n              以上效果均持续2分钟。\n            "
       ]
     },
     "tip": [
-      "配合【群星·练习曲】可快速获取大量小发光浆果，荧光果，蕨叶"
+      "配合【群星·练习曲】可快速获取大量小发光浆果，荧光果，蕨叶",
+      "描述取自《PASSIONATE ANTHEM》片段：<br>言の叶の世界が煌びやかにひらり舞い踊る<br>（言语构成的世界在光辉中翩然起舞）<br>授かったものを辉かしく育ててゆくまで<br>（直到将被赐予之物培育至绽放光芒为止）"
     ]
   },
   {
@@ -840,7 +846,7 @@
       ]
     },
     "tip": [
-        "【星源】使用短杖时，除了第一次攻击，后续弹射均会扣减20秒耐久。"
+        "【星源】使用短杖时，后续的弹射攻击也会扣减20秒耐久。"
     ]
   },
   {
@@ -936,7 +942,8 @@
         "<span class=\"color-important\">昭示星光之愿（astgenne_starwish_complete）</span>是一种仅【星源】可制作与使用的武器。"
       ],
       "multi": [
-        "攻击力42.5，攻击距离10<br/>\n              移速+20%，耐久200次<br/>\n              最大弹射次数2<br/>\n              攻击对目标造成伤害后，会令其进入0.5秒的【停顿】状态，即移速-80%。<br/><br/>\n\n              耐久降至0时不消失，<br/>\n              但会立刻掉落至物品栏并无法装备。<br/>\n              使用【生物数据】修补60次耐久。<br/>\n              使用【星空修补套件】修补100%耐久。<br/><br/>\n<span class=\"color-important\">说明-基础特性：</span><br/>\n              ①拥有技能【星光的指引】。<br/>\n\n              在距离自身24范围以内，<span class=\"color-important\">右键</span>可在鼠标当前的位置生成一颗临时【矮星】，存在时间30秒。<br/>\n              若【星源】与其距离超过32，则临时【矮星】立刻消失。\n              在该临时【矮星】存在期间，再次<span class=\"color-important\">右键</span>会以【星源】为中心出现方向指示箭头，\n              且箭头末端固定指向临时【矮星】，此时右键会取消箭头，<span class=\"color-important\">左键</span>会令【星源】立刻传送至临时【矮星】的位置，\n              并使临时【矮星】立刻消失。<br/>\n              在临时【矮星】因任何原因消失后，此技能进入冷却状态，冷却30秒。<br/><br/>\n          \n              ②在月相为【满月】的夜晚，可将其插入【月亮石】触发<span class=\"color-important\">特殊的</span>【月亮石袭击】，并进行转化升级。\n            "
+        "攻击力42.5，攻击距离10<br/>\n              移速+20%，耐久200次<br/>\n              最大弹射次数2<br/>\n              攻击对目标造成伤害后，会令其进入0.5秒的【停顿】状态，即移速-80%。<br/><br/>\n\n              耐久降至0时不消失，<br/>\n              但会立刻掉落至物品栏并无法装备。<br/>\n              使用【生物数据】修补60次耐久。<br/>\n              使用【星空修补套件】修补100%耐久。<br/><br/>\n<span class=\"color-important\">说明-基础特性：</span><br/>\n              ①拥有技能【星光的指引】。<br/>\n\n              在距离自身24范围以内，<span class=\"color-important\">右键</span>可在鼠标当前的位置生成一颗临时【矮星】，存在时间30秒。<br/>\n              若【星源】与其距离超过32，则临时【矮星】立刻消失。\n              在该临时【矮星】存在期间，再次<span class=\"color-important\">右键</span>会以【星源】为中心出现方向指示箭头，\n              且箭头末端固定指向临时【矮星】，此时右键会取消箭头，<span class=\"color-important\">左键</span>会令【星源】立刻传送至临时【矮星】的位置，\n              并使临时【矮星】立刻消失。<br/>\n              在临时【矮星】因任何原因消失后，此技能进入冷却状态，冷却30秒。<br/><br/>\n          \n              ②在月相为【满月】的夜晚，可将其插入【月亮石】触发<span class=\"color-important\">特殊的</span>【月亮石袭击】，并进行转化升级。\n            ",
+        "<a href=\"../astgenne#item-design-special-item-weapon\">具体袭击点击这里，查看E - 3</a>"
       ]
     },
     "tip": [
@@ -1004,7 +1011,7 @@
         "<span class=\"color-important\">实验操作台（astgenne_rack）</span>是一种仅【星源】可制作的建筑。"
       ],
       "multi": [
-        "<a href=\"../astgenne#item-design-special-item-experiment-product\">具体实验点击这里</a>"
+        "<a href=\"../astgenne#item-design-special-item-experiment\">具体实验点击这里</a>"
       ]
     },
     "tip": [
@@ -1388,7 +1395,7 @@
       ]
     },
     "tip": [
-      ""
+      "原型似乎是星源的信物。"
     ]
   },
   {
@@ -1610,6 +1617,9 @@
         "",
         "",
         ""
+      ],
+      "multi": [
+        "<a href=\"../astesia#item-design-special-item-weapon\">具体袭击点击这里，查看E - 3</a>"
       ]
     },
     "tip": []

@@ -46,19 +46,6 @@
           <li><a href="#level-conclusion2">2. 结论，精二属性</a></li>
         </ul>
       </li>
-      <!-- <li class="has-submenu">
-        <div class="menu-item">
-          <a href="#talent-system">④天赋系统</a>
-          <span class="toggle-icon" @click.stop="toggle('talent')">
-            {{ open.talent ? '−' : '+' }}
-          </span>
-        </div>
-        <ul v-show="open.talent" class="submenu">
-          <li><a href="#ember">1.余烬</a></li>
-          <li><a href="#ember-dance">2.灼热的回忆</a></li>
-          <li><a href="#ember-rotation">3.绝烬重燃</a></li>
-        </ul>
-      </li> -->
       <li class="has-submenu">
         <div class="menu-item">
           <a href="#skill-system">④技能系统</a>
@@ -336,7 +323,7 @@
           <td>初始解锁</td>
           <td>主动触发<br>（按键X）</td>
           <td>瞬发</td>
-          <td>15秒</td>
+          <td>30秒</td>
         </tr>
 
         <tr>
@@ -398,7 +385,7 @@
         <tr>
           <td>墨焰凝神</td>
           <td>
-            夕消耗50墨染值（不足则消耗25生命值）向四周发射5道墨焰卷须，卷须会自动追踪附近的敌对单位，命中时对目标造成200 * 夕攻击倍率 的真实伤害。
+            夕消耗50墨染值（不足则消耗25生命值）生成8道旋转且跟随移动的墨焰卷须（范围2地皮），卷须会为触碰的友方单位每0.1秒恢复0.2生命值，触碰的敌方单位停顿2秒（停顿：移动速度-80%）。
           </td>
         </tr>
 
@@ -449,7 +436,7 @@
             <img src="@/assets/othercharacter/dusk/dusk_statue.webp" alt="夕泡泡雕像" width="40px"><br>
             夕泡泡雕像</td>
           <td>初始解锁</td>
-          <td style="min-width: 110px;">①暗影心房*1<br>
+          <td>①暗影心房*1<br>
             ②大理石*40<br>
             ③纯粹恐惧*40
           </td>
@@ -526,7 +513,7 @@
           <td><img src="@/assets/othercharacter/dusk/dusk_medal.webp" alt="墨染勋章" width="40px"><br>墨染勋章</td>
           <td>装备/身体</td>
           <td>初始解锁</td>
-          <td style="min-width: 120px;">①绿宝石*20<br>
+          <td>①绿宝石*20<br>
             ②纯粹恐惧*20<br>
             ③金块*20
           </td>
@@ -540,7 +527,7 @@
           <td><img src="@/assets/othercharacter/dusk/dusk_pen.webp" alt="幻墨神笔" width="40px"><br>幻墨神笔</td>
           <td>装备/手部</td>
           <td>初始解锁</td>
-          <td style="min-width: 120px;">①理智值*400/生命值*100
+          <td>①理智值*400/生命值*100
           </td>
           <td>
             攻击力0，位面伤害68，攻击距离2，移速加成25%，精神值+6.7/min<br>
@@ -555,7 +542,7 @@
           <td><img src="@/assets/othercharacter/dusk/spell_dusk_level.webp" alt="无题长卷" width="40px"><br>无题长卷</td>
           <td>物品/功能</td>
           <td>初始解锁</td>
-          <td style="min-width: 120px;">①莎草纸*1<br>
+          <td>①莎草纸*1<br>
             ②绿宝石*10<br>
             ③蛞蝓龟粘液*5<br>
             ④金块*5
@@ -569,7 +556,7 @@
           <td><img src="@/assets/othercharacter/dusk/spell_dusk_level2.webp" alt="“终夜无寐”（上卷）" width="40px"><br>“终夜无寐”（上卷）</td>
           <td>物品/功能</td>
           <td>初始解锁</td>
-          <td style="min-width: 120px;">①莎草纸*1<br>
+          <td>①莎草纸*1<br>
             ②绿宝石*10<br>
             ③纯粹恐惧*10<br>
             ④金块*10
@@ -577,15 +564,34 @@
           <td>
             每级使夕在造成真实伤害时，恢复伤害值0.005% * 等级 的墨染值<br><br>
             <span class="color-important">说明-等级效果：</span><br>
-            1级：每隔4秒，若夕的周围32范围内存在“小自在”，则恢复1墨染值；<br>
-            3级：所有“小自在”生成时获得2层护盾，且攻击力提高至68，生命值提高至200；<br>
-            5级：夕造成真实伤害时，恢复伤害值0.0025% * 等级 的生命值；<br>
-            8级：夕使用涂鬼神攻击时，额外再对目标周围8范围内的一个非友方单位造成一次攻击；<br>
-            10级：夕变为鬼魂后可以随时右键作祟自己复活，其它玩家可以作祟夕复活。<br><br>
+            <span class="color-important">1级：</span>每隔4秒，若夕的周围32范围内存在“小自在”，则恢复1墨染值；<br>
+            <span class="color-important">3级：</span>所有“小自在”生成时获得2层护盾，且攻击力提高至68，生命值提高至200；<br>
+            <span class="color-important">5级：</span>夕造成真实伤害时，恢复伤害值0.0025% * 等级 的生命值；<br>
+            <span class="color-important">8级：</span>夕使用涂鬼神攻击时，额外再对目标周围8范围内的一个非友方单位造成一次攻击；<br>
+            <span class="color-important">10级：</span>夕变为鬼魂后可以随时右键作祟自己复活，其它玩家可以作祟夕复活。<br><br>
 
           </td>
         </tr>
 
+        <tr>
+          <td><img src="@/assets/othercharacter/dusk/spell_dusk_level3.webp" alt="“终夜无寐”（下卷）" width="40px"><br>“终夜无寐”（下卷）</td>
+          <td>物品/功能</td>
+          <td>初始解锁</td>
+          <td>①莎草纸*1<br>
+            ②绿宝石*10<br>
+            ③纯粹恐惧*10<br>
+            ④金块*10<br>
+            ⑤暗影心房*1
+          </td>
+          <td>
+            <span class="color-important">说明-等级效果：</span><br>
+            <span class="color-important">11级：</span>所有“小自在”的存在时间延长至50秒；夕的攻击触发【工笔入画】时，若命中单位不为史诗生物则打断其动作，并使所有命中目标停顿2秒（停顿：移动速度降低80%）；<br>
+            <span class="color-important">13级：</span>夕受到致命伤害时，恢复所有生命值并在10秒内无敌，冷却480秒；<br>
+            <span class="color-important">15级：</span>所有“小自在”因任何原因死亡/消失时会产生爆炸，造成4范围480点真实伤害（不摧毁可破坏结构）；所有“小自在”受到攻击时，反射攻击者68点真实伤害（不触发造成伤害/受到伤害相关事件）；<br>
+            <span class="color-important">18级：</span>夕可以右键地图上的任意一点，消耗50墨染值（无论距离）打开跃迁隙间（同旺达裂隙表）；<br>
+            <span class="color-important">20级：</span>“涂鬼神”的攻击速度提高，攻击不再消耗墨染值。<br><br>
+          </td>
+        </tr>
 
       </tbody>
 
@@ -607,9 +613,9 @@
         <!-- 第一组：SOH 行 -->
         <tr>
           <td><img src="@/assets/othercharacter/dusk/dusk_sword.webp" alt="涂鬼神" width="40px"><br>涂鬼神</td>
-          <td style="min-width: 80px;">装备/手部</td>
-          <td style="min-width: 80px;">初始解锁</td>
-          <td style="min-width: 120px;">
+          <td>装备/手部</td>
+          <td>初始解锁</td>
+          <td>
             ①栅栏击剑*1<br>
             ②金块*40<br>
             ③噩梦燃料*40
@@ -632,7 +638,7 @@
           <td><img src="@/assets/othercharacter/dusk/dusk_star.webp" alt="“星稀”" width="40px"><br>“星稀”</td>
           <td>装备/手部</td>
           <td>初始解锁</td>
-          <td style="min-width: 120px;">①彩虹宝石*1<br>
+          <td>①彩虹宝石*1<br>
             ②金块*10
           </td>
           <td>
@@ -775,7 +781,7 @@
     <thead>
         <tr>
           <th>物品图标与名称</th>
-          <th style="min-width: 80px;">物品类型</th>
+          <th>物品类型</th>
           <th>解锁方式</th>
           <th>制作材料</th>
           <th>效果简述</th>
@@ -787,7 +793,7 @@
           <td><img src="@/assets/othercharacter/dusk/dusk_eye_open.webp" alt="幻造·第三只眼（开眼）" width="40px"><br>幻造·第三只眼（开眼）</td>
           <td>装备/头部</td>
           <td>完整的远古伪科技站</td>
-          <td style="min-width: 120px;">①巨鹿眼球*1<br>
+          <td>①巨鹿眼球*1<br>
             ②铥矿*10<br>
             ③纯粹恐惧*10
           </td>
@@ -807,7 +813,7 @@
           <td><img src="@/assets/othercharacter/dusk/dusk_eye_closed.webp" alt="幻造·第三只眼（闭眼）" width="40px"><br>幻造·第三只眼（闭眼）</td>
           <td>装备/头部</td>
           <td>无法解锁</td>
-          <td style="min-width: 120px;">无法制作
+          <td>无法制作
           </td>
           <td>
             隔热240，移速加成10%，防水100%<br><br>
@@ -823,7 +829,7 @@
           <td><img src="@/assets/othercharacter/dusk/dusk_hammer.webp" alt="岩崩锤" width="40px"><br>岩崩锤</td>
           <td>装备/手部</td>
           <td>蓝图解锁</td>
-          <td style="min-width: 120px;">①锤子*1<br>
+          <td>①锤子*1<br>
             ②石头*40<br>
             ③电子元件*5
           </td>
@@ -842,7 +848,7 @@
           <td><img src="@/assets/othercharacter/dusk/dusk_dial.webp" alt="幻造·月时计" width="40px"><br>幻造·月时计</td>
           <td>装备/手部</td>
           <td>完整的远古伪科技站</td>
-          <td style="min-width: 120px;">①铥矿*10<br>
+          <td>①铥矿*10<br>
             ②橙宝石*10<br>
             ③噩梦燃料*10
           </td>
@@ -861,7 +867,7 @@
           <td><img src="@/assets/othercharacter/dusk/dusk_staff.webp" alt="意义非凡的法杖" width="40px"><br>意义非凡的法杖</td>
           <td>装备/手部</td>
           <td>完整的远古伪科技站</td>
-          <td style="min-width: 120px;">①彩虹宝石*1<br>
+          <td>①彩虹宝石*1<br>
             ②木头*10<br>
             ③蜘蛛丝*5
           </td>
@@ -878,7 +884,7 @@
           <td><img src="@/assets/othercharacter/dusk/dusk_fan.webp" alt="宇智波团扇" width="40px"><br>宇智波团扇</td>
           <td>装备/手部</td>
           <td>初始解锁</td>
-          <td style="min-width: 120px;">①羽毛扇*1<br>
+          <td>①羽毛扇*1<br>
             ②活木*40<br>
             ③纯粹恐惧*40<br>
             ④金块*40

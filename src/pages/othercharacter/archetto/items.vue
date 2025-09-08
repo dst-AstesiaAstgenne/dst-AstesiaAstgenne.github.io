@@ -5,7 +5,7 @@
     <sidebar />
   </aside>
   <main v-if="currentPage">
-    <h1 style="font-size: 48px;">{{ currentPage.details?.name || currentPage.items?.[0].title }}</h1>
+    <h1 style="font-size: 48px;">{{ currentPage.details?.name}}</h1>
     <h3 style="margin-bottom: 20px;">{{ currentPage.subtitle }}</h3>
 
     <div class="main-container">
@@ -103,6 +103,42 @@
       </div>
 
     </div>
+
+    <h1 style="font-size: 48px;">{{ currentPage.details2?.name}}</h1>
+    <h3 style="margin-bottom: 20px;">{{ currentPage.subtitle2 }}</h3>
+    <div class="main-container">
+      <!-- 左侧 -->
+      <div class="left-container">
+        <div class="avatar-container">
+          <img 
+            v-for="(, key) in currentPage.avatar2"
+            :key="key"
+            :src="`/images/description/${key}2.webp`"
+            :alt="key"
+            class="avatar"
+            :class="{ active: activeAvatar[currentPage.id] === key }"
+            @click="setActiveAvatar(currentPage.id, key)"
+          />
+        </div>
+        <!-- <div class="description-container" v-html="currentPage.avatar2[activeAvatar[currentPage.id]]">
+        </div> -->
+      </div>
+      <div class="right-container" v-if="currentPage.details2">
+        <h2 style="color: #007acc;">{{ currentPage.details2.name }}</h2>
+        <p>{{ currentPage.details2.code }}</p>
+        <hr>
+        <img :src="`${currentPage.details2.image}`" 
+             :alt="currentPage.details2.name" width="100px" />
+        <hr>
+        <p v-if="currentPage.details2.category">分类：<span v-html="currentPage.details2.category"></span></p>
+        <p v-if="currentPage.details2.stack">堆叠上限：{{ currentPage.details2.stack }}</p>
+        <p v-if="currentPage.details2.unlock">解锁方式：<span v-html="currentPage.details2.unlock"></span></p>
+        <p v-if="currentPage.details2.materials">制作材料：<br>
+          <span v-for="mat in currentPage.details2.materials" :key="mat">{{ mat }}<br></span>
+        </p>
+      </div>
+    </div>
+
   </main>
 
   <main v-else>
@@ -127,8 +163,14 @@ interface Page {
   tip?: string[]
   craftableItems?: { name: string; image: string; link: string }[]
   details?: { name: string; code: string; image: string; category: string; stack?: number; unlock?: string; materials?: string[] }
-  items?: { title: string; image: string; category: string; unlock: string; materials: string[] }[]
   cooking?:{ requirement?: string[]; time?: string; limit?: string[] }
+
+  title2?: string
+  subtitle2?: string
+  avatar2?: Record<string, string>
+  description2?: { single: string[]; multi?: string[] }
+  tip2?: string[]
+  details2?: { name: string; code: string; image: string; category: string; stack?: number; unlock?: string; materials?: string[] }
 }
 
 const typedPages: Page[] = items

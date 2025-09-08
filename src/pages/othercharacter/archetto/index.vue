@@ -148,6 +148,7 @@
           <p>*请确保对于原版拥有一定的理解与熟练度，以此获得更好的游玩体验。</p>
           <p>*作者的创意工坊介绍页：<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3005687457">[明日方舟] 空弦</a></p>
           <p>*作者的模组介绍页：<a href="https://www.bilibili.com/read/readlist/rl777082">饥荒联机版空弦MOD介绍</a></p>
+          <p>*请注意页面的时效性，信息更新时间：2025.9.2（v1.4.6）</p>
           <p>*该页面仍有不少错误，欢迎指正。</p>
         </div>
       </header>
@@ -167,7 +168,7 @@
       </section>
 
       <section class="items">
-        <h4>模组建筑</h4>
+        <h4 id="building">模组建筑</h4>
         <div class="table-wrapper">
           <table class="items-table">
             <thead>
@@ -182,7 +183,7 @@
           </table>  
         </div>
 
-        <h4>模组材料</h4>
+        <h4 id="material">模组材料</h4>
         <div class="table-wrapper">
           <table class="items-table">
             <thead>
@@ -198,7 +199,7 @@
           </table>  
         </div>
 
-        <h4>模组物品</h4>
+        <h4 id="items">模组物品</h4>
         <div class="table-wrapper">
           <table class="items-table">
             <thead>
@@ -286,7 +287,7 @@
           </table>  
         </div>
 
-        <h4>模组料理</h4>
+        <h4 id="cuisine">模组料理</h4>
         <div class="table-wrapper">
           <table class="items-table">
             <thead>
@@ -309,7 +310,7 @@
           </table>
         </div>
 
-        <h4>模组随从</h4>
+        <h4 id="follower">模组随从</h4>
         <div class="table-wrapper">
           <table class="items-table">
             <thead>
@@ -325,7 +326,6 @@
         </div>
       </section>
     </main>
-
   </body>
   
   </html>
@@ -380,6 +380,13 @@ const openSections = ref<Record<string, boolean>>({
 
 const toggleSection = (key: string) => {
   openSections.value[key] = !openSections.value[key];
+  if(openSections.value[key]){
+    // 滑动至对应位置
+    const element = document.getElementById(key);
+    if (element) {
+      element.scrollIntoView({ behavior: 'auto' });
+    }
+  }
 };
 
 </script>

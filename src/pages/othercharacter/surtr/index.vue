@@ -17,22 +17,38 @@
         <li><router-link to="/othercharacter/surtrindex/surtr">史尔特尔</router-link></li>
       </ul>
 
-      <h3 style="color: #007acc;">模组物品</h3>
-      <ul>
-        <li><router-link to="/othercharacter/surtrindex/items/surtrclothes">史尔特尔服装</router-link></li>
-        <li><router-link to="/othercharacter/surtrindex/items/laevatain">莱万汀</router-link></li>
-        <li><router-link to="/othercharacter/surtrindex/items/surtr_pureflame">纯粹火焰</router-link></li>
-        <li><router-link to="/othercharacter/surtrindex/items/surtr_elitebook1">高级资深干员训练书</router-link></li>
-        <li><router-link to="/othercharacter/surtrindex/items/surtr_elitebook2">高级资深干员特训书</router-link></li>
-        <li><router-link to="/othercharacter/surtrindex/items/surtr_supericecream">豪华冰淇淋</router-link></li>
-        <li><router-link to="/othercharacter/surtrindex/items/surtr_lavabreath">灼热之息</router-link></li>
-        <li><router-link to="/othercharacter/surtrindex/items/surtr_lavakiss">熔岩之吻</router-link></li>
-        <li><router-link to="/othercharacter/surtrindex/items/surtr_sxys_deerleg">晶肝茸髓</router-link></li>
-        <li><router-link to="/othercharacter/surtrindex/items/surtr_sxys_shutiao">脆肉薯条转醇</router-link></li>
-        <li><router-link to="/othercharacter/surtrindex/items/surtr_sxys_shanshui">炎国山水原液</router-link></li>
-        <li><router-link to="/othercharacter/surtrindex/items/surtr_glassseaweed">玻璃海苔</router-link></li>
-        <li><router-link to="/othercharacter/surtrindex/items/surtr_scarygrandma">地精奶奶</router-link></li>
-      </ul>
+      <div class="sidebar-section">
+        <h3 style="color: #007acc;" @click="toggleSection('items')">
+          模组物品
+        <span>{{ openSections.items ? '▲' : '▼' }}</span>
+        </h3>
+        <ul v-show="openSections.items">
+          <li><router-link to="/othercharacter/surtrindex/items/surtrclothes">史尔特尔服装</router-link></li>
+          <li><router-link to="/othercharacter/surtrindex/items/laevatain">莱万汀</router-link></li>
+          <li><router-link to="/othercharacter/surtrindex/items/surtr_pureflame">纯粹火焰</router-link></li>
+          <li><router-link to="/othercharacter/surtrindex/items/surtr_elitebook1">高级资深干员训练书</router-link></li>
+          <li><router-link to="/othercharacter/surtrindex/items/surtr_elitebook2">高级资深干员特训书</router-link></li>
+          <li><router-link to="/othercharacter/surtrindex/items/surtr_supericecream">豪华冰淇淋</router-link></li>
+          <li><router-link to="/othercharacter/surtrindex/items/surtr_sxys_deerleg">晶肝茸髓</router-link></li>
+          <li><router-link to="/othercharacter/surtrindex/items/surtr_glassseaweed">玻璃海苔</router-link></li>
+          <li><router-link to="/othercharacter/surtrindex/items/surtr_scarygrandma">地精奶奶</router-link></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <h3 style="color: #007acc;" @click="toggleSection('cuisine')">
+          模组料理
+        <span>{{ openSections.cuisine ? '▲' : '▼' }}</span>
+        </h3>
+        <ul v-show="openSections.cuisine">
+          <li><router-link to="/othercharacter/surtrindex/items/surtr_lavabreath">灼热之息</router-link></li>
+          <li><router-link to="/othercharacter/surtrindex/items/surtr_lavakiss">熔岩之吻</router-link></li>
+          <li><router-link to="/othercharacter/surtrindex/items/surtr_sxys_shutiao">脆肉薯条转醇</router-link></li>
+          <li><router-link to="/othercharacter/surtrindex/items/surtr_sxys_shanshui">炎国山水原液</router-link></li>
+        </ul>
+      </div>
+
+      
     </aside>
 
     <main>
@@ -48,6 +64,7 @@
       <div class="notes">
         <p>*作者的创意工坊介绍页：<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3452922217">[Arknights]明日方舟：史尔特尔</a></p>
         <p>*吃土穷神的模组介绍视频：<a href="https://www.bilibili.com/video/BV16xExzKEob">【饥荒MOD人物介绍】红色幻神——史尔特尔（锁血高伤、诸神黄昏）</a></p>
+        <p>*请注意页面的时效性，信息更新时间：2025.8.19（v1.2.07）</p>
         <p>*该页面仍有不少错误，欢迎指正。</p>
       </div>
       </header>
@@ -67,7 +84,7 @@
       </section>
 
       <section class="items">
-        <h4>模组物品</h4>
+        <h4 id="items">模组物品</h4>
         <div class="table-wrapper">
           <table class="items-table">
             <thead>
@@ -82,16 +99,40 @@
                 <td><router-link to="/othercharacter/surtrindex/items/surtr_elitebook1"><img src="@/assets/othercharacter/surtr/surtr_elitebook1.webp" alt="高级资深干员训练书" width="60px"><br>高级资深干员训练书</router-link></td>
                 <td><router-link to="/othercharacter/surtrindex/items/surtr_elitebook2"><img src="@/assets/othercharacter/surtr/surtr_elitebook2.webp" alt="高级资深干员特训书" width="60px"><br>高级资深干员特训书</router-link></td>
                 <td><router-link to="/othercharacter/surtrindex/items/surtr_supericecream"><img src="@/assets/othercharacter/surtr/surtr_supericecream.webp" alt="豪华冰淇淋" width="60px"><br>豪华冰淇淋</router-link></td>
-                <td><router-link to="/othercharacter/surtrindex/items/surtr_lavabreath"><img src="@/assets/othercharacter/surtr/surtr_lavabreath.webp" alt="灼热之息" width="60px"><br>灼热之息</router-link></td>
-                <td><router-link to="/othercharacter/surtrindex/items/surtr_lavakiss"><img src="@/assets/othercharacter/surtr/surtr_lavakiss.webp" alt="熔岩之吻" width="60px"><br>熔岩之吻</router-link></td>
+                <td><router-link to="/othercharacter/surtrindex/items/surtr_sxys_deerleg"><img src="@/assets/othercharacter/surtr/surtr_sxys_deerleg.webp" alt="晶肝茸髓" width="60px"><br>晶肝茸髓</router-link></td>
+                <td><router-link to="/othercharacter/surtrindex/items/surtr_glassseaweed"><img src="@/assets/othercharacter/surtr/surtr_glassseaweed.webp" alt="玻璃海苔" width="60px"><br>玻璃海苔</router-link></td>
               </tr>
 
               <tr>
-                <td><router-link to="/othercharacter/surtrindex/items/surtr_sxys_deerleg"><img src="@/assets/othercharacter/surtr/surtr_sxys_deerleg.webp" alt="晶肝茸髓" width="60px"><br>晶肝茸髓</router-link></td>
+
+                <td><router-link to="/othercharacter/surtrindex/items/surtr_scarygrandma"><img src="@/assets/othercharacter/surtr/surtr_scarygrandma.webp" alt="地精奶奶" width="60px"><br>地精奶奶</router-link></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>   
+              
+            </tbody>
+          </table>
+        </div>
+
+        <h4 id="cuisine">模组料理</h4>
+        <div class="table-wrapper">
+          <table class="items-table">
+            <thead>
+              <tr>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><router-link to="/othercharacter/surtrindex/items/surtr_lavabreath"><img src="@/assets/othercharacter/surtr/surtr_lavabreath.webp" alt="灼热之息" width="60px"><br>灼热之息</router-link></td>
+                <td><router-link to="/othercharacter/surtrindex/items/surtr_lavakiss"><img src="@/assets/othercharacter/surtr/surtr_lavakiss.webp" alt="熔岩之吻" width="60px"><br>熔岩之吻</router-link></td>
                 <td><router-link to="/othercharacter/surtrindex/items/surtr_sxys_shutiao"><img src="@/assets/othercharacter/surtr/surtr_sxys_shutiao.webp" alt="脆肉薯条转醇" width="60px"><br>脆肉薯条转醇</router-link></td>
                 <td><router-link to="/othercharacter/surtrindex/items/surtr_sxys_shanshui"><img src="@/assets/othercharacter/surtr/surtr_sxys_shanshui.webp" alt="炎国山水原液" width="60px"><br>炎国山水原液</router-link></td>
-                <td><router-link to="/othercharacter/surtrindex/items/surtr_glassseaweed"><img src="@/assets/othercharacter/surtr/surtr_glassseaweed.webp" alt="玻璃海苔" width="60px"><br>玻璃海苔</router-link></td>
-                <td><router-link to="/othercharacter/surtrindex/items/surtr_scarygrandma"><img src="@/assets/othercharacter/surtr/surtr_scarygrandma.webp" alt="地精奶奶" width="60px"><br>地精奶奶</router-link></td>
+                <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -107,7 +148,7 @@
 </template>
 
 <script setup lang="ts">
-// import '@/pages/css/main.css';
+import '@/pages/css/main.css';
 import navigation from './components/navigation.vue';
 import { onMounted, ref } from 'vue';
 
@@ -141,8 +182,26 @@ const toggleSidebar = () => {
   isSidebarActive.value = !isSidebarActive.value;
 };
 
+// 控制每个 section 是否展开
+const openSections = ref<Record<string, boolean>>({
+  character: false,
+  building: false,
+  material: false,
+  cuisine: false,
+  items: false,
+  follower: false,
+});
 
-
+const toggleSection = (key: string) => {
+  openSections.value[key] = !openSections.value[key];
+  if(openSections.value[key]){
+    // 滑动至对应位置
+    const element = document.getElementById(key);
+    if (element) {
+      element.scrollIntoView({ behavior: 'auto' });
+    }
+  }
+};
 </script>
 
 <style scoped>
