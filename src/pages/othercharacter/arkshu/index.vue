@@ -92,7 +92,7 @@
       <div class="notes">
         <p>*作者的创意工坊介绍页：<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3524519338">[Arknights]明日方舟：黍（SHU）</a></p>
         <p>*吃土穷神的模组介绍视频：<a href="https://www.bilibili.com/video/BV1LFtkzhEPL">【饥荒MOD人物介绍】千秋一粟——黍（种地奶盾、极致抗压）</a></p>
-        <p>*请注意页面的时效性，信息更新时间：2025.8.21（v1.0.4）</p>
+        <p>*请注意页面的时效性，信息更新时间：2025.9.10（v1.0.3）</p>
         <p>*该页面仍有不少错误，欢迎指正。</p>
       </div>
       </header>

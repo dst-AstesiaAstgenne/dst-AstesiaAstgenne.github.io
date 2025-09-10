@@ -17,7 +17,7 @@
     "description": {
       "single": [
         "<span class=\"color-important\">异铁</span>是一种模组材料。",
-        "<span class=\"color-important\">说明-获取方式</span><br>挖掘【原版矿石】的时候有10%的概率掉落"
+        "<span class=\"color-important\">说明-获取方式</span><br>挖掘【原版矿石】的时候有10%的概率掉落<br><br> <span class=\"color-important\">说明-其余设定</span><br>可在装备栏右键拆解，获得1个废料"
       ]
     },
     "tip": [
@@ -51,6 +51,9 @@
     "description": {
       "single": [
         "<span class=\"color-important\">异铁组</span>是一种模组材料。"
+      ],
+      "multi": [
+        "<span class=\"color-important\">说明-其余设定</span><br>  可在装备栏右键拆解，获得5个废料和1个烂电线"
       ]
     },
     "tip": [
@@ -84,6 +87,9 @@
     "description": {
       "single": [
         "<span class=\"color-important\">全新装置</span>是一种模组物品。"
+      ],
+      "multi": [
+        "可以修复损坏的发条装置，一个可以修复一次，修复后会变成正常的发条装置"
       ]
     },
     "tip": [
@@ -112,12 +118,15 @@
     },
     "description": {
       "single": [
-        "<span class=\"color-important\">研磨石</span>是一种模组物品。",
-        "<span class=\"color-important\">说明-获取方式</span><br>挖掘【原版矿石】的时候有10%的概率掉落"
+        "<span class=\"color-important\">研磨石</span>是一种模组物品。"
+      ],
+      "multi": [
+        "<span class=\"color-important\">说明-获取方式</span><br>    挖掘【原版矿石】的时候有10%的概率掉落<br>   （掉落后2分钟不拾取会消失）<br><br>  <span class=\"color-important\">说明-基础特性</span><br>   可以恢复任意武器20%的耐久"
       ]
     },
     "tip": [
-      ""
+      "拾取之后重新丢在地上，过2分钟同样会直接消失",
+      "实际上的基础特性。<br> <span class=\"color-important\">说明-基础特性</span><br> ①可以恢复部分武器20%的耐久（有伤害的手部装备，包括【懒人魔杖】【冰魔杖】等）<br> ②时间耐久度的不能修，例如【晨星锤】<br> ③新鲜耐久度的不能修，例如【公牛海带茎】<br>"
     ],
     "craftableItems": [
       {
@@ -146,12 +155,14 @@
     },
     "description": {
       "single": [
-        "<span class=\"color-important\">炽合金</span>是一种模组物品。",
-        "<span class=\"color-important\">说明-获取方式</span><br>①发条骑士，发条主教，损坏的发条骑士，损坏的发条主教有10%概率掉落<br>②发条战车，损坏的发条战车有20%概率掉落<br>"
+        "<span class=\"color-important\">炽合金</span>是一种模组物品。"
+      ],
+      "multi": [
+        "<span class=\"color-important\">说明-获取方式</span><br>    ①发条骑士，发条主教，损坏的发条骑士，损坏的发条主教有10%概率掉落<br>  ②发条战车，损坏的发条战车有20%概率掉落<br>  （掉落后2分钟不拾取会消失）<br>  <span class=\"color-important\">说明-其余设定</span><br>  可在装备栏右键拆解，获得3个齿轮"
       ]
     },
     "tip": [
-      ""
+      "拾取之后重新丢在地上，过2分钟同样会直接消失"
     ],
     "craftableItems": [
       {
@@ -182,12 +193,14 @@
     },
     "description": {
       "single": [
-        "<span class=\"color-important\">炽合金块</span>是一种模组物品。",
-        ""
+        "<span class=\"color-important\">炽合金块</span>是一种模组物品。"
+      ],
+      "multi": [
+        "<span class=\"color-important\">说明-基础特性</span><br>   ①持有炽合金块时，会减少潮湿值（每3秒减少1点）<br>  ②炽合金块被放置在地面时，会成为30°的热源<br><br>   <span class=\"color-important\">说明-其余设定</span><br>  可在装备栏右键拆解，获得5个齿轮，2个金块，1个废料"
       ]
     },
     "tip": [
-      ""
+      "暂时只有拆解动作但不能拆解"
     ],
     "craftableItems": [
       {
@@ -248,12 +261,14 @@
     },
     "description": {
       "single": [
-        "<span class=\"color-important\">凝胶</span>是一种模组物品。",
-        "<span class=\"color-important\">说明-获取方式</span><br>击杀水性生物获得【青蛙&明眼青蛙5%，触手10%，水獭10%，水獭掠夺者窝点100%】"
+        "<span class=\"color-important\">凝胶</span>是一种模组物品。"
+      ],
+      "multi": [
+        "<span class=\"color-important\">说明-获取方式</span><br>   击杀水性生物获得【青蛙&明眼青蛙5%，触手10%，水獭10%，水獭掠夺者窝点100%】<br>    （掉落后2分钟不拾取会消失）<br><br>  <span class=\"color-important\">说明-基础特性</span><br>  可在物品栏右键使用，降低20点潮湿值"
       ]
     },
     "tip": [
-      ""
+      "拾取之后重新丢在地上，过2分钟同样会直接消失"
     ],
     "craftableItems": [
       {
@@ -285,11 +300,11 @@
     "description": {
       "single": [
         "<span class=\"color-important\">聚合凝胶</span>是一种模组材料。",
-        "              可用作180s燃料<br/><br/>\n<span class=\"color-important\">说明-获取方式：</span><br/>\n              ①击杀史诗生物有概率掉落，默认50%\n            "
+        "可以用作燃料，将篝火点燃成最大状态持续5分钟，硝石火堆的冷火和火坑的火也生效<br>"
       ]
     },
     "tip": [
-      ""
+      "暂时只是100秒燃料"
     ]
   },
   {
