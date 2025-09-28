@@ -49,7 +49,7 @@
           <li><router-link to="/astesia-astgenne/items/astgenne_wand1">制式源石短杖</router-link></li>
           <li><router-link to="/astesia-astgenne/items/astgenne_wings">翱翔星海之翼</router-link></li>
           <li><router-link to="/astesia-astgenne/items/astgenne_bouquet">飞燕草花束</router-link></li>
-          <li><router-link to="/astesia-astgenne/items/astgenne_badge_astgenne">星源证章</router-link></li>
+          <li><router-link to="/astesia-astgenne/items/ast_badge_astgenne">星源证章</router-link></li>
           <li><router-link to="/astesia-astgenne/items/astgenne_key">黯淡星河之钥</router-link></li>
         </ul>
       </div>

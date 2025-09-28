@@ -67,7 +67,7 @@
           <li><router-link to="/astesia-astgenne/items/astgenne_wand1">制式源石短杖</router-link></li>
           <li><router-link to="/astesia-astgenne/items/astgenne_wings">翱翔星海之翼</router-link></li>
           <li><router-link to="/astesia-astgenne/items/astgenne_bouquet">飞燕草花束</router-link></li>
-          <li><router-link to="/astesia-astgenne/items/astgenne_badge_astgenne">星源证章</router-link></li>
+          <li><router-link to="/astesia-astgenne/items/ast_badge_astgenne">星源证章</router-link></li>
           <li><router-link to="/astesia-astgenne/items/astgenne_key">黯淡星河之钥</router-link></li>
         </ul>
       </div>
@@ -220,119 +220,6 @@
           </table>
         </div>
 
-        <!-- <h4>模组物品</h4>
-        <div class="table-wrapper">
-          <table class="items-table">
-            <thead>
-              <tr>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><router-link to="/astesia-astgenne/items/ast_truth"><img src="@/assets/astesia-astgenne/ast_truth.webp" alt="“真理”" width="60px"><br/>“真理”</router-link></td>
-                <td><router-link to="/astesia-astgenne/items/ast_understar"><img src="@/assets/astesia-astgenne/ast_understar_inactive.webp" alt="“同一片星空下”" width="60px"><br/>“同一片星空下”</router-link></td>
-                <td><router-link to="/astesia-astgenne/items/ast_d32steel"><img src="@/assets/astesia-astgenne/ast_d32steel.webp" alt="D32钢" width="60px"><br/>D32钢</router-link></td>
-                <td><router-link to="/astesia-astgenne/items/ast_starkit"><img src="@/assets/astesia-astgenne/ast_starkit.webp" alt="星空修补套件" width="60px"><br/>星空修补套件</router-link></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-
-              <tr>
-                <td><router-link to="/astesia-astgenne/items/astesia_hat"><img src="@/assets/astesia-astgenne/astesia_hat.webp" alt="探索者之愿" width="60px"><br/>探索者之愿</router-link></td>
-                <td><router-link to="/astesia-astgenne/items/astesia_armor"><img src="@/assets/astesia-astgenne/astesia_armor.webp" alt="探索者之星" width="60px"><br/>探索者之星</router-link></td>
-                <td><router-link to="/astesia-astgenne/items/astesia_sword3"><img src="@/assets/astesia-astgenne/astesia_sword3.webp" alt="祷告星辰之语" width="60px"><br/>祷告星辰之语</router-link></td>
-                <td><router-link to="/astesia-astgenne/items/astesia_sword2"><img src="@/assets/astesia-astgenne/astesia_sword2.webp" alt="残响星辰之语" width="60px"><br/>残响星辰之语</router-link></td>
-                <td><router-link to="/astesia-astgenne/items/astesia_sword1"><img src="@/assets/astesia-astgenne/astesia_sword1.webp" alt="制式源石长剑" width="60px"><br/>制式源石长剑</router-link></td>
-                <td><router-link to="/astesia-astgenne/items/ast_globes"><img src="@/assets/astesia-astgenne/ast_globes.webp" alt="星象天体仪" width="60px"><br/>星象天体仪</router-link></td>
-                <td><router-link to="/astesia-astgenne/items/ast_box"><img src="@/assets/astesia-astgenne/ast_box.webp" alt="奇工纳物箱" width="60px"><br/>奇工纳物箱</router-link></td>
-                <td><router-link to="/astesia-astgenne/items/ast_bookshelf"><img src="@/assets/astesia-astgenne/ast_bookshelf.webp" alt="一体式书桌" width="60px"><br/>一体式书桌</router-link></td>
-              </tr>
-              <tr>
-                <td><router-link to="/astesia-astgenne/items/ast_penandbottle"><img src="@/assets/astesia-astgenne/ast_penandbottle.webp" alt="描绘星空之羽" width="60px"><br/>描绘星空之羽</router-link></td>
-                <td><router-link to="/astesia-astgenne/items/ast_starfeather"><img src="@/assets/astesia-astgenne/ast_starfeather.webp" alt="星之羽" width="60px"><br/>星之羽</router-link></td>
-                <td><router-link to="/astesia-astgenne/items/ast_book_flavor"><img src="@/assets/astesia-astgenne/ast_book_flavor.webp" alt="群星·随想曲" width="60px"><br/>群星·随想曲</router-link></td>
-                <td><router-link to="/astesia-astgenne/items/ast_book_map"><img src="@/assets/astesia-astgenne/ast_book_map.webp" alt="群星·幻想曲" width="60px"><br/>群星·幻想曲</router-link></td>
-                <td><router-link to="/astesia-astgenne/items/ast_book_moon"><img src="@/assets/astesia-astgenne/ast_book_moon.webp" alt="群星·变奏曲" width="60px"><br/>群星·变奏曲</router-link></td>
-                <td><router-link to="/astesia-astgenne/items/ast_book_pick"><img src="@/assets/astesia-astgenne/ast_book_pick.webp" alt="群星·练习曲" width="60px"><br/>群星·练习曲</router-link></td>
-                <td><router-link to="/astesia-astgenne/items/ast_book_rebirth"><img src="@/assets/astesia-astgenne/ast_book_rebirth.webp" alt="群星·颂扬曲" width="60px"><br/>群星·颂扬曲</router-link></td>
-                <td><router-link to="/astesia-astgenne/items/ast_book_speed"><img src="@/assets/astesia-astgenne/ast_book_speed.webp" alt="群星·圆舞曲" width="60px"><br/>群星·圆舞曲</router-link></td>
-              </tr>
-              <tr>
-                <td><router-link to="/astesia-astgenne/items/ast_elite_books1_astesia"><img src="@/assets/astesia-astgenne/ast_elite_books1.webp" alt="一级晋升凭证【星极】" width="60px"><br/>一级晋升凭证【星极】</router-link></td>
-                <td><router-link to="/astesia-astgenne/items/ast_elite_books2_astesia"><img src="@/assets/astesia-astgenne/ast_elite_books2.webp" alt="二级晋升凭证【星极】" width="60px"><br/>二级晋升凭证【星极】</router-link></td>
-                <td><router-link to="/astesia-astgenne/items/ast_elite_books3_astesia"><img src="@/assets/astesia-astgenne/ast_elite_books3.webp" alt="三级晋升凭证【星极】" width="60px"><br/>三级晋升凭证【星极】</router-link></td>
-                <td><router-link to="/astesia-astgenne/items/ast_skill1_books1_astesia"><img src="@/assets/astesia-astgenne/ast_skill_books1.webp" alt="技巧概要·卷1【星座守护】" width="60px"><br/>技巧概要·卷1【星座守护】</router-link></td>
-                <td><router-link to="/astesia-astgenne/items/ast_skill2_books1_astesia"><img src="@/assets/astesia-astgenne/ast_skill_books1.webp" alt="技巧概要·卷1【星辉剑】" width="60px"><br/>技巧概要·卷1【星辉剑】</router-link></td>
-                <td><router-link to="/astesia-astgenne/items/ast_skill1_books2_astesia"><img src="@/assets/astesia-astgenne/ast_skill_books2.webp" alt="技巧概要·卷2【星座守护】" width="60px"><br/>技巧概要·卷2【星座守护】</router-link></td>
-                <td><router-link to="/astesia-astgenne/items/ast_skill2_books2_astesia"><img src="@/assets/astesia-astgenne/ast_skill_books2.webp" alt="技巧概要·卷2【星辉剑】" width="60px"><br/>技巧概要·卷2【星辉剑】</router-link></td>
-                <td><router-link to="/astesia-astgenne/items/ast_skill1_books3_astesia"><img src="@/assets/astesia-astgenne/ast_skill_books3.webp" alt="技巧概要·卷3【星座守护】" width="60px"><br/>技巧概要·卷3【星座守护】</router-link></td>
-              </tr>
-              <tr>
-                <td><router-link to="/astesia-astgenne/items/ast_skill2_books3_astesia"><img src="@/assets/astesia-astgenne/ast_skill_books3.webp" alt="技巧概要·卷3【星辉剑】" width="60px"><br/>技巧概要·卷3【星辉剑】</router-link></td>
-                <td><router-link to="/astesia-astgenne/items/ast_badge_astesia"><img src="@/assets/astesia-astgenne/ast_badge_astesia.webp" alt="星极证章" width="60px"><br/>星极证章</router-link></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td><router-link to="/astesia-astgenne/items/astgenne_hat"><img src="@/assets/astesia-astgenne/astgenne_hat.webp" alt="科研者之愿" width="60px"><br/>科研者之愿</router-link></td>
-                <td><router-link to="/astesia-astgenne/items/astgenne_armor"><img src="@/assets/astesia-astgenne/astgenne_armor.webp" alt="科研者之星" width="60px"><br/>科研者之星</router-link></td>
-                <td><router-link to="/astesia-astgenne/items/astgenne_wand3"><img src="@/assets/astesia-astgenne/astgenne_wand3.webp" alt="昭示星光之愿" width="60px"><br/>昭示星光之愿</router-link></td>
-                <td><router-link to="/astesia-astgenne/items/astgenne_wand2"><img src="@/assets/astesia-astgenne/astgenne_wand2.webp" alt="残缺星光之愿" width="60px"><br/>残缺星光之愿</router-link></td>
-                <td><router-link to="/astesia-astgenne/items/astgenne_wand1"><img src="@/assets/astesia-astgenne/astgenne_wand1.webp" alt="制式源石短杖" width="60px"><br/>制式源石短杖</router-link></td>
-                <td><router-link to="/astesia-astgenne/items/astgenne_wings"><img src="@/assets/astesia-astgenne/astgenne_wings.webp" alt="翱翔星海之翼" width="60px"><br/>翱翔星海之翼</router-link></td>
-                <td><router-link to="/astesia-astgenne/items/astgenne_base"><img src="@/assets/astesia-astgenne/ast_base.webp" alt="微星投影仪" width="60px"><br/>微星投影仪</router-link></td>
-                <td><router-link to="/astesia-astgenne/items/astgenne_rack"><img src="@/assets/astesia-astgenne/ast_rack.webp" alt="实验操作台" width="60px"><br/>实验操作台</router-link></td>
-              </tr>
-              <tr>
-                <td><router-link to="/astesia-astgenne/items/astgenne_bouquet"><img src="@/assets/astesia-astgenne/ast_bouquet.webp" alt="飞燕草花束" width="60px"><br/>飞燕草花束</router-link></td>
-                <td><router-link to="/astesia-astgenne/items/astgenne_swallowgrass"><img src="@/assets/astesia-astgenne/ast_swallowgrass.webp" alt="飞燕草" width="60px"><br/>飞燕草</router-link></td>
-                <td><router-link to="/astesia-astgenne/items/astgenne_potions_energy"><img src="@/assets/astesia-astgenne/ast_potions_energy.webp" alt="瓶装活力混合剂" width="60px"><br/>瓶装活力混合剂</router-link></td>
-                <td><router-link to="/astesia-astgenne/items/astgenne_potions_energy_big"><img src="@/assets/astesia-astgenne/ast_potions_energy_big.webp" alt="壶装活力混合剂" width="60px"><br/>壶装活力混合剂</router-link></td>
-                <td><router-link to="/astesia-astgenne/items/astgenne_potions_sadness"><img src="@/assets/astesia-astgenne/ast_potions_sadness.webp" alt="少许沉沦悲意" width="60px"><br/>少许沉沦悲意</router-link></td>
-                <td><router-link to="/astesia-astgenne/items/astgenne_potions_sadness_big"><img src="@/assets/astesia-astgenne/ast_potions_sadness_big.webp" alt="杯装沉沦悲意" width="60px"><br/>杯装沉沦悲意</router-link></td>
-                <td><router-link to="/astesia-astgenne/items/astgenne_bombs_husk"><img src="@/assets/astesia-astgenne/ast_bombs_husk.webp" alt="位面晶体炸弹" width="60px"><br/>位面晶体炸弹</router-link></td>
-                <td><router-link to="/astesia-astgenne/items/astgenne_bombs_purebrilliance"><img src="@/assets/astesia-astgenne/ast_bombs_purebrilliance.webp" alt="辉煌晶体炸弹" width="60px"><br/>辉煌晶体炸弹</router-link></td>
-              </tr>
-              <tr>
-                <td><router-link to="/astesia-astgenne/items/ast_elite_books1_astgenne"><img src="@/assets/astesia-astgenne/ast_elite_books1.webp" alt="一级晋升凭证【星源】" width="60px"><br/>一级晋升凭证【星源】</router-link></td>
-                <td><router-link to="/astesia-astgenne/items/ast_elite_books2_astgenne"><img src="@/assets/astesia-astgenne/ast_elite_books2.webp" alt="二级晋升凭证【星源】" width="60px"><br/>二级晋升凭证【星源】</router-link></td>
-                <td><router-link to="/astesia-astgenne/items/ast_elite_books3_astgenne"><img src="@/assets/astesia-astgenne/ast_elite_books3.webp" alt="三级晋升凭证【星源】" width="60px"><br/>三级晋升凭证【星源】</router-link></td>
-                <td><router-link to="/astesia-astgenne/items/ast_skill1_books1_astgenne"><img src="@/assets/astesia-astgenne/ast_skill_books1.webp" alt="技巧概要·卷1【双端导流】" width="60px"><br/>技巧概要·卷1【双端导流】</router-link></td>
-                <td><router-link to="/astesia-astgenne/items/ast_skill2_books1_astgenne"><img src="@/assets/astesia-astgenne/ast_skill_books1.webp" alt="技巧概要·卷1【星束交汇】" width="60px"><br/>技巧概要·卷1【星束交汇】</router-link></td>
-                <td><router-link to="/astesia-astgenne/items/ast_skill1_books2_astgenne"><img src="@/assets/astesia-astgenne/ast_skill_books2.webp" alt="技巧概要·卷2【双端导流】" width="60px"><br/>技巧概要·卷2【双端导流】</router-link></td>
-                <td><router-link to="/astesia-astgenne/items/ast_skill2_books2_astgenne"><img src="@/assets/astesia-astgenne/ast_skill_books2.webp" alt="技巧概要·卷2【星束交汇】" width="60px"><br/>技巧概要·卷2【星束交汇】</router-link></td>
-                <td><router-link to="/astesia-astgenne/items/ast_skill1_books3_astgenne"><img src="@/assets/astesia-astgenne/ast_skill_books3.webp" alt="技巧概要·卷3【双端导流】" width="60px"><br/>技巧概要·卷3【双端导流】</router-link></td>
-              </tr>
-              <tr>
-                <td><router-link to="/astesia-astgenne/items/ast_skill2_books3_astgenne"><img src="@/assets/astesia-astgenne/ast_skill_books3.webp" alt="技巧概要·卷3【星束交汇】" width="60px"><br/>技巧概要·卷3【星束交汇】</router-link></td>
-                <td><router-link to="/astesia-astgenne/items/ast_badge_astesia"><img src="@/assets/astesia-astgenne/ast_badge_astesia.webp" alt="星极证章" width="60px"><br/>星极证章</router-link></td>
-                <td><router-link to="/astesia-astgenne/items/astgenne_key"><img src="@/assets/astesia-astgenne/ast_key.webp" alt="黯淡星河之钥" width="60px"><br/>黯淡星河之钥</router-link></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td><router-link to="/astesia-astgenne/items/astgenne_rabbitlamp"><img src="@/assets/astesia-astgenne/ast_rabbitlamp.webp" alt="兔兔落地灯" width="60px"><br/>兔兔落地灯</router-link></td>
-                <td><router-link to="/astesia-astgenne/items/astgenne_candymachine"><img src="@/assets/astesia-astgenne/ast_candymachine.webp" alt="“全是兔兔”糖果机" width="60px"><br/>“全是兔兔”糖果机</router-link></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-            </tbody>
-          </table>
-        </div> -->
-
         <h4 id="items">模组物品</h4>
         <div class="table-wrapper">
           <table class="items-table">
@@ -369,7 +256,7 @@
                 <td><router-link to="/astesia-astgenne/items/astgenne_wand2"><img src="@/assets/astesia-astgenne/astgenne_wand2.webp" alt="残缺星光之愿" width="60px"><br/>残缺星光之愿</router-link></td>
                 <td><router-link to="/astesia-astgenne/items/astgenne_wand1"><img src="@/assets/astesia-astgenne/astgenne_wand1.webp" alt="制式源石短杖" width="60px"><br/>制式源石短杖</router-link></td>
                 <td><router-link to="/astesia-astgenne/items/astgenne_wings"><img src="@/assets/astesia-astgenne/astgenne_wings.webp" alt="翱翔星海之翼" width="60px"><br/>翱翔星海之翼</router-link></td>
-                <td><router-link to="/astesia-astgenne/items/ast_badge_astesia"><img src="@/assets/astesia-astgenne/ast_badge_astesia.webp" alt="星极证章" width="60px"><br/>星极证章</router-link></td>
+                <td><router-link to="/astesia-astgenne/items/ast_badge_astgenne"><img src="@/assets/astesia-astgenne/ast_badge_astgenne.webp" alt="星源证章" width="60px"><br/>星源证章</router-link></td>
                 <td><router-link to="/astesia-astgenne/items/astgenne_key"><img src="@/assets/astesia-astgenne/ast_key.webp" alt="黯淡星河之钥" width="60px"><br/>黯淡星河之钥</router-link></td>
               </tr>
             </tbody>
