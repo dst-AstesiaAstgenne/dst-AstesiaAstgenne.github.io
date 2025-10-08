@@ -26,6 +26,7 @@
           <li><router-link to="/othercharacter/surtrindex/items/surtrclothes">史尔特尔服装</router-link></li>
           <li><router-link to="/othercharacter/surtrindex/items/laevatain">莱万汀</router-link></li>
           <li><router-link to="/othercharacter/surtrindex/items/surtr_pureflame">纯粹火焰</router-link></li>
+          <li><router-link to="/othercharacter/surtrindex/items/surtr_embersurvivor_medal">余烬幸存者勋章</router-link></li>
           <li><router-link to="/othercharacter/surtrindex/items/surtr_elitebook1">高级资深干员训练书</router-link></li>
           <li><router-link to="/othercharacter/surtrindex/items/surtr_elitebook2">高级资深干员特训书</router-link></li>
           <li><router-link to="/othercharacter/surtrindex/items/surtr_supericecream">豪华冰淇淋</router-link></li>
@@ -64,7 +65,7 @@
       <div class="notes">
         <p>*作者的创意工坊介绍页：<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3452922217">[Arknights]明日方舟：史尔特尔</a></p>
         <p>*吃土穷神的模组介绍视频：<a href="https://www.bilibili.com/video/BV16xExzKEob">【饥荒MOD人物介绍】红色幻神——史尔特尔（锁血高伤、诸神黄昏）</a></p>
-        <p>*请注意页面的时效性，信息更新时间：2025.8.19（v1.2.07）</p>
+        <p>*请注意页面的时效性，信息更新时间：2025.10.8（v2.0.01）</p>
         <p>*该页面仍有不少错误，欢迎指正。</p>
       </div>
       </header>
@@ -96,17 +97,17 @@
                 <td><router-link to="/othercharacter/surtrindex/items/surtrclothes"><img src="@/assets/othercharacter/surtr/surtrclothes.webp" alt="史尔特尔服装" width="60px"><br>史尔特尔服装</router-link></td>
                 <td><router-link to="/othercharacter/surtrindex/items/laevatain"><img src="@/assets/othercharacter/surtr/laevatain.webp" alt="莱万汀" width="60px"><br>莱万汀</router-link></td>
                 <td><router-link to="/othercharacter/surtrindex/items/surtr_pureflame"><img src="@/assets/othercharacter/surtr/pureflame.webp" alt="纯粹火焰" width="60px"><br>纯粹火焰</router-link></td>
+                <td><router-link to="/othercharacter/surtrindex/items/surtr_embersurvivor_medal"><img src="@/assets/othercharacter/surtr/surtr_embersurvivor_medal.webp" alt="余烬幸存者勋章" width="60px"><br>余烬幸存者勋章</router-link></td>
                 <td><router-link to="/othercharacter/surtrindex/items/surtr_elitebook1"><img src="@/assets/othercharacter/surtr/surtr_elitebook1.webp" alt="高级资深干员训练书" width="60px"><br>高级资深干员训练书</router-link></td>
                 <td><router-link to="/othercharacter/surtrindex/items/surtr_elitebook2"><img src="@/assets/othercharacter/surtr/surtr_elitebook2.webp" alt="高级资深干员特训书" width="60px"><br>高级资深干员特训书</router-link></td>
                 <td><router-link to="/othercharacter/surtrindex/items/surtr_supericecream"><img src="@/assets/othercharacter/surtr/surtr_supericecream.webp" alt="豪华冰淇淋" width="60px"><br>豪华冰淇淋</router-link></td>
                 <td><router-link to="/othercharacter/surtrindex/items/surtr_sxys_deerleg"><img src="@/assets/othercharacter/surtr/surtr_sxys_deerleg.webp" alt="晶肝茸髓" width="60px"><br>晶肝茸髓</router-link></td>
-                <td><router-link to="/othercharacter/surtrindex/items/surtr_glassseaweed"><img src="@/assets/othercharacter/surtr/surtr_glassseaweed.webp" alt="玻璃海苔" width="60px"><br>玻璃海苔</router-link></td>
               </tr>
 
               <tr>
 
+                <td><router-link to="/othercharacter/surtrindex/items/surtr_glassseaweed"><img src="@/assets/othercharacter/surtr/surtr_glassseaweed.webp" alt="玻璃海苔" width="60px"><br>玻璃海苔</router-link></td>
                 <td><router-link to="/othercharacter/surtrindex/items/surtr_scarygrandma"><img src="@/assets/othercharacter/surtr/surtr_scarygrandma.webp" alt="地精奶奶" width="60px"><br>地精奶奶</router-link></td>
-                <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
