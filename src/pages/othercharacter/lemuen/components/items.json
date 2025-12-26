@@ -1,0 +1,164 @@
+[
+  {
+    "id": "lemuen_sniper",
+    "title": "拉特兰狙击铳",
+    "subtitle": "拉特兰狙击铳",
+    "avatars": {
+      "lemuen": "拉特兰狙击铳"
+    },
+    "details": {
+      "name": "拉特兰狙击铳",
+      "code": "lemuen_sniper",
+      "image": "/images/lemuen/lemuen_sniper.webp",
+      "category": "装备/手部",
+      "unlock": "初始解锁",
+      "materials": ["象鼻*1", "废料*5", "紫宝石*5", "烂电线*5"]
+    },
+    "description": {
+      "single": [
+        "<span class=\"color-important\">拉特兰狙击铳</span>是一种仅【蕾缪安】可制作的模组装备。"
+      ],
+      "multi": [
+        "攻击力50，攻击距离12，攻击间隔三倍于长矛<br>右键手部装备可以变为近战，伤害减半，攻击距离3，攻击间隔一倍于长矛，可以击飞目标，可以无视pvp击飞其他玩家<br><br> <span class=\"color-important\">说明-基础特性：</span><br> ①可给予以下物品增强此装备的战斗向属性。<br>【电子元件】/【月亮碎片】/【铥矿】*1：1点【攻击力】（合计最多给予50个）<br>【巨鹿眼球】/【守护者之角】*1：25点【攻击力】（合计最多给予1个）<br>【月熠】*1：1点【攻击力】（最多给予25个）<br>【启迪碎片】/【亮茄外壳】*1：2点【攻击力】（合计最多给予25个）<br>"
+      ]
+    },
+    "tip": [],
+    "cooking": {}
+  },
+  {
+    "id": "lemuen_horns",
+    "title": "萨卡兹角饰",
+    "subtitle": "萨卡兹角饰",
+    "avatars": {
+      "lemuen": "代餐可不能当饭吃。"
+    },
+    "details": {
+      "name": "萨卡兹角饰",
+      "code": "lemuen_horns",
+      "image": "/images/lemuen/lemuen_horns.webp",
+      "category": "装备/头部",
+      "unlock": "初始解锁",
+      "materials": ["绝望石*3"]
+    },
+    "description": {
+      "single": [
+        "<span class=\"color-important\">萨卡兹角饰</span>是一种可制作的模组装备。"
+      ],
+      "multi": [
+        "佩戴者视为萨卡兹（带tag），受到舞者/泥岩的减伤影响。"
+      ]
+    },
+    "tip": []
+  },
+  {
+    "id": "lemuen_elite_1",
+    "title": "一级精英化券（蕾缪安）",
+    "subtitle": "一级精英化券（蕾缪安）",
+    "avatars": {
+      "lemuen": "一级精英化券（蕾缪安）"
+    },
+    "details": {
+      "name": "一级精英化券（蕾缪安）",
+      "code": "lemuen_elite_1",
+      "image": "/images/lemuen/lemuen_elite_1.webp",
+      "category": "物品/功能",
+      "unlock": "初始解锁",
+      "materials": ["金块*10", "月岩*5", "电子元件*2", "大理石*10"]
+    },
+    "description": {
+      "single": [
+        "<span class=\"color-important\">一级精英化券（蕾缪安）</span>是一种仅【蕾缪安】可制作的模组物品。"
+      ],
+      "multi": [
+        "*仅【蕾缪安】可制作与使用<br>*使用后令对应角色精英化阶段提升至1<br>"
+      ]
+    },
+    "craftableItems": [
+      {
+        "name": "二级精英化券（蕾缪安）",
+        "image": "/images/lemuen/lemuen_elite_2.webp",
+        "link": "/othercharacter/lemuenindex/items/lemuen_elite_2"
+      },
+      {
+        "name": "模组：弹匣与花窗",
+        "image": "/images/lemuen/lemuen_module.webp",
+        "link": "/othercharacter/lemuenindex/items/lemuen_module"
+      }
+    ]
+  },
+  {
+    "id": "lemuen_elite_2",
+    "title": "二级精英化券（蕾缪安）",
+    "subtitle": "二级精英化券（蕾缪安）",
+    "avatars": {
+      "lemuen": "二级精英化券（蕾缪安）"
+    },
+    "details": {
+      "name": "二级精英化券（蕾缪安）",
+      "code": "lemuen_elite_2",
+      "image": "/images/lemuen/lemuen_elite_2.webp",
+      "category": "物品/功能",
+      "unlock": "初始解锁",
+      "materials": ["一级精英化券（蕾缪安）*5", "麻刺节点*40", "蜂刺*20", "吹箭*5"]
+    },
+    "description": {
+      "single": [
+        "<span class=\"color-important\">二级精英化券（蕾缪安）</span>是一种仅【蕾缪安】可制作的模组物品。"
+      ],
+      "multi": [
+        "*仅【蕾缪安】可制作与使用<br>*使用后令对应角色精英化阶段提升至2<br>"
+      ]
+    }
+  },
+  {
+    "id": "lemuen_module",
+    "title": "模组：弹匣与花窗",
+    "subtitle": "模组：弹匣与花窗",
+    "avatars": {
+      "lemuen": "模组：弹匣与花窗"
+    },
+    "details": {
+      "name": "模组：弹匣与花窗",
+      "code": "lemuen_module",
+      "image": "/images/lemuen/lemuen_module.webp",
+      "category": "物品/功能",
+      "unlock": "初始解锁",
+      "materials": ["一级精英化券（蕾缪安）*1", "传送魔杖*5", "启迪之冠*1", "懒人魔杖*1"]
+    },
+    "description": {
+      "single": [
+        "<span class=\"color-important\">模组：弹匣与花窗</span>是一种仅【蕾缪安】可制作的模组物品。"
+      ],
+      "multi": [
+        "强化天赋【逃犯引渡手续】<br>击杀主目标时，尝试为每个技能都恢复1弹药（有可调冷却，若弹药已满则不进入冷却）未击杀主目标时，自身尝试为所有技能恢复1技力。"
+      ]
+    }
+  },
+  {
+    "id": "lemuen_wheelchair",
+    "title": "特制电动轮椅",
+    "subtitle": "特制电动轮椅",
+    "avatars": {
+      "lemuen": "特制电动轮椅"
+    },
+    "details": {
+      "name": "特制电动轮椅",
+      "code": "lemuen_wheelchair",
+      "image": "/images/lemuen/lemuen_wheelchair.webp",
+      "category": "物品/功能",
+      "unlock": "初始解锁",
+      "materials": ["金块*40", "电子元件*10"]
+    },
+    "description": {
+      "single": [
+        "<span class=\"color-important\">特制电动轮椅</span>是一种可制作的通用模组物品。"
+      ],
+      "multi": [
+        "拥有12格储物空间<br>可以骑乘移动<br>"
+      ]
+    },
+    "tip": [
+      "好像都能骑，速来一起飙车！"
+    ]
+  }
+]

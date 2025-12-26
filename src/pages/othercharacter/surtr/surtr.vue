@@ -428,7 +428,7 @@
 
     </table>
 
-    <h5 id="item-design-special-item-weapon">4.专属武器</h5>
+    <h5 id="item-design-special-item-weapon">3.专属武器</h5>
     <table class="other-system-table">
     <thead>
         <tr>

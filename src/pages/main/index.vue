@@ -3,14 +3,30 @@
   <body>
     <navigation />
     <aside class="sidebar">
-      <h3 style="color: #007acc;">模组角色</h3>
       <ul>
         <li><router-link to="/astesia-astgenne">星极&星源</router-link></li>
+      </ul>
+      <!-- 下拉菜单“人物分区1” -->
+      <div class="sidebar-section">
+        <h3 style="color: #007acc;" @click="toggleSection('person1')">
+          人物分区1
+        <span>{{ openSections.person1 ? '▲' : '▼' }}</span>
+        </h3>
+        <ul v-show="openSections.person1">
+          <li><router-link to="/othercharacter/surtrindex">史尔特尔</router-link></li>
+          <li><router-link to="/othercharacter/duskindex">夕</router-link></li>
+          <li><router-link to="/othercharacter/arkshuindex">黍</router-link></li>
+          <li><router-link to="/othercharacter/archettoindex">空弦</router-link></li>
+          <li><router-link to="/othercharacter/lemuenindex">蕾缪安</router-link></li>
+        </ul>
+      </div>
+
+      <!-- <ul class="dropdown-menu">
         <li><router-link to="/othercharacter/surtrindex">史尔特尔</router-link></li>
         <li><router-link to="/othercharacter/duskindex">夕</router-link></li>
         <li><router-link to="/othercharacter/arkshuindex">黍</router-link></li>
         <li><router-link to="/othercharacter/archettoindex">空弦</router-link></li>
-      </ul>
+      </ul> -->
 
     </aside>
 
@@ -61,6 +77,12 @@
               <h5>空弦</h5>
             </div>
           </router-link>
+          <router-link to="/othercharacter/lemuenindex" class="character-link">
+            <div class="character">
+              <img src="@/assets/othercharacter/lemuen/lemuen_none.webp" alt="蕾缪安立绘" width="150px"><br/>
+              <h5>蕾缪安</h5>
+            </div>
+          </router-link>
         </div>
       </section>
 
@@ -71,7 +93,23 @@
 
 <script setup lang="ts">
 import navigation from './components/navigation.vue'
+import { ref } from 'vue'
 
+// 控制每个 section 是否展开
+const openSections = ref<Record<string, boolean>>({
+  person1: false,
+});
+
+const toggleSection = (key: string) => {
+  openSections.value[key] = !openSections.value[key];
+  if(openSections.value[key]){
+    // 滑动至对应位置
+    const element = document.getElementById(key);
+    if (element) {
+      element.scrollIntoView({ behavior: 'auto' });
+    }
+  }
+};
 
 </script>
 

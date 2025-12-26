@@ -5,5 +5,6 @@ import router from './router'
 
 const app = createApp(App);
 app.use(router); // 使用路由
+console.log(router.getRoutes())
 app.mount('#app');
 

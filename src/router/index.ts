@@ -8,7 +8,8 @@ import AstesiaAstgenneRoutes from './modules/astesia-astgenne';
 import SurtrRoutes from './modules/surtr';
 import DuskRoutes from './modules/dusk';
 import ArkShuRoutes from './modules/arkshu';
-import ArchettoRoutes from './modules/archetto'
+import ArchettoRoutes from './modules/archetto';
+import LemuenRoutes from './modules/lemuen';
 
 
 
@@ -23,12 +24,14 @@ const routes = [
     name: 'Notice',
     component: Notice
   },
+  
 
   ...AstesiaAstgenneRoutes,
   ...SurtrRoutes,
   ...DuskRoutes,
   ...ArkShuRoutes,
   ...ArchettoRoutes,
+  ...LemuenRoutes,
 ];
 
 const router = createRouter({

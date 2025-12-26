@@ -185,6 +185,8 @@ a{
     border: 1px solid #ddd;
     padding: 8px;
     text-align: left;
+    /*增大行间距*/
+    line-height: 1.6;
 }
 .other-system-table th {
     border: 1px solid #ddd;
