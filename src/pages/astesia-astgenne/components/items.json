@@ -502,7 +502,7 @@
         "<span class=\"color-important\">奇工纳物箱</span>是一种仅【星极】可制作，仅【星极】【星源】可使用的物品。"
       ],
       "multi": [
-        "<span class=\"color-important\">说明-基础特性：</span><br/>\n              ①置于物品栏可打开的储物箱<br/>\n              ②拥有6格储物空间（2行3列）<br/>\n              ③储物空间可自由拖拽位置。<br/>\n              ④可使用【弹性空间制造器】升级至无线堆叠。<br/><br/>\n<span class=\"color-important\">说明-其余设定</span>：<br/>\n              ①根据当前任务的精英化等级决定同时可携带的最大数量——<br/>\n              等级0：可携带1个<br/>\n              等级1：可携带2个<br/>\n              等级2及以上：可携带3个\n            "
+        "<span class=\"color-important\">说明-基础特性：</span><br/>\n              ①置于物品栏可打开的储物箱<br/>\n              ②拥有6格储物空间（2行3列）<br/>\n              ③储物空间可自由拖拽位置。<br/>\n              ④可使用【弹性空间制造器】升级至无限堆叠。<br/><br/>\n<span class=\"color-important\">说明-其余设定</span>：<br/>\n              ①根据当前人物的精英化等级决定同时可携带的最大数量——<br/>\n              等级0：可携带1个<br/>\n              等级1：可携带2个<br/>\n              等级2及以上：可携带3个\n            "
       ]
     },
     "tip": [
@@ -606,7 +606,7 @@
         "<span class=\"color-important\">群星·随想曲（astesia_book_capriccio）</span>是一种仅【星极】可制作的物品。"
       ],
       "multi": [
-        "耐久5次，阅读消耗20点理智值<br/><br/>\n<span class=\"color-important\">说明-基础特性：</span><br/>\n              阅读后对半径距离6以内最多10个可调位的料理进行随机调味，并回复满新鲜度。\n            "
+        "耐久5次，阅读消耗20点理智值<br/><br/>\n<span class=\"color-important\">说明-基础特性：</span><br/>\n              阅读后对半径距离6以内最多10个可调味的料理进行随机调味，并回复满新鲜度。\n            "
       ]
     },
     "tip": [
@@ -744,7 +744,7 @@
         "<span class=\"color-important\">群星·颂扬曲（astesia_book_carol）</span>是一种仅【星极】可制作的物品。"
       ],
       "multi": [
-        "\n              耐久2次，阅读消耗100点理智值。<br/><br/>\n<span class=\"color-important\">说明-基础特性：</span><br/>\n              阅读后随机选取一位当前世界死亡的玩家，令其在原地复活，<br/>\n              且在复活后持续拥有【铥矿皇冠】立场护盾的效果，持续30秒。<br/>\n<span class=\"color-important\">若无人死亡，则阅读后不会产生任何效果，但依旧会消耗耐久与理智值。</span>\n"
+        "\n              耐久2次，阅读消耗100点理智值。<br/><br/>\n<span class=\"color-important\">说明-基础特性：</span><br/>\n              阅读后随机选取一位当前世界死亡的玩家，令其在原地复活，<br/>\n              且在复活后持续拥有【铥矿皇冠】力场护盾的效果，持续30秒。<br/>\n<span class=\"color-important\">若无人死亡，则阅读后不会产生任何效果，但依旧会消耗耐久与理智值。</span>\n"
       ]
     },
     "tip": [
