@@ -4,6 +4,8 @@
 
 [点击前往介绍页面](https://dst-astesiaastgenne.github.io/)
 
+不打算在github.io上更新了，只在下面这个站点更新一段时间。
+
 ### 更多站点
 
 中国服务器部署，中国访问快。
